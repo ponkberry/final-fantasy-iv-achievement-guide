@@ -26,8 +26,13 @@ export function ChapterBestiaryList({ entries, isSeen, onToggle }: ChapterBestia
                   onChange={() => onToggle(entry.number)}
                   className="mt-0.5 size-3.5 shrink-0 accent-indigo-600"
                 />
-                <span className={seen ? 'text-slate-500 line-through dark:text-slate-500' : 'text-slate-700 dark:text-slate-300'}>
-                  #{entry.number} {entry.name}
+                <span>
+                  <span className={seen ? 'text-slate-500 line-through dark:text-slate-500' : 'text-slate-700 dark:text-slate-300'}>
+                    #{entry.number} {entry.name}
+                  </span>
+                  {entry.notes && (
+                    <span className="block text-xs text-slate-500 dark:text-slate-500">{entry.notes}</span>
+                  )}
                 </span>
               </label>
             </li>

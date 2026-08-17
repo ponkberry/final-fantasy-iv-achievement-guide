@@ -90,8 +90,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch03-kaipo-s04',
-        text: 'Rydia formally joins the party as a Summoner, bringing her eidolon partner Whyt with her.',
+        text: 'Rydia formally joins the party as a Summoner, bringing her eidolon partner Whyt with her. As a child she already knows one real summon, Chocobo.',
         achievementIds: ['apprentice-summoner'],
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'chocobo' }],
       },
       {
         id: 'ch03-kaipo-s05',
@@ -111,7 +112,7 @@ export const walkthrough: WalkthroughChapter[] = [
   },
   {
     id: 'ch04-underground-waterway',
-    title: 'Underground Waterway',
+    title: 'Underground Waterway and Underground Lake',
     summary: 'A long, two-part dungeon standing between Kaipo and Damcyan.',
     steps: [
       {
@@ -120,14 +121,22 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch04-underground-waterway-s02',
-        text: 'Work your way through the many floors, collecting equipment and completing maps for item rewards.',
+        text: 'Work your way through the Underground Waterway\'s floors, collecting equipment and completing maps for item rewards.',
       },
       {
         id: 'ch04-underground-waterway-s03',
-        text: 'At the bottom of the dungeon, defeat the Octomammoth.',
+        text: 'Exit the Underground Waterway back onto the World Map, then head north to find the entrance to the second half of this dungeon, the Underground Lake.',
       },
       {
         id: 'ch04-underground-waterway-s04',
+        text: 'Work through the Underground Lake\'s floors the same way — this is where Red Mousse and Alligator turn up, both on B2.',
+      },
+      {
+        id: 'ch04-underground-waterway-s05',
+        text: 'At the bottom of the dungeon, defeat the Octomammoth.',
+      },
+      {
+        id: 'ch04-underground-waterway-s06',
         text: 'Climb out through the waterfall to see the Red Wings attacking Damcyan Castle. Tellah leaves the party here.',
       },
     ],
@@ -426,8 +435,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s05',
-        text: 'Golbez himself appears next. The fight is unwinnable at first until an adult Rydia arrives to save the party, having grown up and returned with new power. She rejoins already knowing six summons.',
-        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'chocobo' }, { achievementId: 'master-summoner', subItemId: 'shiva' }, { achievementId: 'master-summoner', subItemId: 'ifrit' }, { achievementId: 'master-summoner', subItemId: 'dragon' }, { achievementId: 'master-summoner', subItemId: 'titan' }, { achievementId: 'master-summoner', subItemId: 'ramuh' }],
+        text: 'Golbez himself appears next. The fight is unwinnable at first until an adult Rydia arrives to save the party, having grown up and returned with new power. She rejoins already knowing five more summons on top of Chocobo.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'shiva' }, { achievementId: 'master-summoner', subItemId: 'ifrit' }, { achievementId: 'master-summoner', subItemId: 'dragon' }, { achievementId: 'master-summoner', subItemId: 'titan' }, { achievementId: 'master-summoner', subItemId: 'ramuh' }],
       },
       {
         id: 'ch13-dwarven-castle-s06',

@@ -72,6 +72,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 11,
     name: 'Red Mousse',
     location: 'Underground Lake B2',
+    notes: 'Underground Lake B2',
     chapterId: 'ch04-underground-waterway',
   },
   {
@@ -84,6 +85,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 13,
     name: 'Alligator',
     location: 'Underground Lake B2',
+    notes: 'Underground Lake B2',
     chapterId: 'ch04-underground-waterway',
   },
   {
