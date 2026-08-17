@@ -12,6 +12,7 @@ export const achievements: Achievement[] = [
     description: 'You played a new game.',
     category: 'Miscellaneous',
     icon: '/achievements/customer-appreciation.jpg',
+    chapterId: 'ch01-baron',
   },
   {
     id: 'mission-accomplished',
@@ -19,7 +20,7 @@ export const achievements: Achievement[] = [
     description: 'You traveled to Mist.',
     category: 'Story',
     icon: '/achievements/mission-accomplished.jpg',
-    chapterId: 'ch01-baron',
+    chapterId: 'ch02-mist-cave',
   },
   {
     id: 'apprentice-summoner',
@@ -27,6 +28,7 @@ export const achievements: Achievement[] = [
     description: 'You acquired one summon.',
     category: 'Story',
     icon: '/achievements/apprentice-summoner.jpg',
+    chapterId: 'ch03-kaipo',
   },
   {
     id: 'augment-novice',
@@ -34,6 +36,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained one augment.',
     category: 'Collection',
     icon: '/achievements/augment-novice.jpg',
+    chapterId: 'ch03-kaipo',
   },
   {
     id: 'a-bloodstained-road',
@@ -55,6 +58,7 @@ export const achievements: Achievement[] = [
     description: 'You traveled to Damcyan Castle.',
     category: 'Story',
     icon: '/achievements/assault.jpg',
+    chapterId: 'ch05-damcyan',
   },
   {
     id: 'seeker',
@@ -77,6 +81,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated the Sahagin that attacked at Kaipo.',
     category: 'Combat',
     icon: '/achievements/bravery.jpg',
+    chapterId: 'ch03-kaipo',
   },
   {
     id: 'big-bang',
@@ -84,6 +89,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Mom Bomb.',
     category: 'Combat',
     icon: '/achievements/big-bang.jpg',
+    chapterId: 'ch07-mt-hobs-fabul',
   },
   {
     id: 'alone-again',
@@ -91,6 +97,7 @@ export const achievements: Achievement[] = [
     description: 'You were shipwrecked by Leviathan.',
     category: 'Story',
     icon: '/achievements/alone-again.jpg',
+    chapterId: 'ch07-mt-hobs-fabul',
   },
   {
     id: 'pockets-full',
@@ -105,6 +112,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Scarmiglione.',
     category: 'Combat',
     icon: '/achievements/defeated-scarmiglione.jpg',
+    chapterId: 'ch08-mysidia-ordeals',
   },
   {
     id: 'moves-toward-the-light',
@@ -126,6 +134,7 @@ export const achievements: Achievement[] = [
     description: 'You talked to everybody in the Training Classroom.',
     category: 'Sidequest',
     icon: '/achievements/training-complete.jpg',
+    chapterId: 'ch01-baron',
   },
   {
     id: 'walks-with-the-light',
@@ -140,6 +149,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Cagnazzo.',
     category: 'Combat',
     icon: '/achievements/defeated-cagnazzo.jpg',
+    chapterId: 'ch09-baron-retaken',
   },
   {
     id: 'deep-into-darkness',
@@ -147,6 +157,7 @@ export const achievements: Achievement[] = [
     description: 'You raised Cecil (Dark Knight) to level 25.',
     category: 'Combat',
     icon: '/achievements/deep-into-darkness.jpg',
+    chapterId: 'ch08-mysidia-ordeals',
   },
   {
     id: 'catching-on',
@@ -162,6 +173,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Dark Elf.',
     category: 'Combat',
     icon: '/achievements/saved-by-music.jpg',
+    chapterId: 'ch10-mysidia-troia',
   },
   {
     id: 'the-gatherer-of-light',
@@ -183,6 +195,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated the Magus Sisters.',
     category: 'Combat',
     icon: '/achievements/delta-attack-defiance.jpg',
+    chapterId: 'ch11-tower-of-zot',
   },
   {
     id: 'defeated-barbariccia',
@@ -190,6 +203,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Barbariccia.',
     category: 'Combat',
     icon: '/achievements/defeated-barbariccia.jpg',
+    chapterId: 'ch11-tower-of-zot',
   },
   {
     id: 'defeated-calcabrina',
@@ -197,6 +211,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Calcabrina.',
     category: 'Combat',
     icon: '/achievements/defeated-calcabrina.jpg',
+    chapterId: 'ch13-dwarven-castle',
   },
   {
     id: 'defeated-dr-lugae',
@@ -204,6 +219,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Dr. Lugae.',
     category: 'Combat',
     icon: '/achievements/defeated-dr-lugae.jpg',
+    chapterId: 'ch14-tower-of-babil-lower',
   },
   {
     id: 'gold-hunter',
@@ -225,6 +241,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Rubicante.',
     category: 'Combat',
     icon: '/achievements/defeated-rubicante.jpg',
+    chapterId: 'ch16-tower-of-babil-upper',
   },
   {
     id: 'aficionado',
@@ -240,6 +257,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Demon Wall.',
     category: 'Combat',
     icon: '/achievements/defeated-demon-wall.jpg',
+    chapterId: 'ch18-sealed-cave',
   },
   {
     id: 'promised-ship-of-light',
@@ -247,6 +265,7 @@ export const achievements: Achievement[] = [
     description: 'You went to the moon on The Lunar Whale.',
     category: 'Story',
     icon: '/achievements/promised-ship-of-light.jpg',
+    chapterId: 'ch19-odin-lunar-whale',
   },
   {
     id: 'bursting-treasure-chest',
@@ -261,6 +280,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated the elemental archfiends.',
     category: 'Combat',
     icon: '/achievements/defeated-elemental-archfiends.jpg',
+    chapterId: 'ch21-giant-of-babil',
   },
   {
     id: 'defeated-cpu',
@@ -268,6 +288,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated the CPU.',
     category: 'Combat',
     icon: '/achievements/defeated-cpu.jpg',
+    chapterId: 'ch21-giant-of-babil',
   },
   {
     id: 'form-reborn',
@@ -275,6 +296,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained Excalibur.',
     category: 'Sidequest',
     icon: '/achievements/form-reborn.jpg',
+    chapterId: 'ch20-moon-lair-of-father',
   },
   {
     id: 'paladin-of-light-incarnate',
@@ -289,6 +311,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game.',
     category: 'Story',
     icon: '/achievements/to-mother-earth.jpg',
+    chapterId: 'ch23-final-battle',
   },
   {
     id: 'master-summoner',
@@ -296,6 +319,7 @@ export const achievements: Achievement[] = [
     description: 'You acquired all summons.',
     category: 'Collection',
     icon: '/achievements/master-summoner.jpg',
+    chapterId: 'ch22-lunar-subterrane',
   },
   {
     id: 'developers-pal',
@@ -303,6 +327,7 @@ export const achievements: Achievement[] = [
     description: 'You talked to everybody in the Developers\' Office.',
     category: 'Sidequest',
     icon: '/achievements/developers-pal.jpg',
+    chapterId: 'ch13-dwarven-castle',
   },
   {
     id: 'unsealed',
@@ -310,6 +335,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained Ragnarok, Holy Lance, Murasame, and Ribbon.',
     category: 'Sidequest',
     icon: '/achievements/unsealed.jpg',
+    chapterId: 'ch22-lunar-subterrane',
   },
   {
     id: 'time-for-a-vault',
@@ -338,6 +364,7 @@ export const achievements: Achievement[] = [
     description: 'You traveled across the entire map.',
     category: 'Sidequest',
     icon: '/achievements/the-perpetual-wayfarer.jpg',
+    chapterId: 'ch22-lunar-subterrane',
   },
   {
     id: 'bitter-battle',
@@ -345,6 +372,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game on Hard difficulty.',
     category: 'Miscellaneous',
     icon: '/achievements/bitter-battle.jpg',
+    chapterId: 'ch24-new-game-plus',
   },
   {
     id: 'rabbit-chaser',
@@ -352,6 +380,7 @@ export const achievements: Achievement[] = [
     description: 'You played through all Namingway events.',
     category: 'Sidequest',
     icon: '/achievements/rabbit-chaser.jpg',
+    chapterId: 'ch01-baron',
   },
   {
     id: 'to-the-end-of-misery',
@@ -359,6 +388,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained Adamant Armor.',
     category: 'Sidequest',
     icon: '/achievements/to-the-end-of-misery.jpg',
+    chapterId: 'ch22-lunar-subterrane',
   },
   {
     id: 'the-onion-swordsman',
@@ -366,6 +396,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained all the Onion items.',
     category: 'Sidequest',
     icon: '/achievements/the-onion-swordsman.jpg',
+    chapterId: 'ch22-lunar-subterrane',
   },
   {
     id: 'augment-master',
@@ -380,6 +411,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game twice.',
     category: 'Miscellaneous',
     icon: '/achievements/earths-savior-times-two.jpg',
+    chapterId: 'ch24-new-game-plus',
   },
   {
     id: 'expert-summoner',
@@ -394,6 +426,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Geryon.',
     category: 'Combat',
     icon: '/achievements/defeated-geryon.jpg',
+    chapterId: 'ch24-new-game-plus',
   },
   {
     id: 'defeated-proto-babil',
@@ -401,6 +434,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Proto-Babil.',
     category: 'Combat',
     icon: '/achievements/defeated-proto-babil.jpg',
+    chapterId: 'ch24-new-game-plus',
   },
   {
     id: 'know-it-all',
@@ -416,5 +450,6 @@ export const achievements: Achievement[] = [
     description: 'You earned all achievements.',
     category: 'Miscellaneous',
     icon: '/achievements/final-fantasy-iv-master.jpg',
+    chapterId: 'ch24-new-game-plus',
   },
 ]
