@@ -9,7 +9,12 @@ import { WalkthroughNav } from '../components/WalkthroughNav'
 import { ChapterBestiaryList } from '../components/ChapterBestiaryList'
 
 export function WalkthroughPage() {
-  const { isComplete: isAchievementComplete, toggle: toggleAchievement } = useAchievementProgress()
+  const {
+    isComplete: isAchievementComplete,
+    toggle: toggleAchievement,
+    isSubItemComplete,
+    toggleSubItem,
+  } = useAchievementProgress()
   const { isComplete: isStepComplete, toggle: toggleStep, reset: resetSteps } = useWalkthroughProgress()
   const { isSeen, toggle: toggleBestiary } = useBestiaryProgress()
 
@@ -79,9 +84,10 @@ export function WalkthroughPage() {
                           {step.text}
                         </span>
                       </label>
-                      {step.achievementIds && step.achievementIds.length > 0 && (
+                      {((step.achievementIds && step.achievementIds.length > 0) ||
+                        (step.subAchievementIds && step.subAchievementIds.length > 0)) && (
                         <div className="mt-2 ml-6 flex flex-wrap gap-2">
-                          {step.achievementIds.map((id) => {
+                          {step.achievementIds?.map((id) => {
                             const achievement = achievementById.get(id)
                             if (!achievement) return null
                             const achDone = isAchievementComplete(id)
@@ -105,6 +111,36 @@ export function WalkthroughPage() {
                                 />
                                 {achDone ? '✓ ' : ''}
                                 {achievement.name}
+                              </button>
+                            )
+                          })}
+                          {step.subAchievementIds?.map(({ achievementId, subItemId }) => {
+                            const achievement = achievementById.get(achievementId)
+                            const subItem = achievement?.subItems?.find((s) => s.id === subItemId)
+                            if (!achievement || !subItem) return null
+                            const subDone = isSubItemComplete(achievementId, subItemId)
+                            const label = subItem.label.replace(/^\d+\.\s*/, '')
+                            return (
+                              <button
+                                key={`${achievementId}:${subItemId}`}
+                                type="button"
+                                onClick={() => toggleSubItem(achievementId, subItemId)}
+                                title={achievement.name}
+                                className={`flex items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-xs transition-colors ${
+                                  subDone
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
+                                }`}
+                              >
+                                <img
+                                  src={achievement.icon}
+                                  alt=""
+                                  width={20}
+                                  height={20}
+                                  className={`size-5 rounded-full ${subDone ? '' : 'opacity-50 grayscale'}`}
+                                />
+                                {subDone ? '✓ ' : ''}
+                                {label}
                               </button>
                             )
                           })}

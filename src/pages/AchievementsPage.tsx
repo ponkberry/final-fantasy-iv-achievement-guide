@@ -15,8 +15,18 @@ const categories: Array<AchievementCategory | 'All'> = [
 ]
 
 export function AchievementsPage() {
-  const { isComplete, isLocked, toggle, reset, completedCount, total, percentComplete } =
-    useAchievementProgress()
+  const {
+    isComplete,
+    isLocked,
+    toggle,
+    reset,
+    completedCount,
+    total,
+    percentComplete,
+    isSubItemComplete,
+    toggleSubItem,
+    subItemProgress,
+  } = useAchievementProgress()
   const [filter, setFilter] = useState<(typeof categories)[number]>('All')
 
   const visible = useMemo(
@@ -66,6 +76,9 @@ export function AchievementsPage() {
             completed={isComplete(achievement.id)}
             locked={isLocked(achievement.id)}
             onToggle={toggle}
+            subItemProgress={achievement.subItems ? subItemProgress(achievement.id) : undefined}
+            isSubItemComplete={(subItemId) => isSubItemComplete(achievement.id, subItemId)}
+            onToggleSubItem={(subItemId) => toggleSubItem(achievement.id, subItemId)}
           />
         ))}
       </div>

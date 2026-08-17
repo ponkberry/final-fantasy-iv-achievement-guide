@@ -5,6 +5,11 @@ export type AchievementCategory =
   | 'Combat'
   | 'Miscellaneous'
 
+export interface AchievementSubItem {
+  id: string
+  label: string
+}
+
 export interface Achievement {
   id: string
   name: string
@@ -16,6 +21,12 @@ export interface Achievement {
   chapterId?: string
   /** if set, this achievement auto-completes once bestiary completion reaches this percent, and can't be toggled manually */
   bestiaryThreshold?: number
+  /**
+   * if set, this achievement is made up of several individually-trackable parts (e.g. 13 Namingway
+   * sightings, or a list of summons) — it auto-completes once every part is checked off, and can't
+   * be toggled manually as a whole
+   */
+  subItems?: AchievementSubItem[]
 }
 
 export interface BestiaryEntry {
@@ -32,6 +43,8 @@ export interface WalkthroughStep {
   text: string
   /** achievement ids relevant to this step, shown as inline callouts */
   achievementIds?: string[]
+  /** specific sub-items of multi-part achievements (see Achievement.subItems) relevant to this step */
+  subAchievementIds?: { achievementId: string; subItemId: string }[]
 }
 
 export interface WalkthroughChapter {

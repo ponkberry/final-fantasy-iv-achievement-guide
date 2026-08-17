@@ -23,7 +23,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch01-baron-s03',
         text: 'Explore Baron Castle and the town below before you leave. In the west tower you can find Namingway, who marks the first of thirteen sightings across the whole game — talking to him now starts the Rabbit Chaser sidequest.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-01' }],
       },
       {
         id: 'ch01-baron-s04',
@@ -32,6 +32,11 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch01-baron-s05',
+        text: 'Helldivers just outside Baron have a very rare chance to drop the hidden Cockatrice summon — not required for a first pass, but worth knowing about early.',
+        subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'cockatrice' }],
+      },
+      {
+        id: 'ch01-baron-s06',
         text: 'Rest, then set out for Mist with Kain to deliver a ring and investigate the summoners there.',
       },
     ],
@@ -47,15 +52,20 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch02-mist-cave-s02',
-        text: 'Namingway appears again partway through the cave and becomes Mappingway, marking your second sighting.',
-        achievementIds: ['rabbit-chaser'],
+        text: 'Goblins here have a very rare chance to drop the hidden Goblin summon.',
+        subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'goblin' }],
       },
       {
         id: 'ch02-mist-cave-s03',
-        text: 'Push through to the depths of the cave and defeat the Mist Dragon.',
+        text: 'Namingway appears again partway through the cave and becomes Mappingway, marking your second sighting.',
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-02' }],
       },
       {
         id: 'ch02-mist-cave-s04',
+        text: 'Push through to the depths of the cave and defeat the Mist Dragon.',
+      },
+      {
+        id: 'ch02-mist-cave-s05',
         text: 'Leave the cave and enter the village of Mist.',
         achievementIds: ['mission-accomplished'],
       },
@@ -92,7 +102,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch03-kaipo-s06',
         text: 'Namingway is in this same house and shows you the Bestiary for your third sighting.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-03' }],
       },
       {
         id: 'ch03-kaipo-s07',
@@ -183,7 +193,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch07-mt-hobs-fabul-s03',
         text: 'Namingway is at the inn in Fabul Castle for your fourth sighting.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-04' }],
       },
       {
         id: 'ch07-mt-hobs-fabul-s04',
@@ -225,7 +235,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch08-mysidia-ordeals-s03',
         text: 'A Chocobo Forest south of the mountain holds your fifth Namingway sighting; he buys all your Tents for 300 gil.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-05' }],
       },
       {
         id: 'ch08-mysidia-ordeals-s04',
@@ -262,7 +272,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch09-baron-retaken-s02',
         text: 'The key also opens the castle shop — find Namingway inside for your sixth sighting.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-06' }],
       },
       {
         id: 'ch09-baron-retaken-s03',
@@ -307,7 +317,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch10-mysidia-troia-s04',
         text: 'In Troia, Namingway is now in the pub for your seventh sighting — distract one of his two dates.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-07' }],
       },
       {
         id: 'ch10-mysidia-troia-s05',
@@ -315,7 +325,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch10-mysidia-troia-s06',
-        text: 'Take a Black Chocobo to Lodestone Cavern and fight through to the Crystal room.',
+        text: 'Take a Black Chocobo to Lodestone Cavern and fight through to the Crystal room. Mindflayers on B2 have a very rare chance to drop the hidden Mindflayer summon.',
+        subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'mindflayer' }],
       },
       {
         id: 'ch10-mysidia-troia-s07',
@@ -373,7 +384,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch12-eblan-agart-s03',
         text: 'Namingway waits outside a house in Agart asking for a Rainbow Pudding for your eighth sighting — a rare monster drop you can chase down now or return for later.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-08' }],
       },
       {
         id: 'ch12-eblan-agart-s04',
@@ -402,7 +413,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch13-dwarven-castle-s03',
         text: 'Namingway is also in the pub for your ninth sighting — he starts a fight before talking.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-09' }],
       },
       {
         id: 'ch13-dwarven-castle-s04',
@@ -411,7 +422,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s05',
-        text: 'Golbez himself appears next. The fight is unwinnable at first until an adult Rydia arrives to save the party, having grown up and returned with new power.',
+        text: 'Golbez himself appears next. The fight is unwinnable at first until an adult Rydia arrives to save the party, having grown up and returned with new power. She rejoins already knowing six summons.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'chocobo' }, { achievementId: 'master-summoner', subItemId: 'shiva' }, { achievementId: 'master-summoner', subItemId: 'ifrit' }, { achievementId: 'master-summoner', subItemId: 'dragon' }, { achievementId: 'master-summoner', subItemId: 'titan' }, { achievementId: 'master-summoner', subItemId: 'ramuh' }],
       },
       {
         id: 'ch13-dwarven-castle-s06',
@@ -481,15 +493,20 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch16-tower-of-babil-upper-s03',
-        text: 'Face a false boss fight between Edge\'s parents, the King and Queen of Eblan, freed from Golbez\'s control.',
+        text: 'Balloons on B4 have a very rare chance to drop the hidden Bomb summon.',
+        subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'bomb' }],
       },
       {
         id: 'ch16-tower-of-babil-upper-s04',
+        text: 'Face a false boss fight between Edge\'s parents, the King and Queen of Eblan, freed from Golbez\'s control.',
+      },
+      {
+        id: 'ch16-tower-of-babil-upper-s05',
         text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually.',
         achievementIds: ['defeated-rubicante'],
       },
       {
-        id: 'ch16-tower-of-babil-upper-s05',
+        id: 'ch16-tower-of-babil-upper-s06',
         text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower — fight your way back out and steal the Falcon airship.',
       },
     ],
@@ -526,15 +543,17 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch17-underworld-sidequests-s07',
         text: 'Defeat Asura to earn her summon.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'asura' }],
       },
       {
         id: 'ch17-underworld-sidequests-s08',
         text: 'Defeat Leviathan to earn his summon — a different encounter from the earlier shipwreck.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'leviathan' }],
       },
       {
         id: 'ch17-underworld-sidequests-s09',
         text: 'Namingway is somewhere in the Feymarch for your tenth sighting; he asks you to choose a name for something close to his heart.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-10' }],
       },
     ],
   },
@@ -574,6 +593,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch19-odin-lunar-whale-s01',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him — he doesn\'t rejoin, but Rydia earns the Sylphid summon.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
       },
       {
         id: 'ch19-odin-lunar-whale-s02',
@@ -582,11 +602,12 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch19-odin-lunar-whale-s03',
         text: 'Defeat Odin to earn his summon.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
       },
       {
         id: 'ch19-odin-lunar-whale-s04',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
       },
       {
         id: 'ch19-odin-lunar-whale-s05',
@@ -607,7 +628,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch20-moon-lair-of-father-s02',
         text: 'There\'s a Namingway sighting hidden near the Hummingway Abode\'s tunnels for your twelfth encounter.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-12' }],
       },
       {
         id: 'ch20-moon-lair-of-father-s03',
@@ -672,7 +693,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lunar-subterrane-s02',
-        text: 'Defeat Bahamut to earn his summon.',
+        text: 'Defeat Bahamut to earn his summon — typically the last regular summon most players pick up.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
       },
       {
         id: 'ch22-lunar-subterrane-s03',
@@ -717,15 +739,10 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch22-lunar-subterrane-s12',
         text: 'Namingway\'s final sighting can appear in several places — a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
-        achievementIds: ['rabbit-chaser'],
+        subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
       },
       {
         id: 'ch22-lunar-subterrane-s13',
-        text: 'With Bahamut in hand, this is also typically where the last regular summon is acquired for most players.',
-        achievementIds: ['master-summoner'],
-      },
-      {
-        id: 'ch22-lunar-subterrane-s14',
         text: 'Reach the Lunar Core on B12 and prepare for the final battle — this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
       },
     ],
