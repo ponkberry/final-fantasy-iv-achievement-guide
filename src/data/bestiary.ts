@@ -46,7 +46,9 @@ export const bestiary: BestiaryEntry[] = [
     number: 7,
     name: 'Sand Worm',
     location: 'Outside Kaipo',
+    notes: 'Also appears in Antlion\'s Den, where it\'s easier to find than out in the desert.',
     chapterId: 'ch03-kaipo',
+    extraChapterIds: ['ch06-antlions-den'],
   },
   {
     number: 8,

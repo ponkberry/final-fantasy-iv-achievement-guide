@@ -81,7 +81,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated the Sahagin that attacked at Kaipo.',
     category: 'Combat',
     icon: 'achievements/bravery.jpg',
-    chapterId: 'ch03-kaipo',
+    chapterId: 'ch06-antlions-den',
   },
   {
     id: 'big-bang',

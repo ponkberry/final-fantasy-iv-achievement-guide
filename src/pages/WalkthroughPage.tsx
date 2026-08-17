@@ -23,10 +23,14 @@ export function WalkthroughPage() {
   const bestiaryByChapter = useMemo(() => {
     const map = new Map<string, typeof bestiary>()
     for (const entry of bestiary) {
-      if (!entry.chapterId) continue
-      const list = map.get(entry.chapterId) ?? []
-      list.push(entry)
-      map.set(entry.chapterId, list)
+      const chapterIds = [entry.chapterId, ...(entry.extraChapterIds ?? [])].filter(
+        (id): id is string => Boolean(id),
+      )
+      for (const chapterId of chapterIds) {
+        const list = map.get(chapterId) ?? []
+        list.push(entry)
+        map.set(chapterId, list)
+      }
     }
     return map
   }, [])

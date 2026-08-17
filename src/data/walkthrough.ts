@@ -86,8 +86,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch03-kaipo-s03',
-        text: 'That night, a Baron General and his soldiers attack. Kill the General first — the official achievement is credited for defeating the Sahagin/soldiers that attack at Kaipo, and killing the General first is also required for its bestiary entry.',
-        achievementIds: ['bravery'],
+        text: 'That night, a Baron General and his soldiers attack. Kill the General first — this is required for its bestiary entry, or he flees and you lose the credit.',
       },
       {
         id: 'ch03-kaipo-s04',
@@ -164,7 +163,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch06-antlions-den-s01',
-        text: 'Work through Antlion\'s Den, collecting the Lamia Harp and other treasure along the way.',
+        text: 'Work through Antlion\'s Den, collecting the Lamia Harp and other treasure along the way. Still need the Sand Worm for your bestiary? It\'s easier to find here than out in the desert near Kaipo.',
       },
       {
         id: 'ch06-antlions-den-s02',
@@ -172,7 +171,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch06-antlions-den-s03',
-        text: 'Return to Kaipo and use the Sand Pearl on Rosa. She recovers and, after a night attack tests Edward\'s courage, joins the party as a White Mage/Archer.',
+        text: 'Return to Kaipo and use the Sand Pearl on Rosa. That night, Edward slips out to the oasis alone and is attacked by a Sahagin. Anna\'s spirit appears to give him courage — defeat the Sahagin to pass this test of nerve.',
+        achievementIds: ['bravery'],
+      },
+      {
+        id: 'ch06-antlions-den-s04',
+        text: 'Rosa recovers and Edward finds his confidence, and Rosa joins the party as a White Mage/Archer.',
       },
     ],
   },

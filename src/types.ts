@@ -36,6 +36,8 @@ export interface BestiaryEntry {
   notes?: string
   /** id of the walkthrough chapter where this monster is first encountered */
   chapterId?: string
+  /** additional chapters where this monster also reappears and is worth noting */
+  extraChapterIds?: string[]
 }
 
 export interface WalkthroughStep {
