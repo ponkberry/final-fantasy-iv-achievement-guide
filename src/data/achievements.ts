@@ -1,9 +1,9 @@
-import type { Achievement } from '../types'
+﻿import type { Achievement } from '../types'
 
 // Sourced from the official Steam achievement list for Final Fantasy IV (3D Remake):
 // https://steamcommunity.com/stats/312750/achievements/
 // Categories (Story / Sidequest / Collection / Combat / Miscellaneous) are our own
-// classification — Steam doesn't provide categories. chapterId links are added as the
+// classification â€” Steam doesn't provide categories. chapterId links are added as the
 // walkthrough is written.
 export const achievements: Achievement[] = [
   {
@@ -11,7 +11,7 @@ export const achievements: Achievement[] = [
     name: 'Customer Appreciation',
     description: 'You played a new game.',
     category: 'Miscellaneous',
-    icon: '/achievements/customer-appreciation.jpg',
+    icon: 'achievements/customer-appreciation.jpg',
     chapterId: 'ch01-baron',
   },
   {
@@ -19,7 +19,7 @@ export const achievements: Achievement[] = [
     name: 'Mission Accomplished?',
     description: 'You traveled to Mist.',
     category: 'Story',
-    icon: '/achievements/mission-accomplished.jpg',
+    icon: 'achievements/mission-accomplished.jpg',
     chapterId: 'ch02-mist-cave',
   },
   {
@@ -27,7 +27,7 @@ export const achievements: Achievement[] = [
     name: 'Apprentice Summoner',
     description: 'You acquired one summon.',
     category: 'Story',
-    icon: '/achievements/apprentice-summoner.jpg',
+    icon: 'achievements/apprentice-summoner.jpg',
     chapterId: 'ch03-kaipo',
   },
   {
@@ -35,7 +35,7 @@ export const achievements: Achievement[] = [
     name: 'Augment Novice',
     description: 'You obtained one augment.',
     category: 'Collection',
-    icon: '/achievements/augment-novice.jpg',
+    icon: 'achievements/augment-novice.jpg',
     chapterId: 'ch03-kaipo',
   },
   {
@@ -43,21 +43,21 @@ export const achievements: Achievement[] = [
     name: 'A Bloodstained Road',
     description: 'You raised Cecil (Dark Knight) to level 15.',
     category: 'Combat',
-    icon: '/achievements/a-bloodstained-road.jpg',
+    icon: 'achievements/a-bloodstained-road.jpg',
   },
   {
     id: 'bronze-hunter',
     name: 'Bronze Hunter',
     description: 'You defeated 100 enemies.',
     category: 'Combat',
-    icon: '/achievements/bronze-hunter.jpg',
+    icon: 'achievements/bronze-hunter.jpg',
   },
   {
     id: 'assault',
     name: 'Assault!',
     description: 'You traveled to Damcyan Castle.',
     category: 'Story',
-    icon: '/achievements/assault.jpg',
+    icon: 'achievements/assault.jpg',
     chapterId: 'ch05-damcyan',
   },
   {
@@ -65,7 +65,7 @@ export const achievements: Achievement[] = [
     name: 'Seeker',
     description: 'You completed 10% of the Bestiary.',
     category: 'Collection',
-    icon: '/achievements/seeker.jpg',
+    icon: 'achievements/seeker.jpg',
     bestiaryThreshold: 10,
   },
   {
@@ -73,14 +73,14 @@ export const achievements: Achievement[] = [
     name: 'Heaps of Corpses',
     description: 'You raised Cecil (Dark Knight) to level 20.',
     category: 'Combat',
-    icon: '/achievements/heaps-of-corpses.jpg',
+    icon: 'achievements/heaps-of-corpses.jpg',
   },
   {
     id: 'bravery',
     name: 'Bravery',
     description: 'You defeated the Sahagin that attacked at Kaipo.',
     category: 'Combat',
-    icon: '/achievements/bravery.jpg',
+    icon: 'achievements/bravery.jpg',
     chapterId: 'ch03-kaipo',
   },
   {
@@ -88,7 +88,7 @@ export const achievements: Achievement[] = [
     name: 'Big Bang!',
     description: 'You defeated Mom Bomb.',
     category: 'Combat',
-    icon: '/achievements/big-bang.jpg',
+    icon: 'achievements/big-bang.jpg',
     chapterId: 'ch07-mt-hobs-fabul',
   },
   {
@@ -96,7 +96,7 @@ export const achievements: Achievement[] = [
     name: 'Alone Again',
     description: 'You were shipwrecked by Leviathan.',
     category: 'Story',
-    icon: '/achievements/alone-again.jpg',
+    icon: 'achievements/alone-again.jpg',
     chapterId: 'ch07-mt-hobs-fabul',
   },
   {
@@ -104,14 +104,14 @@ export const achievements: Achievement[] = [
     name: 'Pockets Full',
     description: 'You earned 10,000 gil.',
     category: 'Miscellaneous',
-    icon: '/achievements/pockets-full.jpg',
+    icon: 'achievements/pockets-full.jpg',
   },
   {
     id: 'defeated-scarmiglione',
     name: 'Defeated Scarmiglione',
     description: 'You defeated Scarmiglione.',
     category: 'Combat',
-    icon: '/achievements/defeated-scarmiglione.jpg',
+    icon: 'achievements/defeated-scarmiglione.jpg',
     chapterId: 'ch08-mysidia-ordeals',
   },
   {
@@ -119,21 +119,21 @@ export const achievements: Achievement[] = [
     name: 'Moves toward the Light',
     description: 'You raised Cecil (Paladin) to level 10.',
     category: 'Combat',
-    icon: '/achievements/moves-toward-the-light.jpg',
+    icon: 'achievements/moves-toward-the-light.jpg',
   },
   {
     id: 'silver-hunter',
     name: 'Silver Hunter',
     description: 'You defeated 500 enemies.',
     category: 'Combat',
-    icon: '/achievements/silver-hunter.jpg',
+    icon: 'achievements/silver-hunter.jpg',
   },
   {
     id: 'training-complete',
     name: 'Training Complete!',
     description: 'You talked to everybody in the Training Classroom.',
     category: 'Sidequest',
-    icon: '/achievements/training-complete.jpg',
+    icon: 'achievements/training-complete.jpg',
     chapterId: 'ch01-baron',
   },
   {
@@ -141,14 +141,14 @@ export const achievements: Achievement[] = [
     name: 'Walks with the Light',
     description: 'You raised Cecil (Paladin) to level 20.',
     category: 'Combat',
-    icon: '/achievements/walks-with-the-light.jpg',
+    icon: 'achievements/walks-with-the-light.jpg',
   },
   {
     id: 'defeated-cagnazzo',
     name: 'Defeated Cagnazzo',
     description: 'You defeated Cagnazzo.',
     category: 'Combat',
-    icon: '/achievements/defeated-cagnazzo.jpg',
+    icon: 'achievements/defeated-cagnazzo.jpg',
     chapterId: 'ch09-baron-retaken',
   },
   {
@@ -156,7 +156,7 @@ export const achievements: Achievement[] = [
     name: 'Deep into Darkness',
     description: 'You raised Cecil (Dark Knight) to level 25.',
     category: 'Combat',
-    icon: '/achievements/deep-into-darkness.jpg',
+    icon: 'achievements/deep-into-darkness.jpg',
     chapterId: 'ch08-mysidia-ordeals',
   },
   {
@@ -164,7 +164,7 @@ export const achievements: Achievement[] = [
     name: 'Catching On',
     description: 'You completed 30% of the Bestiary.',
     category: 'Collection',
-    icon: '/achievements/catching-on.jpg',
+    icon: 'achievements/catching-on.jpg',
     bestiaryThreshold: 30,
   },
   {
@@ -172,7 +172,7 @@ export const achievements: Achievement[] = [
     name: 'Saved by Music',
     description: 'You defeated Dark Elf.',
     category: 'Combat',
-    icon: '/achievements/saved-by-music.jpg',
+    icon: 'achievements/saved-by-music.jpg',
     chapterId: 'ch10-mysidia-troia',
   },
   {
@@ -180,21 +180,21 @@ export const achievements: Achievement[] = [
     name: 'The Gatherer of Light',
     description: 'You raised Cecil (Paladin) to level 30.',
     category: 'Combat',
-    icon: '/achievements/the-gatherer-of-light.jpg',
+    icon: 'achievements/the-gatherer-of-light.jpg',
   },
   {
     id: 'fat-purse',
     name: 'Fat Purse',
     description: 'You earned 50,000 gil.',
     category: 'Miscellaneous',
-    icon: '/achievements/fat-purse.jpg',
+    icon: 'achievements/fat-purse.jpg',
   },
   {
     id: 'delta-attack-defiance',
     name: 'Delta Attack Defiance',
     description: 'You defeated the Magus Sisters.',
     category: 'Combat',
-    icon: '/achievements/delta-attack-defiance.jpg',
+    icon: 'achievements/delta-attack-defiance.jpg',
     chapterId: 'ch11-tower-of-zot',
   },
   {
@@ -202,7 +202,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated Barbariccia',
     description: 'You defeated Barbariccia.',
     category: 'Combat',
-    icon: '/achievements/defeated-barbariccia.jpg',
+    icon: 'achievements/defeated-barbariccia.jpg',
     chapterId: 'ch11-tower-of-zot',
   },
   {
@@ -210,7 +210,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated Calcabrina',
     description: 'You defeated Calcabrina.',
     category: 'Combat',
-    icon: '/achievements/defeated-calcabrina.jpg',
+    icon: 'achievements/defeated-calcabrina.jpg',
     chapterId: 'ch13-dwarven-castle',
   },
   {
@@ -218,7 +218,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated Dr. Lugae',
     description: 'You defeated Dr. Lugae.',
     category: 'Combat',
-    icon: '/achievements/defeated-dr-lugae.jpg',
+    icon: 'achievements/defeated-dr-lugae.jpg',
     chapterId: 'ch14-tower-of-babil-lower',
   },
   {
@@ -226,21 +226,21 @@ export const achievements: Achievement[] = [
     name: 'Gold Hunter',
     description: 'You defeated 1,000 enemies.',
     category: 'Combat',
-    icon: '/achievements/gold-hunter.jpg',
+    icon: 'achievements/gold-hunter.jpg',
   },
   {
     id: 'the-illuminator',
     name: 'The Illuminator',
     description: 'You raised Cecil (Paladin) to level 50.',
     category: 'Combat',
-    icon: '/achievements/the-illuminator.jpg',
+    icon: 'achievements/the-illuminator.jpg',
   },
   {
     id: 'defeated-rubicante',
     name: 'Defeated Rubicante',
     description: 'You defeated Rubicante.',
     category: 'Combat',
-    icon: '/achievements/defeated-rubicante.jpg',
+    icon: 'achievements/defeated-rubicante.jpg',
     chapterId: 'ch16-tower-of-babil-upper',
   },
   {
@@ -248,7 +248,7 @@ export const achievements: Achievement[] = [
     name: 'Aficionado',
     description: 'You completed 60% of the Bestiary.',
     category: 'Collection',
-    icon: '/achievements/aficionado.jpg',
+    icon: 'achievements/aficionado.jpg',
     bestiaryThreshold: 60,
   },
   {
@@ -256,7 +256,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated Demon Wall',
     description: 'You defeated Demon Wall.',
     category: 'Combat',
-    icon: '/achievements/defeated-demon-wall.jpg',
+    icon: 'achievements/defeated-demon-wall.jpg',
     chapterId: 'ch18-sealed-cave',
   },
   {
@@ -264,7 +264,7 @@ export const achievements: Achievement[] = [
     name: 'Promised Ship of Light',
     description: 'You went to the moon on The Lunar Whale.',
     category: 'Story',
-    icon: '/achievements/promised-ship-of-light.jpg',
+    icon: 'achievements/promised-ship-of-light.jpg',
     chapterId: 'ch19-odin-lunar-whale',
   },
   {
@@ -272,14 +272,14 @@ export const achievements: Achievement[] = [
     name: 'Bursting Treasure Chest',
     description: 'You earned 200,000 gil.',
     category: 'Miscellaneous',
-    icon: '/achievements/bursting-treasure-chest.jpg',
+    icon: 'achievements/bursting-treasure-chest.jpg',
   },
   {
     id: 'defeated-elemental-archfiends',
     name: 'Defeated Elemental Archfiends',
     description: 'You defeated the elemental archfiends.',
     category: 'Combat',
-    icon: '/achievements/defeated-elemental-archfiends.jpg',
+    icon: 'achievements/defeated-elemental-archfiends.jpg',
     chapterId: 'ch21-giant-of-babil',
   },
   {
@@ -287,7 +287,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated CPU',
     description: 'You defeated the CPU.',
     category: 'Combat',
-    icon: '/achievements/defeated-cpu.jpg',
+    icon: 'achievements/defeated-cpu.jpg',
     chapterId: 'ch21-giant-of-babil',
   },
   {
@@ -295,7 +295,7 @@ export const achievements: Achievement[] = [
     name: 'Form Reborn',
     description: 'You obtained Excalibur.',
     category: 'Sidequest',
-    icon: '/achievements/form-reborn.jpg',
+    icon: 'achievements/form-reborn.jpg',
     chapterId: 'ch20-moon-lair-of-father',
   },
   {
@@ -303,14 +303,14 @@ export const achievements: Achievement[] = [
     name: 'Paladin of Light Incarnate',
     description: 'You raised Cecil (Paladin) to level 70.',
     category: 'Combat',
-    icon: '/achievements/paladin-of-light-incarnate.jpg',
+    icon: 'achievements/paladin-of-light-incarnate.jpg',
   },
   {
     id: 'to-mother-earth',
     name: 'To Mother Earth',
     description: 'You finished the game.',
     category: 'Story',
-    icon: '/achievements/to-mother-earth.jpg',
+    icon: 'achievements/to-mother-earth.jpg',
     chapterId: 'ch23-final-battle',
   },
   {
@@ -318,7 +318,7 @@ export const achievements: Achievement[] = [
     name: 'Master Summoner',
     description: 'You acquired all summons.',
     category: 'Collection',
-    icon: '/achievements/master-summoner.jpg',
+    icon: 'achievements/master-summoner.jpg',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -326,7 +326,7 @@ export const achievements: Achievement[] = [
     name: 'Developers\' Pal',
     description: 'You talked to everybody in the Developers\' Office.',
     category: 'Sidequest',
-    icon: '/achievements/developers-pal.jpg',
+    icon: 'achievements/developers-pal.jpg',
     chapterId: 'ch13-dwarven-castle',
   },
   {
@@ -334,7 +334,7 @@ export const achievements: Achievement[] = [
     name: 'Unsealed',
     description: 'You obtained Ragnarok, Holy Lance, Murasame, and Ribbon.',
     category: 'Sidequest',
-    icon: '/achievements/unsealed.jpg',
+    icon: 'achievements/unsealed.jpg',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -342,28 +342,28 @@ export const achievements: Achievement[] = [
     name: 'Time for a Vault',
     description: 'You earned 500,000 gil.',
     category: 'Miscellaneous',
-    icon: '/achievements/time-for-a-vault.jpg',
+    icon: 'achievements/time-for-a-vault.jpg',
   },
   {
     id: 'platinum-hunter',
     name: 'Platinum Hunter',
     description: 'You defeated 2,000 enemies.',
     category: 'Combat',
-    icon: '/achievements/platinum-hunter.jpg',
+    icon: 'achievements/platinum-hunter.jpg',
   },
   {
     id: 'augment-practitioner',
     name: 'Augment Practitioner',
     description: 'You obtained 20 augments.',
     category: 'Collection',
-    icon: '/achievements/augment-practitioner.jpg',
+    icon: 'achievements/augment-practitioner.jpg',
   },
   {
     id: 'the-perpetual-wayfarer',
     name: 'The Perpetual Wayfarer',
     description: 'You traveled across the entire map.',
     category: 'Sidequest',
-    icon: '/achievements/the-perpetual-wayfarer.jpg',
+    icon: 'achievements/the-perpetual-wayfarer.jpg',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -371,7 +371,7 @@ export const achievements: Achievement[] = [
     name: 'Bitter Battle',
     description: 'You finished the game on Hard difficulty.',
     category: 'Miscellaneous',
-    icon: '/achievements/bitter-battle.jpg',
+    icon: 'achievements/bitter-battle.jpg',
     chapterId: 'ch24-new-game-plus',
   },
   {
@@ -379,7 +379,7 @@ export const achievements: Achievement[] = [
     name: 'Rabbit Chaser',
     description: 'You played through all Namingway events.',
     category: 'Sidequest',
-    icon: '/achievements/rabbit-chaser.jpg',
+    icon: 'achievements/rabbit-chaser.jpg',
     chapterId: 'ch01-baron',
   },
   {
@@ -387,7 +387,7 @@ export const achievements: Achievement[] = [
     name: 'To the End of Misery',
     description: 'You obtained Adamant Armor.',
     category: 'Sidequest',
-    icon: '/achievements/to-the-end-of-misery.jpg',
+    icon: 'achievements/to-the-end-of-misery.jpg',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -395,7 +395,7 @@ export const achievements: Achievement[] = [
     name: 'The Onion Swordsman',
     description: 'You obtained all the Onion items.',
     category: 'Sidequest',
-    icon: '/achievements/the-onion-swordsman.jpg',
+    icon: 'achievements/the-onion-swordsman.jpg',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -403,14 +403,14 @@ export const achievements: Achievement[] = [
     name: 'Augment Master',
     description: 'You obtained all augments.',
     category: 'Collection',
-    icon: '/achievements/augment-master.jpg',
+    icon: 'achievements/augment-master.jpg',
   },
   {
     id: 'earths-savior-times-two',
     name: 'Earth\'s Savior Times Two',
     description: 'You finished the game twice.',
     category: 'Miscellaneous',
-    icon: '/achievements/earths-savior-times-two.jpg',
+    icon: 'achievements/earths-savior-times-two.jpg',
     chapterId: 'ch24-new-game-plus',
   },
   {
@@ -418,14 +418,14 @@ export const achievements: Achievement[] = [
     name: 'Expert Summoner',
     description: 'You acquired all hidden summons.',
     category: 'Collection',
-    icon: '/achievements/expert-summoner.jpg',
+    icon: 'achievements/expert-summoner.jpg',
   },
   {
     id: 'defeated-geryon',
     name: 'Defeated Geryon',
     description: 'You defeated Geryon.',
     category: 'Combat',
-    icon: '/achievements/defeated-geryon.jpg',
+    icon: 'achievements/defeated-geryon.jpg',
     chapterId: 'ch24-new-game-plus',
   },
   {
@@ -433,7 +433,7 @@ export const achievements: Achievement[] = [
     name: 'Defeated Proto-Babil',
     description: 'You defeated Proto-Babil.',
     category: 'Combat',
-    icon: '/achievements/defeated-proto-babil.jpg',
+    icon: 'achievements/defeated-proto-babil.jpg',
     chapterId: 'ch24-new-game-plus',
   },
   {
@@ -441,7 +441,7 @@ export const achievements: Achievement[] = [
     name: 'Know-It-All',
     description: 'You completed the entire Bestiary.',
     category: 'Collection',
-    icon: '/achievements/know-it-all.jpg',
+    icon: 'achievements/know-it-all.jpg',
     bestiaryThreshold: 100,
   },
   {
@@ -449,7 +449,7 @@ export const achievements: Achievement[] = [
     name: 'FINAL FANTASY IV Master',
     description: 'You earned all achievements.',
     category: 'Miscellaneous',
-    icon: '/achievements/final-fantasy-iv-master.jpg',
+    icon: 'achievements/final-fantasy-iv-master.jpg',
     chapterId: 'ch24-new-game-plus',
   },
 ]
