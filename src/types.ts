@@ -1,0 +1,29 @@
+export type AchievementCategory =
+  | 'Story'
+  | 'Sidequest'
+  | 'Collection'
+  | 'Combat'
+  | 'Miscellaneous'
+
+export interface Achievement {
+  id: string
+  name: string
+  description: string
+  category: AchievementCategory
+  /** id of the walkthrough chapter where this achievement is first obtainable */
+  chapterId?: string
+}
+
+export interface WalkthroughStep {
+  id: string
+  text: string
+  /** achievement ids relevant to this step, shown as inline callouts */
+  achievementIds?: string[]
+}
+
+export interface WalkthroughChapter {
+  id: string
+  title: string
+  summary: string
+  steps: WalkthroughStep[]
+}
