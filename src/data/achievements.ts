@@ -62,6 +62,7 @@ export const achievements: Achievement[] = [
     description: 'You completed 10% of the Bestiary.',
     category: 'Collection',
     icon: '/achievements/seeker.jpg',
+    bestiaryThreshold: 10,
   },
   {
     id: 'heaps-of-corpses',
@@ -153,6 +154,7 @@ export const achievements: Achievement[] = [
     description: 'You completed 30% of the Bestiary.',
     category: 'Collection',
     icon: '/achievements/catching-on.jpg',
+    bestiaryThreshold: 30,
   },
   {
     id: 'saved-by-music',
@@ -230,6 +232,7 @@ export const achievements: Achievement[] = [
     description: 'You completed 60% of the Bestiary.',
     category: 'Collection',
     icon: '/achievements/aficionado.jpg',
+    bestiaryThreshold: 60,
   },
   {
     id: 'defeated-demon-wall',
@@ -405,6 +408,7 @@ export const achievements: Achievement[] = [
     description: 'You completed the entire Bestiary.',
     category: 'Collection',
     icon: '/achievements/know-it-all.jpg',
+    bestiaryThreshold: 100,
   },
   {
     id: 'final-fantasy-iv-master',

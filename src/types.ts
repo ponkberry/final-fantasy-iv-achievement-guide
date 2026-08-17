@@ -14,6 +14,15 @@ export interface Achievement {
   icon: string
   /** id of the walkthrough chapter where this achievement is first obtainable */
   chapterId?: string
+  /** if set, this achievement auto-completes once bestiary completion reaches this percent, and can't be toggled manually */
+  bestiaryThreshold?: number
+}
+
+export interface BestiaryEntry {
+  number: number
+  name: string
+  location: string
+  notes?: string
 }
 
 export interface WalkthroughStep {

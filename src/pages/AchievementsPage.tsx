@@ -15,7 +15,7 @@ const categories: Array<AchievementCategory | 'All'> = [
 ]
 
 export function AchievementsPage() {
-  const { isComplete, toggle, reset, completedCount, total, percentComplete } =
+  const { isComplete, isLocked, toggle, reset, completedCount, total, percentComplete } =
     useAchievementProgress()
   const [filter, setFilter] = useState<(typeof categories)[number]>('All')
 
@@ -64,6 +64,7 @@ export function AchievementsPage() {
             key={achievement.id}
             achievement={achievement}
             completed={isComplete(achievement.id)}
+            locked={isLocked(achievement.id)}
             onToggle={toggle}
           />
         ))}

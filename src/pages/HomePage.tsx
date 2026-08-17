@@ -1,9 +1,11 @@
 import { Link } from 'react-router-dom'
 import { useAchievementProgress } from '../hooks/useAchievementProgress'
+import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { ProgressBar } from '../components/ProgressBar'
 
 export function HomePage() {
   const { completedCount, total, percentComplete } = useAchievementProgress()
+  const bestiary = useBestiaryProgress()
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -11,11 +13,11 @@ export function HomePage() {
         Final Fantasy IV (3D Remake) Achievement Guide
       </h1>
       <p className="mt-3 text-slate-600 dark:text-slate-400">
-        A step-by-step walkthrough paired with an achievement tracker. Your progress is saved
-        for this browser session and clears when you close the tab.
+        A step-by-step walkthrough paired with an achievement tracker and bestiary. Your progress
+        is saved for this browser session and clears when you close the tab.
       </p>
 
-      <div className="mt-8 grid gap-4 sm:grid-cols-2">
+      <div className="mt-8 grid gap-4 sm:grid-cols-3">
         <Link
           to="/walkthrough"
           className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
@@ -34,10 +36,32 @@ export function HomePage() {
             Track every achievement and check them off as you go.
           </p>
         </Link>
+        <Link
+          to="/bestiary"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+        >
+          <h2 className="text-lg font-medium text-slate-900 dark:text-white">Bestiary</h2>
+          <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
+            Log every monster and unlock the bestiary achievements.
+          </p>
+        </Link>
       </div>
 
-      <div className="mt-8">
-        <ProgressBar completed={completedCount} total={total} percent={percentComplete} />
+      <div className="mt-8 grid gap-6 sm:grid-cols-2">
+        <div>
+          <h3 className="mb-1 text-sm font-medium text-slate-700 dark:text-slate-300">
+            Achievements
+          </h3>
+          <ProgressBar completed={completedCount} total={total} percent={percentComplete} />
+        </div>
+        <div>
+          <h3 className="mb-1 text-sm font-medium text-slate-700 dark:text-slate-300">Bestiary</h3>
+          <ProgressBar
+            completed={bestiary.seenCount}
+            total={bestiary.total}
+            percent={Math.round(bestiary.percentComplete)}
+          />
+        </div>
       </div>
     </div>
   )
