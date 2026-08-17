@@ -891,7 +891,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 139,
     name: 'Dark Sage',
     location: 'Lair of the Father B1',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch20-moon-lair-of-father',
   },
   {
     number: 140,
@@ -921,7 +921,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 144,
     name: 'Moonmaiden',
     location: 'Lair of the Father B1',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch20-moon-lair-of-father',
   },
   {
     number: 145,

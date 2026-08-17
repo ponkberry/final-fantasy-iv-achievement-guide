@@ -597,7 +597,7 @@ export const walkthrough: WalkthroughChapter[] = [
   },
   {
     id: 'ch20-moon-lair-of-father',
-    title: 'The Moon & Lair of the Father',
+    title: 'The Moon & Lair of the Father (First Visit)',
     summary: 'The party explores the Moon\'s surface and braves the Lair of the Father for Genji equipment.',
     steps: [
       {
@@ -616,7 +616,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch20-moon-lair-of-father-s04',
-        text: 'Head back to the Moon and enter the Lair of the Father for a first pass, avoiding the Behemoth guarding the path deeper in for now.',
+        text: 'Head back to the Moon and enter the Lair of the Father for a first pass, covering floors B1 and B2 only and avoiding the Behemoth guarding the path deeper in for now.',
       },
       {
         id: 'ch20-moon-lair-of-father-s05',
@@ -663,12 +663,12 @@ export const walkthrough: WalkthroughChapter[] = [
   },
   {
     id: 'ch22-lunar-subterrane',
-    title: 'Lair of the Father & Lunar Subterrane',
+    title: 'Lair of the Father (Second Visit) & Lunar Subterrane',
     summary: 'With Bahamut\'s blessing and the game\'s finest equipment at stake, the party descends into the final dungeon.',
     steps: [
       {
         id: 'ch22-lunar-subterrane-s01',
-        text: 'Return to the Lair of the Father and push past the Behemoth guardian you avoided before.',
+        text: 'Return to the Lair of the Father — B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
       },
       {
         id: 'ch22-lunar-subterrane-s02',
