@@ -15,7 +15,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch01-step02',
         text: 'Escape Mist after the summoners are destroyed; meet Rydia.',
-        achievementIds: ['first-steps'],
+        achievementIds: ['mission-accomplished'],
       },
     ],
   },

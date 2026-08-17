@@ -10,6 +10,8 @@ export interface Achievement {
   name: string
   description: string
   category: AchievementCategory
+  /** path to the achievement icon, relative to the site root */
+  icon: string
   /** id of the walkthrough chapter where this achievement is first obtainable */
   chapterId?: string
 }

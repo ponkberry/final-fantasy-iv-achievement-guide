@@ -31,12 +31,19 @@ export function WalkthroughPage() {
                             key={id}
                             type="button"
                             onClick={() => toggle(id)}
-                            className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                            className={`flex items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-xs transition-colors ${
                               done
                                 ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
                                 : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
                             }`}
                           >
+                            <img
+                              src={achievement.icon}
+                              alt=""
+                              width={20}
+                              height={20}
+                              className={`size-5 rounded-full ${done ? '' : 'opacity-50 grayscale'}`}
+                            />
                             {done ? '✓ ' : ''}
                             {achievement.name}
                           </button>

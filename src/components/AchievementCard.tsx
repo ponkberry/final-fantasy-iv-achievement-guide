@@ -21,6 +21,13 @@ export function AchievementCard({ achievement, completed, onToggle }: Achievemen
         onChange={() => onToggle(achievement.id)}
         className="mt-1 size-4 accent-indigo-600"
       />
+      <img
+        src={achievement.icon}
+        alt=""
+        width={48}
+        height={48}
+        className={`size-12 shrink-0 rounded ${completed ? '' : 'opacity-50 grayscale'}`}
+      />
       <div>
         <div className="flex items-center gap-2">
           <span className="font-medium text-slate-900 dark:text-white">{achievement.name}</span>
