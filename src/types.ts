@@ -23,6 +23,8 @@ export interface BestiaryEntry {
   name: string
   location: string
   notes?: string
+  /** id of the walkthrough chapter where this monster is first encountered */
+  chapterId?: string
 }
 
 export interface WalkthroughStep {
