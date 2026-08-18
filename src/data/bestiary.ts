@@ -1032,7 +1032,7 @@ export const bestiary: BestiaryEntry[] = [
     name: 'Skulnant',
     location: 'Story',
     notes: 'Boss',
-    chapterId: 'ch07-mt-hobs-fabul',
+    chapterId: 'ch08-mysidia-ordeals',
   },
   {
     number: 161,

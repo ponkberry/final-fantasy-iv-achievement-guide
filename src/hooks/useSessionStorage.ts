@@ -1,29 +1,74 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useSyncExternalStore } from 'react'
 
-/** State backed by window.sessionStorage — persists across page navigation but clears when the tab/browser session ends. */
+const listeners = new Map<string, Set<() => void>>()
+const cache = new Map<string, { raw: string | null; parsed: unknown }>()
+
+function subscribe(key: string, callback: () => void) {
+  let set = listeners.get(key)
+  if (!set) {
+    set = new Set()
+    listeners.set(key, set)
+  }
+  set.add(callback)
+  return () => set!.delete(callback)
+}
+
+function emitChange(key: string) {
+  listeners.get(key)?.forEach((callback) => callback())
+}
+
+/** Reads sessionStorage for `key`, returning a cached parsed reference unless the raw string changed. */
+function readValue<T>(key: string, initialValue: T): T {
+  let raw: string | null
+  try {
+    raw = window.sessionStorage.getItem(key)
+  } catch {
+    // storage unreadable (e.g. private browsing) — trust whatever's cached in memory
+    const cached = cache.get(key)
+    return cached ? (cached.parsed as T) : initialValue
+  }
+
+  const cached = cache.get(key)
+  if (cached && cached.raw === raw) {
+    return cached.parsed as T
+  }
+
+  let parsed: T
+  try {
+    parsed = raw ? (JSON.parse(raw) as T) : initialValue
+  } catch {
+    parsed = initialValue
+  }
+  cache.set(key, { raw, parsed })
+  return parsed
+}
+
+/**
+ * State backed by window.sessionStorage — persists across page navigation but clears when the tab/
+ * browser session ends. Uses useSyncExternalStore so every component reading the same key stays in
+ * sync in real time, even across independently-mounted hook instances on different pages.
+ */
 export function useSessionStorage<T>(key: string, initialValue: T) {
-  const [value, setValue] = useState<T>(() => {
-    try {
-      const stored = window.sessionStorage.getItem(key)
-      return stored ? (JSON.parse(stored) as T) : initialValue
-    } catch {
-      return initialValue
-    }
-  })
+  const value = useSyncExternalStore(
+    (callback) => subscribe(key, callback),
+    () => readValue(key, initialValue),
+    () => initialValue,
+  )
 
   const setStoredValue = useCallback(
     (next: T | ((prev: T) => T)) => {
-      setValue((prev) => {
-        const resolved = next instanceof Function ? next(prev) : next
-        try {
-          window.sessionStorage.setItem(key, JSON.stringify(resolved))
-        } catch {
-          // sessionStorage unavailable (e.g. private browsing) — state still works in-memory
-        }
-        return resolved
-      })
+      const prev = readValue(key, initialValue)
+      const resolved = next instanceof Function ? next(prev) : next
+      const raw = JSON.stringify(resolved)
+      try {
+        window.sessionStorage.setItem(key, raw)
+      } catch {
+        // sessionStorage unavailable (e.g. private browsing) — falls back to in-memory cache only
+      }
+      cache.set(key, { raw, parsed: resolved })
+      emitChange(key)
     },
-    [key],
+    [key, initialValue],
   )
 
   return [value, setStoredValue] as const
