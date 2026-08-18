@@ -8,13 +8,10 @@ interface ChapterProgress {
 interface WalkthroughNavProps {
   chapters: WalkthroughChapter[]
   progressByChapter: Record<string, ChapterProgress>
+  onJumpToChapter: (id: string) => void
 }
 
-function scrollToChapter(id: string) {
-  document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
-}
-
-export function WalkthroughNav({ chapters, progressByChapter }: WalkthroughNavProps) {
+export function WalkthroughNav({ chapters, progressByChapter, onJumpToChapter }: WalkthroughNavProps) {
   return (
     <>
       {/* Mobile / narrow screens: dropdown jump menu */}
@@ -26,7 +23,7 @@ export function WalkthroughNav({ chapters, progressByChapter }: WalkthroughNavPr
           id="chapter-jump"
           defaultValue=""
           onChange={(e) => {
-            if (e.target.value) scrollToChapter(e.target.value)
+            if (e.target.value) onJumpToChapter(e.target.value)
             e.target.value = ''
           }}
           className="w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
@@ -56,7 +53,7 @@ export function WalkthroughNav({ chapters, progressByChapter }: WalkthroughNavPr
                 <li key={chapter.id}>
                   <button
                     type="button"
-                    onClick={() => scrollToChapter(chapter.id)}
+                    onClick={() => onJumpToChapter(chapter.id)}
                     className="flex w-full items-center gap-2 rounded px-2 py-1 text-left text-slate-600 hover:bg-slate-100 hover:text-slate-900 dark:text-slate-400 dark:hover:bg-slate-800 dark:hover:text-white"
                   >
                     <span className="w-5 shrink-0 text-right text-xs text-slate-400 dark:text-slate-600">

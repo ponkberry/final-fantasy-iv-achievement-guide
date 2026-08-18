@@ -14,6 +14,9 @@ const categories: Array<AchievementCategory | 'All'> = [
   'Miscellaneous',
 ]
 
+const statuses = ['All', 'Completed', 'Incomplete'] as const
+type StatusFilter = (typeof statuses)[number]
+
 export function AchievementsPage() {
   const {
     isComplete,
@@ -28,11 +31,14 @@ export function AchievementsPage() {
     subItemProgress,
   } = useAchievementProgress()
   const [filter, setFilter] = useState<(typeof categories)[number]>('All')
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
 
-  const visible = useMemo(
-    () => (filter === 'All' ? achievements : achievements.filter((a) => a.category === filter)),
-    [filter],
-  )
+  const visible = useMemo(() => {
+    let list = filter === 'All' ? achievements : achievements.filter((a) => a.category === filter)
+    if (statusFilter === 'Completed') list = list.filter((a) => isComplete(a.id))
+    if (statusFilter === 'Incomplete') list = list.filter((a) => !isComplete(a.id))
+    return list
+  }, [filter, statusFilter, isComplete])
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -68,6 +74,23 @@ export function AchievementsPage() {
         ))}
       </div>
 
+      <div className="mt-2 flex flex-wrap gap-2">
+        {statuses.map((status) => (
+          <button
+            key={status}
+            type="button"
+            onClick={() => setStatusFilter(status)}
+            className={`rounded-full border px-3 py-1 text-sm transition-colors ${
+              statusFilter === status
+                ? 'border-indigo-400 bg-indigo-50 text-indigo-700 dark:border-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300'
+                : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
+            }`}
+          >
+            {status}
+          </button>
+        ))}
+      </div>
+
       <div className="mt-6 space-y-3">
         {visible.map((achievement) => (
           <AchievementCard
@@ -81,6 +104,11 @@ export function AchievementsPage() {
             onToggleSubItem={(subItemId) => toggleSubItem(achievement.id, subItemId)}
           />
         ))}
+        {visible.length === 0 && (
+          <p className="text-center text-sm text-slate-500 dark:text-slate-500">
+            No achievements match these filters.
+          </p>
+        )}
       </div>
     </div>
   )

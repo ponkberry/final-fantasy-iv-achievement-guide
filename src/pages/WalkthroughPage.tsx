@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { walkthrough } from '../data/walkthrough'
 import { achievements } from '../data/achievements'
 import { bestiary } from '../data/bestiary'
@@ -17,6 +17,26 @@ export function WalkthroughPage() {
   } = useAchievementProgress()
   const { isComplete: isStepComplete, toggle: toggleStep, reset: resetSteps } = useWalkthroughProgress()
   const { isSeen, toggle: toggleBestiary } = useBestiaryProgress()
+  const [collapsed, setCollapsed] = useState<Set<string>>(() => new Set())
+
+  const toggleCollapse = (id: string) => {
+    setCollapsed((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
+
+  const jumpToChapter = (id: string) => {
+    setCollapsed((prev) => {
+      if (!prev.has(id)) return prev
+      const next = new Set(prev)
+      next.delete(id)
+      return next
+    })
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+  }
 
   const achievementById = useMemo(() => new Map(achievements.map((a) => [a.id, a])), [])
 
@@ -58,14 +78,43 @@ export function WalkthroughPage() {
       </div>
 
       <div className="mt-6 flex flex-col gap-8 md:flex-row md:items-start">
-        <WalkthroughNav chapters={walkthrough} progressByChapter={progressByChapter} />
+        <WalkthroughNav
+          chapters={walkthrough}
+          progressByChapter={progressByChapter}
+          onJumpToChapter={jumpToChapter}
+        />
 
         <div className="min-w-0 flex-1 space-y-10">
-          {walkthrough.map((chapter) => (
+          {walkthrough.map((chapter) => {
+            const isCollapsed = collapsed.has(chapter.id)
+            return (
             <section key={chapter.id} id={chapter.id} className="scroll-mt-20">
-              <h2 className="text-xl font-medium text-slate-900 dark:text-white">{chapter.title}</h2>
-              <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{chapter.summary}</p>
+              <button
+                type="button"
+                onClick={() => toggleCollapse(chapter.id)}
+                aria-expanded={!isCollapsed}
+                className="flex w-full items-start gap-2 text-left"
+              >
+                <svg
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className={`mt-1.5 size-4 shrink-0 text-slate-400 transition-transform dark:text-slate-600 ${
+                    isCollapsed ? '-rotate-90' : ''
+                  }`}
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+                <span>
+                  <h2 className="text-xl font-medium text-slate-900 dark:text-white">{chapter.title}</h2>
+                  <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{chapter.summary}</p>
+                </span>
+              </button>
 
+              {!isCollapsed && (
               <ol className="mt-4 space-y-3">
                 {chapter.steps.map((step) => {
                   const done = isStepComplete(step.id)
@@ -154,14 +203,18 @@ export function WalkthroughPage() {
                   )
                 })}
               </ol>
+              )}
 
-              <ChapterBestiaryList
-                entries={bestiaryByChapter.get(chapter.id) ?? []}
-                isSeen={isSeen}
-                onToggle={toggleBestiary}
-              />
+              {!isCollapsed && (
+                <ChapterBestiaryList
+                  entries={bestiaryByChapter.get(chapter.id) ?? []}
+                  isSeen={isSeen}
+                  onToggle={toggleBestiary}
+                />
+              )}
             </section>
-          ))}
+            )
+          })}
         </div>
       </div>
     </div>

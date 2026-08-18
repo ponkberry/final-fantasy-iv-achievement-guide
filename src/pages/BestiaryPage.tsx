@@ -8,17 +8,26 @@ const milestones = achievements
   .filter((a) => a.bestiaryThreshold !== undefined)
   .sort((a, b) => (a.bestiaryThreshold ?? 0) - (b.bestiaryThreshold ?? 0))
 
+const statuses = ['All', 'Seen', 'Unseen'] as const
+type StatusFilter = (typeof statuses)[number]
+
 export function BestiaryPage() {
   const { isSeen, toggle, reset, seenCount, total, percentComplete } = useBestiaryProgress()
   const [query, setQuery] = useState('')
+  const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase()
-    if (!q) return bestiary
-    return bestiary.filter(
-      (entry) => entry.name.toLowerCase().includes(q) || entry.location.toLowerCase().includes(q),
-    )
-  }, [query])
+    let list = bestiary
+    if (q) {
+      list = list.filter(
+        (entry) => entry.name.toLowerCase().includes(q) || entry.location.toLowerCase().includes(q),
+      )
+    }
+    if (statusFilter === 'Seen') list = list.filter((entry) => isSeen(entry.number))
+    if (statusFilter === 'Unseen') list = list.filter((entry) => !isSeen(entry.number))
+    return list
+  }, [query, statusFilter, isSeen])
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -63,12 +72,29 @@ export function BestiaryPage() {
         })}
       </div>
 
+      <div className="mt-6 flex flex-wrap gap-2">
+        {statuses.map((status) => (
+          <button
+            key={status}
+            type="button"
+            onClick={() => setStatusFilter(status)}
+            className={`rounded-full border px-3 py-1 text-sm transition-colors ${
+              statusFilter === status
+                ? 'border-indigo-400 bg-indigo-50 text-indigo-700 dark:border-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300'
+                : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
+            }`}
+          >
+            {status}
+          </button>
+        ))}
+      </div>
+
       <input
         type="search"
         value={query}
         onChange={(e) => setQuery(e.target.value)}
         placeholder="Search by name or location…"
-        className="mt-6 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
+        className="mt-4 w-full rounded-lg border border-slate-200 bg-white px-3 py-2 text-sm text-slate-800 placeholder:text-slate-400 dark:border-slate-800 dark:bg-slate-900 dark:text-slate-200"
       />
 
       <div className="mt-4 overflow-x-auto rounded-lg border border-slate-200 dark:border-slate-800">
@@ -115,7 +141,7 @@ export function BestiaryPage() {
         </table>
         {visible.length === 0 && (
           <p className="p-4 text-center text-sm text-slate-500 dark:text-slate-500">
-            No monsters match "{query}".
+            No monsters match these filters.
           </p>
         )}
       </div>
