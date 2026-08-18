@@ -5,7 +5,7 @@ import { useToast } from '../context/ToastContext'
 
 const achievementById = new Map(achievements.map((a) => [a.id, a]))
 
-/** Mounted once at the app root — fires a toast whenever an achievement newly completes, no matter which page triggered it. */
+/** Mounted once at the app root - fires a toast whenever an achievement newly completes, no matter which page triggered it. */
 export function AchievementUnlockWatcher() {
   const { completedSet } = useAchievementProgress()
   const { addToast } = useToast()

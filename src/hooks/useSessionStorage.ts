@@ -23,7 +23,7 @@ function readValue<T>(key: string, initialValue: T): T {
   try {
     raw = window.sessionStorage.getItem(key)
   } catch {
-    // storage unreadable (e.g. private browsing) — trust whatever's cached in memory
+    // storage unreadable (e.g. private browsing) - trust whatever's cached in memory
     const cached = cache.get(key)
     return cached ? (cached.parsed as T) : initialValue
   }
@@ -44,7 +44,7 @@ function readValue<T>(key: string, initialValue: T): T {
 }
 
 /**
- * State backed by window.sessionStorage — persists across page navigation but clears when the tab/
+ * State backed by window.sessionStorage - persists across page navigation but clears when the tab/
  * browser session ends. Uses useSyncExternalStore so every component reading the same key stays in
  * sync in real time, even across independently-mounted hook instances on different pages.
  */
@@ -63,7 +63,7 @@ export function useSessionStorage<T>(key: string, initialValue: T) {
       try {
         window.sessionStorage.setItem(key, raw)
       } catch {
-        // sessionStorage unavailable (e.g. private browsing) — falls back to in-memory cache only
+        // sessionStorage unavailable (e.g. private browsing) - falls back to in-memory cache only
       }
       cache.set(key, { raw, parsed: resolved })
       emitChange(key)

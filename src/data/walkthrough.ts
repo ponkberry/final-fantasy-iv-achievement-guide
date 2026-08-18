@@ -22,7 +22,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch01-baron-s03',
-        text: 'Explore Baron Castle and the town below before you leave. In the west tower you can find Namingway, who marks the first of thirteen sightings across the whole game — talking to him now starts the Rabbit Chaser sidequest.',
+        text: 'Explore Baron Castle and the town below before you leave. In the west tower you can find Namingway, who marks the first of thirteen sightings across the whole game - talking to him now starts the Rabbit Chaser sidequest.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-01' }],
       },
       {
@@ -32,7 +32,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch01-baron-s05',
-        text: 'Helldivers just outside Baron have a very rare chance to drop the hidden Cockatrice summon — not required for a first pass, but worth knowing about early.',
+        text: 'Helldivers just outside Baron have a very rare chance to drop the hidden Cockatrice summon - not required for a first pass, but worth knowing about early.',
         subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'cockatrice' }],
       },
       {
@@ -86,7 +86,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch03-kaipo-s03',
-        text: 'That night, a Baron General and his soldiers attack. Kill the General first — this is required for its bestiary entry, or he flees and you lose the credit.',
+        text: 'That night, a Baron General and his soldiers attack. Kill the General first - this is required for its bestiary entry, or he flees and you lose the credit.',
       },
       {
         id: 'ch03-kaipo-s04',
@@ -129,7 +129,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch04-underground-waterway-s04',
-        text: 'Work through the Underground Lake\'s floors the same way — this is where Red Mousse and Alligator turn up, both on B2.',
+        text: 'Work through the Underground Lake\'s floors the same way - this is where Red Mousse and Alligator turn up, both on B2.',
       },
       {
         id: 'ch04-underground-waterway-s05',
@@ -180,7 +180,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch06-antlions-den-s03',
-        text: 'Return to Kaipo and use the Sand Pearl on Rosa. That night, Edward slips out to the oasis alone and is attacked by a Sahagin. Anna\'s spirit appears to give him courage — defeat the Sahagin to pass this test of nerve.',
+        text: 'Return to Kaipo and use the Sand Pearl on Rosa. That night, Edward slips out to the oasis alone and is attacked by a Sahagin. Anna\'s spirit appears to give him courage - defeat the Sahagin to pass this test of nerve.',
         achievementIds: ['bravery'],
       },
       {
@@ -218,11 +218,11 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch07-mt-hobs-fabul-s06',
-        text: 'In the Crystal Room, Kain — now mind-controlled — attacks you. You cannot win this fight; simply survive it. Golbez then appears, defeats the party, and takes Rosa and the Wind Crystal.',
+        text: 'In the Crystal Room, Kain - now mind-controlled - attacks you. You cannot win this fight; simply survive it. Golbez then appears, defeats the party, and takes Rosa and the Wind Crystal.',
       },
       {
         id: 'ch07-mt-hobs-fabul-s07',
-        text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment — equip it on Cecil.',
+        text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment - equip it on Cecil.',
       },
       {
         id: 'ch07-mt-hobs-fabul-s08',
@@ -242,7 +242,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch08-mysidia-ordeals-s02',
-        text: 'Before you leave the overworld outside Mysidia, make sure Cecil (Dark Knight) has reached at least level 25 — this is missable once Cecil becomes a Paladin at the top of the mountain.',
+        text: 'Before you leave the overworld outside Mysidia, make sure Cecil (Dark Knight) has reached at least level 25 - this is missable once Cecil becomes a Paladin at the top of the mountain.',
         achievementIds: ['deep-into-darkness'],
       },
       {
@@ -252,7 +252,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch08-mysidia-ordeals-s04',
-        text: 'Climb Mount Ordeals. Golbez summons Scarmiglione to stop you partway up.',
+        text: 'Climb Mount Ordeals. Golbez summons Scarmiglione to stop you partway up - a Skulnant spawns partway through this first-phase fight.',
       },
       {
         id: 'ch08-mysidia-ordeals-s05',
@@ -284,7 +284,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch09-baron-retaken-s02',
-        text: 'The key also opens the castle shop — find Namingway inside for your sixth sighting.',
+        text: 'The key also opens the castle shop - find Namingway inside for your sixth sighting.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-06' }],
       },
       {
@@ -302,11 +302,11 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch09-baron-retaken-s06',
-        text: 'Cid arrives with a new airship, the Enterprise, but Cagnazzo brings the ceiling down as you flee — Palom and Porom sacrifice themselves, turning to stone to save the party.',
+        text: 'Cid arrives with a new airship, the Enterprise, but Cagnazzo brings the ceiling down as you flee - Palom and Porom sacrifice themselves, turning to stone to save the party.',
       },
       {
         id: 'ch09-baron-retaken-s07',
-        text: 'With the Enterprise now yours, Cid joins the party as an Engineer. Kain, still controlled by Golbez, offers to trade the last Crystal for Rosa — the party heads for Mist and Mysidia before pursuing the exchange.',
+        text: 'With the Enterprise now yours, Cid joins the party as an Engineer. Kain, still controlled by Golbez, offers to trade the last Crystal for Rosa - the party heads for Mist and Mysidia before pursuing the exchange.',
       },
     ],
   },
@@ -329,12 +329,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch10-mysidia-troia-s04',
-        text: 'In Troia, Namingway is now in the pub for your seventh sighting — distract one of his two dates.',
+        text: 'In Troia, Namingway is now in the pub for your seventh sighting - distract one of his two dates.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-07' }],
       },
       {
         id: 'ch10-mysidia-troia-s05',
-        text: 'The Epopts ask you to recover Troia\'s Crystal from a Dark Elf holed up in a magnetic cave — swap to non-metal equipment before entering.',
+        text: 'The Epopts ask you to recover Troia\'s Crystal from a Dark Elf holed up in a magnetic cave - swap to non-metal equipment before entering.',
       },
       {
         id: 'ch10-mysidia-troia-s06',
@@ -355,7 +355,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
-        text: 'Return to Troia to resupply, then board the ship — Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        text: 'Return to Troia to resupply, then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
       },
       {
         id: 'ch11-tower-of-zot-s02',
@@ -363,12 +363,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s03',
-        text: 'Partway up, defeat the Magus Sisters — Cindy, Sandy, and Mindy.',
+        text: 'Partway up, defeat the Magus Sisters - Cindy, Sandy, and Mindy.',
         achievementIds: ['delta-attack-defiance'],
       },
       {
         id: 'ch11-tower-of-zot-s04',
-        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him — the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters.',
+        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters.',
       },
       {
         id: 'ch11-tower-of-zot-s05',
@@ -396,7 +396,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch12-eblan-agart-s03',
-        text: 'Namingway waits outside a house in Agart asking for a Rainbow Pudding for your eighth sighting — a rare monster drop you can chase down now or return for later.',
+        text: 'Namingway waits outside a house in Agart asking for a Rainbow Pudding for your eighth sighting - a rare monster drop you can chase down now or return for later.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-08' }],
       },
       {
@@ -416,7 +416,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch13-dwarven-castle-s01',
-        text: 'Meet King Giott, who reveals Golbez already holds two Dark Crystals — Dwarven Castle\'s own Crystal is still safe, for now.',
+        text: 'Meet King Giott, who reveals Golbez already holds two Dark Crystals - Dwarven Castle\'s own Crystal is still safe, for now.',
       },
       {
         id: 'ch13-dwarven-castle-s02',
@@ -425,12 +425,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s03',
-        text: 'Namingway is also in the pub for your ninth sighting — he starts a fight before talking.',
+        text: 'Namingway is also in the pub for your ninth sighting - he starts a fight before talking.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-09' }],
       },
       {
         id: 'ch13-dwarven-castle-s04',
-        text: 'The dwarf Luca\'s dolls, possessed by Golbez, attack in the Crystal Room — defeat Calcabrina.',
+        text: 'The dwarf Luca\'s dolls, possessed by Golbez, attack in the Crystal Room - defeat Calcabrina.',
         achievementIds: ['defeated-calcabrina'],
       },
       {
@@ -468,7 +468,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch14-tower-of-babil-lower-s04',
-        text: 'Climb back out of the tower — Cid saves the party from a collapsing bridge on the way.',
+        text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
       },
     ],
   },
@@ -487,7 +487,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch15-eblan-cave-s03',
-        text: 'Witness Rubicante defeat a young ninja in a duel — Edge, prince of Eblan, joins the party afterward.',
+        text: 'Witness Rubicante defeat a young ninja in a duel - Edge, prince of Eblan, joins the party afterward.',
       },
     ],
   },
@@ -520,7 +520,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch16-tower-of-babil-upper-s06',
-        text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower — fight your way back out and steal the Falcon airship.',
+        text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower - fight your way back out and steal the Falcon airship.',
       },
     ],
   },
@@ -535,7 +535,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch17-underworld-sidequests-s02',
-        text: 'That survivor is Edge\'s rival ninja from the duel — he upgrades your ship.',
+        text: 'That survivor is Edge\'s rival ninja from the duel - he upgrades your ship.',
       },
       {
         id: 'ch17-underworld-sidequests-s03',
@@ -547,7 +547,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch17-underworld-sidequests-s05',
-        text: 'At the back of Sylvan Cave, find the Sylphids tending to an unconscious Yang. He can\'t join yet, but a solution exists — remember Fabul.',
+        text: 'At the back of Sylvan Cave, find the Sylphids tending to an unconscious Yang. He can\'t join yet, but a solution exists - remember Fabul.',
       },
       {
         id: 'ch17-underworld-sidequests-s06',
@@ -560,7 +560,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch17-underworld-sidequests-s08',
-        text: 'Defeat Leviathan to earn his summon — a different encounter from the earlier shipwreck.',
+        text: 'Defeat Leviathan to earn his summon - a different encounter from the earlier shipwreck.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'leviathan' }],
       },
       {
@@ -581,7 +581,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch18-sealed-cave-s02',
-        text: 'Fight through the dungeon\'s living doors — reflect their Target skill back with Reflect to destroy them safely.',
+        text: 'Fight through the dungeon\'s living doors - reflect their Target skill back with Reflect to destroy them safely.',
       },
       {
         id: 'ch18-sealed-cave-s03',
@@ -589,12 +589,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch18-sealed-cave-s04',
-        text: 'Defeat the Demon Wall as it closes in — Haste, Berserk, and Rydia\'s summons help you outrace it.',
+        text: 'Defeat the Demon Wall as it closes in - Haste, Berserk, and Rydia\'s summons help you outrace it.',
         achievementIds: ['defeated-demon-wall'],
       },
       {
         id: 'ch18-sealed-cave-s05',
-        text: 'Golbez ambushes the party as you leave, mind-controls Kain again, and steals the Crystal — he now holds all eight.',
+        text: 'Golbez ambushes the party as you leave, mind-controls Kain again, and steals the Crystal - he now holds all eight.',
       },
     ],
   },
@@ -605,7 +605,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch19-odin-lunar-whale-s01',
-        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him — he doesn\'t rejoin, but Rydia earns the Sylphid summon.',
+        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
       },
       {
@@ -645,7 +645,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch20-moon-lair-of-father-s03',
-        text: 'Return to Kokkol\'s Forge in the Underworld — if you delivered a Rat Tail for Adamantite earlier from the Feymarch, he has finished forging the Excalibur.',
+        text: 'Return to Kokkol\'s Forge in the Underworld - if you delivered a Rat Tail for Adamantite earlier from the Feymarch, he has finished forging the Excalibur.',
         achievementIds: ['form-reborn'],
       },
       {
@@ -669,7 +669,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch21-giant-of-babil-s01',
-        text: 'Return to the airship — Golbez has already awakened the Giant of Babil, but a fleet of tanks and airships buys the party time.',
+        text: 'Return to the airship - Golbez has already awakened the Giant of Babil, but a fleet of tanks and airships buys the party time.',
       },
       {
         id: 'ch21-giant-of-babil-s02',
@@ -677,7 +677,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s03',
-        text: 'Rematch all four Elemental Archfiends together — Scarmiglione, Cagnazzo, Barbariccia, and Rubicante.',
+        text: 'Rematch all four Elemental Archfiends together - Scarmiglione, Cagnazzo, Barbariccia, and Rubicante.',
         achievementIds: ['defeated-elemental-archfiends'],
       },
       {
@@ -702,11 +702,11 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch22-lunar-subterrane-s01',
-        text: 'Return to the Lair of the Father — B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
+        text: 'Return to the Lair of the Father - B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
       },
       {
         id: 'ch22-lunar-subterrane-s02',
-        text: 'Defeat Bahamut to earn his summon — typically the last regular summon most players pick up.',
+        text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
       },
       {
@@ -751,12 +751,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lunar-subterrane-s12',
-        text: 'Namingway\'s final sighting can appear in several places — a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
+        text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
       },
       {
         id: 'ch22-lunar-subterrane-s13',
-        text: 'Reach the Lunar Core on B12 and prepare for the final battle — this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
+        text: 'Reach the Lunar Core on B12 and prepare for the final battle - this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
       },
     ],
   },
@@ -775,7 +775,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch23-final-battle-s03',
-        text: 'Steal Dark Matter from Zeromus during the battle if you intend to fight Proto-Babil in New Game+ — it cannot be obtained any other way.',
+        text: 'Steal Dark Matter from Zeromus during the battle if you intend to fight Proto-Babil in New Game+ - it cannot be obtained any other way.',
       },
       {
         id: 'ch23-final-battle-s04',
@@ -810,7 +810,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch24-new-game-plus-s05',
-        text: 'Clearing the game on Hard difficulty — recommended for a first playthrough by many players, since Normal is comparatively easy — earns its own achievement independently.',
+        text: 'Clearing the game on Hard difficulty - recommended for a first playthrough by many players, since Normal is comparatively easy - earns its own achievement independently.',
         achievementIds: ['bitter-battle'],
       },
       {

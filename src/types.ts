@@ -23,7 +23,7 @@ export interface Achievement {
   bestiaryThreshold?: number
   /**
    * if set, this achievement is made up of several individually-trackable parts (e.g. 13 Namingway
-   * sightings, or a list of summons) — it auto-completes once every part is checked off, and can't
+   * sightings, or a list of summons) - it auto-completes once every part is checked off, and can't
    * be toggled manually as a whole
    */
   subItems?: AchievementSubItem[]

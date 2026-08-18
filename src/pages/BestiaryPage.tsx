@@ -129,7 +129,7 @@ export function BestiaryPage() {
                   <td className="px-3 py-2 text-slate-500 dark:text-slate-500">{entry.number}</td>
                   <td className="px-3 py-2 font-medium text-slate-900 dark:text-white">{entry.name}</td>
                   <td className="px-3 py-2 text-slate-600 dark:text-slate-400">
-                    {entry.location || '—'}
+                    {entry.location || '-'}
                     {entry.notes && (
                       <div className="text-xs text-slate-500 dark:text-slate-500">{entry.notes}</div>
                     )}

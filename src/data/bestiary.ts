@@ -215,7 +215,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 33,
     name: 'Captain',
     location: 'Fabul',
-    notes: 'Story — must be defeated first or he flees',
+    notes: 'Story - must be defeated first or he flees',
     chapterId: 'ch07-mt-hobs-fabul',
   },
   {
@@ -849,7 +849,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 132,
     name: 'Clockwork Soldier',
     location: 'Giant of Babil',
-    notes: 'Giant\'s Chest — spawned by Searcher',
+    notes: 'Giant\'s Chest - spawned by Searcher',
     chapterId: 'ch21-giant-of-babil',
   },
   {
@@ -863,7 +863,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 134,
     name: 'Clockwork Dragon',
     location: 'Giant of Babil',
-    notes: 'Giant\'s Chest — spawned by Searcher',
+    notes: 'Giant\'s Chest - spawned by Searcher',
     chapterId: 'ch21-giant-of-babil',
   },
   {
@@ -933,7 +933,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 145,
     name: 'Flan Princess',
     location: 'Lunar Subterrane B5',
-    notes: 'With Siren — room with Red Fang chest',
+    notes: 'With Siren - room with Red Fang chest',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
@@ -1005,7 +1005,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 156,
     name: 'General',
     location: 'Story',
-    notes: 'Boss — defeat this one first or it won\'t count',
+    notes: 'Boss - defeat this one first or it won\'t count',
     chapterId: 'ch03-kaipo',
   },
   {
@@ -1033,7 +1033,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 160,
     name: 'Skulnant',
     location: 'Story',
-    notes: 'Boss',
+    notes: 'Boss - spawns during the first half of the Scarmiglione fight.',
     chapterId: 'ch08-mysidia-ordeals',
   },
   {
@@ -1152,7 +1152,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 177,
     name: 'Barnabas-Z',
     location: 'Story',
-    notes: 'Boss — defeat Barnabas first; he must not self-destruct for it to count',
+    notes: 'Boss - defeat Barnabas first; he must not self-destruct for it to count',
     chapterId: 'ch14-tower-of-babil-lower',
   },
   {
@@ -1243,35 +1243,35 @@ export const bestiary: BestiaryEntry[] = [
     number: 190,
     name: 'White Dragon',
     location: 'Lunar Subterrane B3',
-    notes: 'Boss — guarding Murasame',
+    notes: 'Boss - guarding Murasame',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
     number: 191,
     name: 'Dark Bahamut',
     location: 'Lunar Subterrane B5',
-    notes: 'Boss — guarding Ragnarok',
+    notes: 'Boss - guarding Ragnarok',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
     number: 192,
     name: 'Plague Horror',
     location: 'Lunar Subterrane B7',
-    notes: 'Boss — Holy Lance room',
+    notes: 'Boss - Holy Lance room',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
     number: 193,
     name: 'Lunasaur',
     location: 'Lunar Subterrane B7',
-    notes: 'Boss — Ribbon room',
+    notes: 'Boss - Ribbon room',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
     number: 194,
     name: 'Ogopogo',
     location: 'Lunar Subterrane B8',
-    notes: 'Boss — guarding Masamune',
+    notes: 'Boss - guarding Masamune',
     chapterId: 'ch22-lunar-subterrane',
   },
   {
