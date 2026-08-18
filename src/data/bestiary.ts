@@ -221,8 +221,10 @@ export const bestiary: BestiaryEntry[] = [
   {
     number: 34,
     name: 'Zu',
-    location: 'Outside Mythril',
-    chapterId: 'ch10-mysidia-troia',
+    location: 'Outside Mysidia',
+    notes: 'Also found near Mythril.',
+    chapterId: 'ch08-mysidia-ordeals',
+    extraChapterIds: ['ch10-mysidia-troia'],
   },
   {
     number: 35,
