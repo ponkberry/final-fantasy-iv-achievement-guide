@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { useMemo } from 'react'
 import { walkthrough } from '../data/walkthrough'
 import { achievements } from '../data/achievements'
 import { bestiary } from '../data/bestiary'
@@ -15,26 +15,18 @@ export function WalkthroughPage() {
     isSubItemComplete,
     toggleSubItem,
   } = useAchievementProgress()
-  const { isComplete: isStepComplete, toggle: toggleStep, reset: resetSteps } = useWalkthroughProgress()
+  const {
+    isComplete: isStepComplete,
+    toggle: toggleStep,
+    reset: resetSteps,
+    isCollapsed,
+    toggleCollapse,
+    expandChapter,
+  } = useWalkthroughProgress()
   const { isSeen, toggle: toggleBestiary } = useBestiaryProgress()
-  const [collapsed, setCollapsed] = useState<Set<string>>(() => new Set())
-
-  const toggleCollapse = (id: string) => {
-    setCollapsed((prev) => {
-      const next = new Set(prev)
-      if (next.has(id)) next.delete(id)
-      else next.add(id)
-      return next
-    })
-  }
 
   const jumpToChapter = (id: string) => {
-    setCollapsed((prev) => {
-      if (!prev.has(id)) return prev
-      const next = new Set(prev)
-      next.delete(id)
-      return next
-    })
+    expandChapter(id)
     document.getElementById(id)?.scrollIntoView({ behavior: 'smooth', block: 'start' })
   }
 
@@ -86,20 +78,20 @@ export function WalkthroughPage() {
 
         <div className="min-w-0 flex-1 space-y-10">
           {walkthrough.map((chapter) => {
-            const isCollapsed = collapsed.has(chapter.id)
+            const collapsed = isCollapsed(chapter.id)
             return (
             <section key={chapter.id} id={chapter.id} className="scroll-mt-20">
               <button
                 type="button"
                 onClick={() => toggleCollapse(chapter.id)}
-                aria-expanded={!isCollapsed}
+                aria-expanded={!collapsed}
                 className="flex w-full items-start gap-2 text-left"
               >
                 <svg
                   viewBox="0 0 20 20"
                   fill="currentColor"
                   className={`mt-1.5 size-4 shrink-0 text-slate-400 transition-transform dark:text-slate-600 ${
-                    isCollapsed ? '-rotate-90' : ''
+                    collapsed ? '-rotate-90' : ''
                   }`}
                 >
                   <path
@@ -114,7 +106,7 @@ export function WalkthroughPage() {
                 </span>
               </button>
 
-              {!isCollapsed && (
+              {!collapsed && (
               <ol className="mt-4 space-y-3">
                 {chapter.steps.map((step) => {
                   const done = isStepComplete(step.id)
@@ -205,7 +197,7 @@ export function WalkthroughPage() {
               </ol>
               )}
 
-              {!isCollapsed && (
+              {!collapsed && (
                 <ChapterBestiaryList
                   entries={bestiaryByChapter.get(chapter.id) ?? []}
                   isSeen={isSeen}
