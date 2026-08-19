@@ -329,7 +329,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch10-mysidia-troia-s04',
-        text: 'In Troia, Namingway is now in the pub for your seventh sighting - distract one of his two dates.',
+        text: 'In Troia, Namingway is behind the item shop first for your seventh sighting, then moves to the pub, where you need to distract one of his two dates.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-07' }],
       },
       {

@@ -399,7 +399,7 @@ export const achievements: Achievement[] = [
       { id: 'sighting-04', label: '4. Fabul inn' },
       { id: 'sighting-05', label: '5. Chocobo Forest south of Mount Ordeals' },
       { id: 'sighting-06', label: '6. Baron weapon shop' },
-      { id: 'sighting-07', label: '7. Troia pub' },
+      { id: 'sighting-07', label: '7. Troia, behind the item shop, then the pub' },
       { id: 'sighting-08', label: '8. Agart (Rainbow Pudding)' },
       { id: 'sighting-09', label: '9. Dwarven Castle pub' },
       { id: 'sighting-10', label: '10. Feymarch' },
