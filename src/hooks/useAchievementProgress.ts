@@ -1,6 +1,7 @@
 import { useCallback, useMemo } from 'react'
 import { useSessionStorage } from './useSessionStorage'
 import { useBestiaryProgress } from './useBestiaryProgress'
+import { useAugmentProgress } from './useAugmentProgress'
 import { achievements } from '../data/achievements'
 
 const STORAGE_KEY = 'ffiv-achievement-progress'
@@ -8,7 +9,12 @@ const SUBITEM_STORAGE_KEY = 'ffiv-achievement-subitem-progress'
 
 const lockedIds = new Set(
   achievements
-    .filter((a) => a.bestiaryThreshold !== undefined || (a.subItems && a.subItems.length > 0))
+    .filter(
+      (a) =>
+        a.bestiaryThreshold !== undefined ||
+        a.augmentThreshold !== undefined ||
+        (a.subItems && a.subItems.length > 0),
+    )
     .map((a) => a.id),
 )
 
@@ -23,6 +29,7 @@ export function useAchievementProgress() {
     [],
   )
   const { percentComplete: bestiaryPercent } = useBestiaryProgress()
+  const { obtainedCount: augmentCount } = useAugmentProgress()
 
   const manualSet = useMemo(() => new Set(completedIds), [completedIds])
   const completedSubItemSet = useMemo(() => new Set(completedSubItemKeys), [completedSubItemKeys])
@@ -58,13 +65,14 @@ export function useAchievementProgress() {
       achievements
         .filter((a) => {
           if (a.bestiaryThreshold !== undefined) return bestiaryPercent >= a.bestiaryThreshold
+          if (a.augmentThreshold !== undefined) return augmentCount >= a.augmentThreshold
           if (a.subItems && a.subItems.length > 0) {
             return a.subItems.every((s) => completedSubItemSet.has(subItemKey(a.id, s.id)))
           }
           return false
         })
         .map((a) => a.id),
-    [bestiaryPercent, completedSubItemSet],
+    [bestiaryPercent, augmentCount, completedSubItemSet],
   )
 
   const completedSet = useMemo(

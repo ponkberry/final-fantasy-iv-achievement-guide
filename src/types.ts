@@ -21,6 +21,8 @@ export interface Achievement {
   chapterId?: string
   /** if set, this achievement auto-completes once bestiary completion reaches this percent, and can't be toggled manually */
   bestiaryThreshold?: number
+  /** if set, this achievement auto-completes once this many augments are checked off, and can't be toggled manually */
+  augmentThreshold?: number
   /**
    * if set, this achievement is made up of several individually-trackable parts (e.g. 13 Namingway
    * sightings, or a list of summons) - it auto-completes once every part is checked off, and can't
@@ -38,6 +40,14 @@ export interface BestiaryEntry {
   chapterId?: string
   /** additional chapters where this monster also reappears and is worth noting */
   extraChapterIds?: string[]
+}
+
+export interface AugmentEntry {
+  id: string
+  name: string
+  notes?: string
+  /** id of the walkthrough chapter where this augment first becomes obtainable */
+  chapterId?: string
 }
 
 export interface WalkthroughStep {

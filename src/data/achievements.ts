@@ -1,9 +1,10 @@
 ﻿import type { Achievement } from '../types'
+import { augments } from './augments'
 
 // Sourced from the official Steam achievement list for Final Fantasy IV (3D Remake):
 // https://steamcommunity.com/stats/312750/achievements/
 // Categories (Story / Sidequest / Collection / Combat / Miscellaneous) are our own
-// classification â€” Steam doesn't provide categories. chapterId links are added as the
+// classification - Steam doesn't provide categories. chapterId links are added as the
 // walkthrough is written.
 export const achievements: Achievement[] = [
   {
@@ -369,6 +370,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained 20 augments.',
     category: 'Collection',
     icon: 'achievements/augment-practitioner.jpg',
+    augmentThreshold: 20,
   },
   {
     id: 'the-perpetual-wayfarer',
@@ -430,6 +432,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained all augments.',
     category: 'Collection',
     icon: 'achievements/augment-master.jpg',
+    augmentThreshold: augments.length,
   },
   {
     id: 'earths-savior-times-two',

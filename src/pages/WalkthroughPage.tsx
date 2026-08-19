@@ -2,11 +2,14 @@ import { useMemo } from 'react'
 import { walkthrough } from '../data/walkthrough'
 import { achievements } from '../data/achievements'
 import { bestiary } from '../data/bestiary'
+import { augments } from '../data/augments'
 import { useAchievementProgress } from '../hooks/useAchievementProgress'
 import { useWalkthroughProgress } from '../hooks/useWalkthroughProgress'
 import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
+import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { WalkthroughNav } from '../components/WalkthroughNav'
 import { ChapterBestiaryList } from '../components/ChapterBestiaryList'
+import { ChapterAugmentList } from '../components/ChapterAugmentList'
 
 export function WalkthroughPage() {
   const {
@@ -24,6 +27,7 @@ export function WalkthroughPage() {
     expandChapter,
   } = useWalkthroughProgress()
   const { isSeen, toggle: toggleBestiary } = useBestiaryProgress()
+  const { isObtained, toggle: toggleAugment } = useAugmentProgress()
 
   const jumpToChapter = (id: string) => {
     expandChapter(id)
@@ -43,6 +47,17 @@ export function WalkthroughPage() {
         list.push(entry)
         map.set(chapterId, list)
       }
+    }
+    return map
+  }, [])
+
+  const augmentsByChapter = useMemo(() => {
+    const map = new Map<string, typeof augments>()
+    for (const entry of augments) {
+      if (!entry.chapterId) continue
+      const list = map.get(entry.chapterId) ?? []
+      list.push(entry)
+      map.set(entry.chapterId, list)
     }
     return map
   }, [])
@@ -202,6 +217,14 @@ export function WalkthroughPage() {
                   entries={bestiaryByChapter.get(chapter.id) ?? []}
                   isSeen={isSeen}
                   onToggle={toggleBestiary}
+                />
+              )}
+
+              {!collapsed && (
+                <ChapterAugmentList
+                  entries={augmentsByChapter.get(chapter.id) ?? []}
+                  isObtained={isObtained}
+                  onToggle={toggleAugment}
                 />
               )}
             </section>
