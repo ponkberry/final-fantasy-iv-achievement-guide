@@ -9,7 +9,6 @@ import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { WalkthroughNav } from '../components/WalkthroughNav'
 import { ChapterBestiaryList } from '../components/ChapterBestiaryList'
-import { ChapterAugmentList } from '../components/ChapterAugmentList'
 
 export function WalkthroughPage() {
   const {
@@ -51,16 +50,7 @@ export function WalkthroughPage() {
     return map
   }, [])
 
-  const augmentsByChapter = useMemo(() => {
-    const map = new Map<string, typeof augments>()
-    for (const entry of augments) {
-      if (!entry.chapterId) continue
-      const list = map.get(entry.chapterId) ?? []
-      list.push(entry)
-      map.set(entry.chapterId, list)
-    }
-    return map
-  }, [])
+  const augmentById = useMemo(() => new Map(augments.map((a) => [a.id, a])), [])
 
   const progressByChapter = useMemo(() => {
     const map: Record<string, { done: number; total: number }> = {}
@@ -145,7 +135,8 @@ export function WalkthroughPage() {
                         </span>
                       </label>
                       {((step.achievementIds && step.achievementIds.length > 0) ||
-                        (step.subAchievementIds && step.subAchievementIds.length > 0)) && (
+                        (step.subAchievementIds && step.subAchievementIds.length > 0) ||
+                        (step.augmentIds && step.augmentIds.length > 0)) && (
                         <div className="mt-2 ml-6 flex flex-wrap gap-2">
                           {step.achievementIds?.map((id) => {
                             const achievement = achievementById.get(id)
@@ -204,6 +195,27 @@ export function WalkthroughPage() {
                               </button>
                             )
                           })}
+                          {step.augmentIds?.map((id) => {
+                            const augment = augmentById.get(id)
+                            if (!augment) return null
+                            const obtained = isObtained(id)
+                            return (
+                              <button
+                                key={id}
+                                type="button"
+                                onClick={() => toggleAugment(id)}
+                                title={augment.notes}
+                                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                                  obtained
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
+                                }`}
+                              >
+                                {obtained ? '✓ ' : ''}
+                                {augment.name}
+                              </button>
+                            )
+                          })}
                         </div>
                       )}
                     </li>
@@ -217,14 +229,6 @@ export function WalkthroughPage() {
                   entries={bestiaryByChapter.get(chapter.id) ?? []}
                   isSeen={isSeen}
                   onToggle={toggleBestiary}
-                />
-              )}
-
-              {!collapsed && (
-                <ChapterAugmentList
-                  entries={augmentsByChapter.get(chapter.id) ?? []}
-                  isObtained={isObtained}
-                  onToggle={toggleAugment}
                 />
               )}
             </section>

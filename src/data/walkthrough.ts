@@ -98,6 +98,7 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch03-kaipo-s05',
         text: 'In the northeastern house you find Rosa, who has secretly followed you and fallen ill. She gives you your first Augment, Auto-Potion.',
         achievementIds: ['augment-novice'],
+        augmentIds: ['auto-potion'],
       },
       {
         id: 'ch03-kaipo-s06',
@@ -180,8 +181,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch06-antlions-den-s03',
-        text: 'Return to Kaipo and use the Sand Pearl on Rosa. That night, Edward slips out to the oasis alone and is attacked by a Sahagin. Anna\'s spirit appears to give him courage - defeat the Sahagin to pass this test of nerve.',
+        text: 'Return to Kaipo and use the Sand Pearl on Rosa. That night, Edward slips out to the oasis alone and is attacked by a Sahagin. Anna\'s spirit appears to give him courage - defeat the Sahagin to pass this test of nerve. The Item Lore Augment is on the ground here too.',
         achievementIds: ['bravery'],
+        augmentIds: ['item-lore'],
       },
       {
         id: 'ch06-antlions-den-s04',
@@ -223,6 +225,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch07-mt-hobs-fabul-s07',
         text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment - equip it on Cecil.',
+        augmentIds: ['counter'],
       },
       {
         id: 'ch07-mt-hobs-fabul-s08',
@@ -270,6 +273,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch08-mysidia-ordeals-s08',
         text: 'Return to Mysidia, then Mount Ordeals to pick up the Curse Augment before heading back to Baron.',
+        augmentIds: ['curse'],
       },
     ],
   },
@@ -318,14 +322,17 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch10-mysidia-troia-s01',
         text: 'Return to Mist and Mysidia to collect Augments from the Elder in exchange for what you gave Palom and Porom before they turned to stone.',
+        augmentIds: ['twincast', 'bluff', 'cry', 'dualcast'],
       },
       {
         id: 'ch10-mysidia-troia-s02',
         text: 'In Baron Castle\'s Ancient Waterway, find the Tsunami Augment for the fight ahead.',
+        augmentIds: ['tsunami'],
       },
       {
         id: 'ch10-mysidia-troia-s03',
-        text: 'Visit the town of Mythril to shop, then head to Troia, ruled entirely by priestesses called Epopts.',
+        text: 'Visit the town of Mythril to shop, then head to Troia, ruled entirely by priestesses called Epopts. In the Troia pub, a Member\'s Writ (100,000 gil) unlocks a dressing room with the Gil Farmer Augment.',
+        augmentIds: ['gil-farmer'],
       },
       {
         id: 'ch10-mysidia-troia-s04',
@@ -359,7 +366,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
-        text: 'Return to Troia to resupply, then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment, plus Salve and Hide if you gave him augments before boarding near Fabul. Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        augmentIds: ['bardsong', 'salve', 'hide'],
       },
       {
         id: 'ch11-tower-of-zot-s02',
@@ -372,12 +380,14 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s04',
-        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters.',
+        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment, plus Last Stand and Fast Talker if you gave him augments before the Magus Sisters fight.',
+        augmentIds: ['recall', 'last-stand', 'fast-talker'],
       },
       {
         id: 'ch11-tower-of-zot-s05',
-        text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia.',
+        text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia, then find the Whirlwind Augment back in Lodestone Cavern\'s Crystal Room.',
         achievementIds: ['defeated-barbariccia'],
+        augmentIds: ['whirlwind'],
       },
       {
         id: 'ch11-tower-of-zot-s06',
@@ -424,13 +434,15 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s02',
-        text: 'In the castle pub, look for a hidden passage leading to the Developers\' Office and talk to everyone inside.',
+        text: 'In the castle pub, look for a hidden passage leading to the Developers\' Office and talk to everyone inside for the Reach Augment.',
         achievementIds: ['developers-pal'],
+        augmentIds: ['reach'],
       },
       {
         id: 'ch13-dwarven-castle-s03',
-        text: 'Namingway is also in the pub for your ninth sighting - he starts a fight before talking.',
+        text: 'Namingway is also in the pub for your ninth sighting - he starts a fight before talking, then gives you the Eye Gouge Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-09' }],
+        augmentIds: ['eye-gouge'],
       },
       {
         id: 'ch13-dwarven-castle-s04',
@@ -444,7 +456,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s06',
-        text: 'Defeat this weakened form of Golbez, though he escapes with the Crystal regardless.',
+        text: 'Defeat this weakened form of Golbez, though he escapes with the Crystal regardless. King Giott gives you the Draw Attacks Augment for defeating Calcabrina and Golbez.',
+        augmentIds: ['draw-attacks'],
       },
       {
         id: 'ch13-dwarven-castle-s07',
@@ -519,8 +532,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch16-tower-of-babil-upper-s05',
-        text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually.',
+        text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually. The Inferno Augment appears back in Eblan Cave where he and Edge dueled.',
         achievementIds: ['defeated-rubicante'],
+        augmentIds: ['inferno'],
       },
       {
         id: 'ch16-tower-of-babil-upper-s06',
@@ -535,7 +549,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch17-underworld-sidequests-s01',
-        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave, and directs you to a survivor who can upgrade the Falcon.',
+        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave, and directs you to a survivor who can upgrade the Falcon. Seek out Cid in the infirmary too - once he finishes his own ship repairs, he gives you the Analyze Augment, plus Upgrade and Adrenaline if you gave him augments before he left the party. The MP+50% Augment is also available now, in a northwestern house back in Mist.',
+        augmentIds: ['analyze', 'upgrade', 'adrenaline', 'mp-plus-50'],
       },
       {
         id: 'ch17-underworld-sidequests-s02',
@@ -609,22 +624,25 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch19-odin-lunar-whale-s01',
-        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon.',
+        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment, plus Kick and Brace if you gave Yang augments before the Fabul dock way back near the start of the game.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
+        augmentIds: ['focus', 'kick', 'brace'],
       },
       {
         id: 'ch19-odin-lunar-whale-s02',
-        text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons.',
+        text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
         id: 'ch19-odin-lunar-whale-s03',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
+        augmentIds: ['darkness'],
       },
       {
         id: 'ch19-odin-lunar-whale-s04',
-        text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting.',
+        text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
+        augmentIds: ['love'],
       },
       {
         id: 'ch19-odin-lunar-whale-s05',
@@ -640,7 +658,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch20-moon-lair-of-father-s01',
-        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop.',
+        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop. The Level Lust Augment is on the ground somewhere inside.',
+        augmentIds: ['level-lust'],
       },
       {
         id: 'ch20-moon-lair-of-father-s02',
@@ -686,8 +705,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s04',
-        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes.',
+        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes. This unlocks the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon, plus Omnicasting and Phoenix if you gave Fusoya augments before this fight.',
         achievementIds: ['defeated-cpu'],
+        augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
       },
       {
         id: 'ch21-giant-of-babil-s05',
@@ -710,8 +730,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lunar-subterrane-s02',
-        text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up.',
+        text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up. This general stretch of the game is also when the multi-step Piercing Magic Augment becomes available; check a dedicated stat-maxing guide for the exact route.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
+        augmentIds: ['piercing-magic'],
       },
       {
         id: 'ch22-lunar-subterrane-s03',
@@ -750,13 +771,15 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lunar-subterrane-s11',
-        text: 'Complete 100% of every dungeon map in the game, including the now-inaccessible Tower of Zot, both visits to the Tower of Babil, and the Giant of Babil, to round out the last of the map completion.',
+        text: 'Complete 100% of every dungeon map in the game, including the now-inaccessible Tower of Zot, both visits to the Tower of Babil, and the Giant of Babil, to round out the last of the map completion. This automatically grants the Treasure Hunter Augment.',
         achievementIds: ['the-perpetual-wayfarer'],
+        augmentIds: ['treasure-hunter'],
       },
       {
         id: 'ch22-lunar-subterrane-s12',
         text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
+        augmentIds: ['safe-travel'],
       },
       {
         id: 'ch22-lunar-subterrane-s13',
@@ -795,7 +818,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch24-new-game-plus-s01',
-        text: 'Starting a New Game+ carries over your Bestiary, Augments, Apples, Soma Drops, the Adamant Armor, Onion equipment, Tails, Dark Matter, and any rare summons you found.',
+        text: 'Starting a New Game+ carries over your Bestiary, Augments, Apples, Soma Drops, the Adamant Armor, Onion equipment, Tails, Dark Matter, and any rare summons you found. You also start out already holding the Limit Break Augment.',
+        augmentIds: ['limit-break'],
       },
       {
         id: 'ch24-new-game-plus-s02',

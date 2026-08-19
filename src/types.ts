@@ -46,8 +46,6 @@ export interface AugmentEntry {
   id: string
   name: string
   notes?: string
-  /** id of the walkthrough chapter where this augment first becomes obtainable */
-  chapterId?: string
 }
 
 export interface WalkthroughStep {
@@ -57,6 +55,8 @@ export interface WalkthroughStep {
   achievementIds?: string[]
   /** specific sub-items of multi-part achievements (see Achievement.subItems) relevant to this step */
   subAchievementIds?: { achievementId: string; subItemId: string }[]
+  /** augment ids obtainable at this step, shown as inline callouts */
+  augmentIds?: string[]
 }
 
 export interface WalkthroughChapter {
