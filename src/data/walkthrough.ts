@@ -338,11 +338,15 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch10-mysidia-troia-s06',
+        text: 'Before leaving Troia Castle, go to the west tower and find Edward in the infirmary. He gives you Whisperweed - without it, the Dark Elf fight ahead is unwinnable.',
+      },
+      {
+        id: 'ch10-mysidia-troia-s07',
         text: 'Take a Black Chocobo to Lodestone Cavern and fight through to the Crystal room. Mindflayers on B2 have a very rare chance to drop the hidden Mindflayer summon.',
         subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'mindflayer' }],
       },
       {
-        id: 'ch10-mysidia-troia-s07',
+        id: 'ch10-mysidia-troia-s08',
         text: 'Defeat the Dark Elf and his true dragon form.',
         achievementIds: ['saved-by-music'],
       },
