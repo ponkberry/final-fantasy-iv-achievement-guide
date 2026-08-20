@@ -4,6 +4,7 @@ import { HomePage } from './pages/HomePage'
 import { WalkthroughPage } from './pages/WalkthroughPage'
 import { AchievementsPage } from './pages/AchievementsPage'
 import { BestiaryPage } from './pages/BestiaryPage'
+import { AugmentsPage } from './pages/AugmentsPage'
 import { ToastProvider } from './context/ToastContext'
 import { ToastContainer } from './components/ToastContainer'
 import { AchievementUnlockWatcher } from './components/AchievementUnlockWatcher'
@@ -19,6 +20,7 @@ function App() {
             <Route path="/walkthrough" element={<WalkthroughPage />} />
             <Route path="/achievements" element={<AchievementsPage />} />
             <Route path="/bestiary" element={<BestiaryPage />} />
+            <Route path="/augments" element={<AugmentsPage />} />
           </Routes>
         </div>
       </HashRouter>

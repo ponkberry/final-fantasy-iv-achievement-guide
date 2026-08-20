@@ -1,6 +1,8 @@
 import { useMemo, useState } from 'react'
 import { achievements } from '../data/achievements'
 import { useAchievementProgress } from '../hooks/useAchievementProgress'
+import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
+import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { AchievementCard } from '../components/AchievementCard'
 import { ProgressBar } from '../components/ProgressBar'
 import type { AchievementCategory } from '../types'
@@ -30,6 +32,8 @@ export function AchievementsPage() {
     toggleSubItem,
     subItemProgress,
   } = useAchievementProgress()
+  const { percentComplete: bestiaryPercent } = useBestiaryProgress()
+  const { obtainedCount: augmentCount } = useAugmentProgress()
   const [filter, setFilter] = useState<(typeof categories)[number]>('All')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
 
@@ -92,18 +96,27 @@ export function AchievementsPage() {
       </div>
 
       <div className="mt-6 space-y-3">
-        {visible.map((achievement) => (
-          <AchievementCard
-            key={achievement.id}
-            achievement={achievement}
-            completed={isComplete(achievement.id)}
-            locked={isLocked(achievement.id)}
-            onToggle={toggle}
-            subItemProgress={achievement.subItems ? subItemProgress(achievement.id) : undefined}
-            isSubItemComplete={(subItemId) => isSubItemComplete(achievement.id, subItemId)}
-            onToggleSubItem={(subItemId) => toggleSubItem(achievement.id, subItemId)}
-          />
-        ))}
+        {visible.map((achievement) => {
+          let thresholdProgress: { current: number; target: number } | undefined
+          if (achievement.bestiaryThreshold !== undefined) {
+            thresholdProgress = { current: Math.round(bestiaryPercent), target: achievement.bestiaryThreshold }
+          } else if (achievement.augmentThreshold !== undefined) {
+            thresholdProgress = { current: augmentCount, target: achievement.augmentThreshold }
+          }
+          return (
+            <AchievementCard
+              key={achievement.id}
+              achievement={achievement}
+              completed={isComplete(achievement.id)}
+              locked={isLocked(achievement.id)}
+              onToggle={toggle}
+              subItemProgress={achievement.subItems ? subItemProgress(achievement.id) : undefined}
+              isSubItemComplete={(subItemId) => isSubItemComplete(achievement.id, subItemId)}
+              onToggleSubItem={(subItemId) => toggleSubItem(achievement.id, subItemId)}
+              thresholdProgress={thresholdProgress}
+            />
+          )
+        })}
         {visible.length === 0 && (
           <p className="text-center text-sm text-slate-500 dark:text-slate-500">
             No achievements match these filters.

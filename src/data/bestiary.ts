@@ -1139,7 +1139,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 175,
     name: 'Doctor',
     location: 'Story',
-    notes: 'Boss',
+    notes: 'Boss - only counts if you defeat Dr. Lugae before Barnabas. Mutually exclusive with Barnabas-Z in a single playthrough; getting both entries needs two separate playthroughs.',
     chapterId: 'ch14-tower-of-babil-lower',
   },
   {
@@ -1153,7 +1153,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 177,
     name: 'Barnabas-Z',
     location: 'Story',
-    notes: 'Boss - defeat Barnabas first; he must not self-destruct for it to count',
+    notes: 'Boss - only counts if you defeat Barnabas before Dr. Lugae, so the two merge instead of Barnabas self-destructing. Mutually exclusive with Doctor in a single playthrough; getting both entries needs two separate playthroughs.',
     chapterId: 'ch14-tower-of-babil-lower',
   },
   {

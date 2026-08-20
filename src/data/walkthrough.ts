@@ -476,7 +476,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch14-tower-of-babil-lower-s02',
-        text: 'Deep in the tower, fight Barnabas and Dr. Lugae together, then Lugae\'s true form, Lugaeborg.',
+        text: 'Deep in the tower, fight Barnabas and Dr. Lugae together, then Lugae\'s true form, Lugaeborg. Which one you kill first determines your bestiary credit: Lugae first gives you the Doctor entry, Barnabas first merges them into Barnabas-Z instead. The two are mutually exclusive in a single playthrough.',
         achievementIds: ['defeated-dr-lugae'],
       },
       {

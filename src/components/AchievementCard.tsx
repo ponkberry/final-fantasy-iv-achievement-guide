@@ -9,6 +9,7 @@ interface AchievementCardProps {
   subItemProgress?: { done: number; total: number }
   isSubItemComplete?: (subItemId: string) => boolean
   onToggleSubItem?: (subItemId: string) => void
+  thresholdProgress?: { current: number; target: number }
 }
 
 export function AchievementCard({
@@ -19,6 +20,7 @@ export function AchievementCard({
   subItemProgress,
   isSubItemComplete,
   onToggleSubItem,
+  thresholdProgress,
 }: AchievementCardProps) {
   const [expanded, setExpanded] = useState(false)
   const hasSubItems = achievement.subItems && achievement.subItems.length > 0
@@ -63,11 +65,25 @@ export function AchievementCard({
                 {subItemProgress.done} / {subItemProgress.total}
               </span>
             )}
+            {!hasSubItems && thresholdProgress && (
+              <span
+                className={`rounded-full px-2 py-0.5 text-xs ${
+                  completed
+                    ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300'
+                    : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
+                }`}
+              >
+                {thresholdProgress.current} / {thresholdProgress.target}
+                {achievement.bestiaryThreshold !== undefined ? '%' : ''}
+              </span>
+            )}
           </div>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">{achievement.description}</p>
           {locked && !hasSubItems && (
             <p className="mt-1 text-xs text-slate-500 dark:text-slate-500">
-              Unlocks automatically from Bestiary progress
+              {achievement.augmentThreshold !== undefined
+                ? 'Unlocks automatically from Augment progress'
+                : 'Unlocks automatically from Bestiary progress'}
             </p>
           )}
           {hasSubItems && (

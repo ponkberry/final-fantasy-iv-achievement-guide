@@ -5,6 +5,7 @@ const links = [
   { to: '/walkthrough', label: 'Walkthrough' },
   { to: '/achievements', label: 'Achievements' },
   { to: '/bestiary', label: 'Bestiary' },
+  { to: '/augments', label: 'Augments' },
 ]
 
 export function NavBar() {
