@@ -224,7 +224,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch07-mt-hobs-fabul-s07',
-        text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment - equip it on Cecil.',
+        text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment.',
         augmentIds: ['counter'],
       },
       {
@@ -321,7 +321,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch10-mysidia-troia-s01',
-        text: 'Return to Mist and Mysidia to collect Augments from the Elder in exchange for what you gave Palom and Porom before they turned to stone.',
+        text: 'Return to Mist and Mysidia to collect Augments from the Elder.',
         augmentIds: ['twincast', 'bluff', 'cry', 'dualcast'],
       },
       {
@@ -366,7 +366,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
-        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment, plus Salve and Hide if you gave him augments before boarding near Fabul. Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment (Salve and Hide are also possible here). Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
         augmentIds: ['bardsong', 'salve', 'hide'],
       },
       {
@@ -380,7 +380,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s04',
-        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment, plus Last Stand and Fast Talker if you gave him augments before the Magus Sisters fight.',
+        text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment (Last Stand and Fast Talker are also possible here).',
         augmentIds: ['recall', 'last-stand', 'fast-talker'],
       },
       {
@@ -549,7 +549,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch17-underworld-sidequests-s01',
-        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave, and directs you to a survivor who can upgrade the Falcon. Seek out Cid in the infirmary too - once he finishes his own ship repairs, he gives you the Analyze Augment, plus Upgrade and Adrenaline if you gave him augments before he left the party. The MP+50% Augment is also available now, in a northwestern house back in Mist.',
+        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave, and directs you to a survivor who can upgrade the Falcon. Seek out Cid in the infirmary too - once he finishes his own ship repairs, he gives you the Analyze Augment (Upgrade and Adrenaline are also possible here). The MP+50% Augment is also available now, in a northwestern house back in Mist.',
         augmentIds: ['analyze', 'upgrade', 'adrenaline', 'mp-plus-50'],
       },
       {
@@ -624,7 +624,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch19-odin-lunar-whale-s01',
-        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment, plus Kick and Brace if you gave Yang augments before the Fabul dock way back near the start of the game.',
+        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
@@ -705,7 +705,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s04',
-        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes. This unlocks the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon, plus Omnicasting and Phoenix if you gave Fusoya augments before this fight.',
+        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes. This unlocks the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
         achievementIds: ['defeated-cpu'],
         augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
       },

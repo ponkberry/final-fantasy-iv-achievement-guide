@@ -608,8 +608,8 @@ export const bestiary: BestiaryEntry[] = [
   {
     number: 95,
     name: 'Blood Bat',
-    location: 'Tower of Babil B8',
-    chapterId: 'ch14-tower-of-babil-lower',
+    location: 'Cave of Eblan',
+    chapterId: 'ch15-eblan-cave',
   },
   {
     number: 96,
