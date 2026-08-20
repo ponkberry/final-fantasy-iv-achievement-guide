@@ -549,12 +549,12 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch17-underworld-sidequests-s01',
-        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave, and directs you to a survivor who can upgrade the Falcon. Seek out Cid in the infirmary too - once he finishes his own ship repairs, he gives you the Analyze Augment (Upgrade and Adrenaline are also possible here). The MP+50% Augment is also available now, in a northwestern house back in Mist.',
-        augmentIds: ['analyze', 'upgrade', 'adrenaline', 'mp-plus-50'],
+        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave. Seek out Cid in the infirmary - once he finishes repairing the Falcon, it can fly over magma, and he gives you the Analyze Augment (Upgrade and Adrenaline are also possible here).',
+        augmentIds: ['analyze', 'upgrade', 'adrenaline'],
       },
       {
         id: 'ch17-underworld-sidequests-s02',
-        text: 'That survivor is Edge\'s rival ninja from the duel - he upgrades your ship.',
+        text: 'Edge\'s rival ninja from the duel survived and gives the Falcon a second upgrade, fitting it with a drill to bore through rock.',
       },
       {
         id: 'ch17-underworld-sidequests-s03',
@@ -624,28 +624,33 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch19-odin-lunar-whale-s01',
+        text: 'With the Falcon upgraded, the party can finally return to the surface world. Stop by the northwestern house in Mist for the MP+50% Augment.',
+        augmentIds: ['mp-plus-50'],
+      },
+      {
+        id: 'ch19-odin-lunar-whale-s02',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s02',
+        id: 'ch19-odin-lunar-whale-s03',
         text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
-        id: 'ch19-odin-lunar-whale-s03',
+        id: 'ch19-odin-lunar-whale-s04',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s04',
+        id: 'ch19-odin-lunar-whale-s05',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s05',
+        id: 'ch19-odin-lunar-whale-s06',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },
