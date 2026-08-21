@@ -1,5 +1,5 @@
 import { useCallback, useMemo } from 'react'
-import { useSessionStorage } from './useSessionStorage'
+import { useLocalStorage } from './useLocalStorage'
 import { useBestiaryProgress } from './useBestiaryProgress'
 import { useAugmentProgress } from './useAugmentProgress'
 import { achievements } from '../data/achievements'
@@ -23,8 +23,8 @@ function subItemKey(achievementId: string, subItemId: string) {
 }
 
 export function useAchievementProgress() {
-  const [completedIds, setCompletedIds] = useSessionStorage<string[]>(STORAGE_KEY, [])
-  const [completedSubItemKeys, setCompletedSubItemKeys] = useSessionStorage<string[]>(
+  const [completedIds, setCompletedIds] = useLocalStorage<string[]>(STORAGE_KEY, [])
+  const [completedSubItemKeys, setCompletedSubItemKeys] = useLocalStorage<string[]>(
     SUBITEM_STORAGE_KEY,
     [],
   )

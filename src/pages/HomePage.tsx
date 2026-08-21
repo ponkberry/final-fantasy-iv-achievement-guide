@@ -16,7 +16,7 @@ export function HomePage() {
       </h1>
       <p className="mt-3 text-slate-600 dark:text-slate-400">
         A step-by-step walkthrough paired with an achievement tracker and bestiary. Your progress
-        is saved for this browser session and clears when you close the tab.
+        is saved in this browser and persists across visits until you reset it.
       </p>
 
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">

@@ -1,11 +1,11 @@
 import { useCallback, useMemo } from 'react'
-import { useSessionStorage } from './useSessionStorage'
+import { useLocalStorage } from './useLocalStorage'
 import { augments } from '../data/augments'
 
 const STORAGE_KEY = 'ffiv-augment-progress'
 
 export function useAugmentProgress() {
-  const [obtainedIds, setObtainedIds] = useSessionStorage<string[]>(STORAGE_KEY, [])
+  const [obtainedIds, setObtainedIds] = useLocalStorage<string[]>(STORAGE_KEY, [])
 
   const obtainedSet = useMemo(() => new Set(obtainedIds), [obtainedIds])
 

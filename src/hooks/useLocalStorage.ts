@@ -17,11 +17,11 @@ function emitChange(key: string) {
   listeners.get(key)?.forEach((callback) => callback())
 }
 
-/** Reads sessionStorage for `key`, returning a cached parsed reference unless the raw string changed. */
+/** Reads localStorage for `key`, returning a cached parsed reference unless the raw string changed. */
 function readValue<T>(key: string, initialValue: T): T {
   let raw: string | null
   try {
-    raw = window.sessionStorage.getItem(key)
+    raw = window.localStorage.getItem(key)
   } catch {
     // storage unreadable (e.g. private browsing) - trust whatever's cached in memory
     const cached = cache.get(key)
@@ -44,11 +44,11 @@ function readValue<T>(key: string, initialValue: T): T {
 }
 
 /**
- * State backed by window.sessionStorage - persists across page navigation but clears when the tab/
- * browser session ends. Uses useSyncExternalStore so every component reading the same key stays in
- * sync in real time, even across independently-mounted hook instances on different pages.
+ * State backed by window.localStorage - persists across tab and browser restarts until cleared.
+ * Uses useSyncExternalStore so every component reading the same key stays in sync in real time,
+ * even across independently-mounted hook instances on different pages.
  */
-export function useSessionStorage<T>(key: string, initialValue: T) {
+export function useLocalStorage<T>(key: string, initialValue: T) {
   const value = useSyncExternalStore(
     (callback) => subscribe(key, callback),
     () => readValue(key, initialValue),
@@ -61,9 +61,9 @@ export function useSessionStorage<T>(key: string, initialValue: T) {
       const resolved = next instanceof Function ? next(prev) : next
       const raw = JSON.stringify(resolved)
       try {
-        window.sessionStorage.setItem(key, raw)
+        window.localStorage.setItem(key, raw)
       } catch {
-        // sessionStorage unavailable (e.g. private browsing) - falls back to in-memory cache only
+        // localStorage unavailable (e.g. private browsing) - falls back to in-memory cache only
       }
       cache.set(key, { raw, parsed: resolved })
       emitChange(key)

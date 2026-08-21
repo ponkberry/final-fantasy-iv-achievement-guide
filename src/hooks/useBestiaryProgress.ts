@@ -1,11 +1,11 @@
 import { useCallback, useMemo } from 'react'
-import { useSessionStorage } from './useSessionStorage'
+import { useLocalStorage } from './useLocalStorage'
 import { bestiary } from '../data/bestiary'
 
 const STORAGE_KEY = 'ffiv-bestiary-progress'
 
 export function useBestiaryProgress() {
-  const [seenNumbers, setSeenNumbers] = useSessionStorage<number[]>(STORAGE_KEY, [])
+  const [seenNumbers, setSeenNumbers] = useLocalStorage<number[]>(STORAGE_KEY, [])
 
   const seenSet = useMemo(() => new Set(seenNumbers), [seenNumbers])
 

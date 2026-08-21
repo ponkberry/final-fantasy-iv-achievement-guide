@@ -1,12 +1,12 @@
 import { useCallback, useMemo } from 'react'
-import { useSessionStorage } from './useSessionStorage'
+import { useLocalStorage } from './useLocalStorage'
 
 const STORAGE_KEY = 'ffiv-walkthrough-progress'
 const COLLAPSED_STORAGE_KEY = 'ffiv-walkthrough-collapsed'
 
 export function useWalkthroughProgress() {
-  const [completedIds, setCompletedIds] = useSessionStorage<string[]>(STORAGE_KEY, [])
-  const [collapsedIds, setCollapsedIds] = useSessionStorage<string[]>(COLLAPSED_STORAGE_KEY, [])
+  const [completedIds, setCompletedIds] = useLocalStorage<string[]>(STORAGE_KEY, [])
+  const [collapsedIds, setCollapsedIds] = useLocalStorage<string[]>(COLLAPSED_STORAGE_KEY, [])
 
   const completedSet = useMemo(() => new Set(completedIds), [completedIds])
   const collapsedSet = useMemo(() => new Set(collapsedIds), [collapsedIds])
