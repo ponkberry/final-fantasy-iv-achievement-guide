@@ -74,7 +74,7 @@ export function WalkthroughPage() {
         </button>
       </div>
 
-      <div className="mt-6 flex flex-col gap-8 md:flex-row md:items-start">
+      <div className="mt-6 flex flex-col gap-8 md:flex-row">
         <WalkthroughNav
           chapters={walkthrough}
           progressByChapter={progressByChapter}
