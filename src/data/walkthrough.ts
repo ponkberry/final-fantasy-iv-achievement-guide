@@ -397,9 +397,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s06',
-        text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia, then find the Whirlwind Augment back in Lodestone Cavern\'s Crystal Room.',
+        text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia.',
         achievementIds: ['defeated-barbariccia'],
-        augmentIds: ['whirlwind'],
       },
       {
         id: 'ch11-tower-of-zot-s07',
@@ -649,28 +648,33 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch19-odin-lunar-whale-s03',
+        text: 'Lodestone Cavern\'s Crystal Room, back on the surface near Troia, now holds the Whirlwind Augment as well.',
+        augmentIds: ['whirlwind'],
+      },
+      {
+        id: 'ch19-odin-lunar-whale-s04',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s04',
+        id: 'ch19-odin-lunar-whale-s05',
         text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
-        id: 'ch19-odin-lunar-whale-s05',
+        id: 'ch19-odin-lunar-whale-s06',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s06',
+        id: 'ch19-odin-lunar-whale-s07',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s07',
+        id: 'ch19-odin-lunar-whale-s08',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },
