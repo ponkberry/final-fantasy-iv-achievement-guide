@@ -8,6 +8,7 @@ import { AugmentsPage } from './pages/AugmentsPage'
 import { ToastProvider } from './context/ToastContext'
 import { ToastContainer } from './components/ToastContainer'
 import { AchievementUnlockWatcher } from './components/AchievementUnlockWatcher'
+import { BackToTopButton } from './components/BackToTopButton'
 
 function App() {
   return (
@@ -26,6 +27,7 @@ function App() {
       </HashRouter>
       <AchievementUnlockWatcher />
       <ToastContainer />
+      <BackToTopButton />
     </ToastProvider>
   )
 }
