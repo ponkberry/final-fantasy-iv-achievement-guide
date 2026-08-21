@@ -532,9 +532,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch16-tower-of-babil-upper-s05',
-        text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually. The Inferno Augment appears back in Eblan Cave where he and Edge dueled.',
+        text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually.',
         achievementIds: ['defeated-rubicante'],
-        augmentIds: ['inferno'],
       },
       {
         id: 'ch16-tower-of-babil-upper-s06',
@@ -554,36 +553,32 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch17-underworld-sidequests-s02',
-        text: 'Edge\'s rival ninja from the duel survived and gives the Falcon a second upgrade, fitting it with a drill to bore through rock.',
-      },
-      {
-        id: 'ch17-underworld-sidequests-s03',
         text: 'Visit Kokkol\'s Forge and Tomra to resupply.',
       },
       {
-        id: 'ch17-underworld-sidequests-s04',
+        id: 'ch17-underworld-sidequests-s03',
         text: 'Explore Sylvan Cave, using Rosa\'s Levitate to cross the poisoned water, for treasure and a Defender Sword.',
       },
       {
-        id: 'ch17-underworld-sidequests-s05',
+        id: 'ch17-underworld-sidequests-s04',
         text: 'At the back of Sylvan Cave, find the Sylphids tending to an unconscious Yang. He can\'t join yet, but a solution exists - remember Fabul.',
       },
       {
-        id: 'ch17-underworld-sidequests-s06',
+        id: 'ch17-underworld-sidequests-s05',
         text: 'Explore the Feymarch, home of the Eidolons, and reach its hidden city.',
       },
       {
-        id: 'ch17-underworld-sidequests-s07',
+        id: 'ch17-underworld-sidequests-s06',
         text: 'Defeat Asura to earn her summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'asura' }],
       },
       {
-        id: 'ch17-underworld-sidequests-s08',
+        id: 'ch17-underworld-sidequests-s07',
         text: 'Defeat Leviathan to earn his summon - a different encounter from the earlier shipwreck.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'leviathan' }],
       },
       {
-        id: 'ch17-underworld-sidequests-s09',
+        id: 'ch17-underworld-sidequests-s08',
         text: 'Namingway is somewhere in the Feymarch for your tenth sighting; he asks you to choose a name for something close to his heart.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-10' }],
       },
@@ -615,6 +610,10 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch18-sealed-cave-s05',
         text: 'Golbez ambushes the party as you leave, mind-controls Kain again, and steals the Crystal - he now holds all eight.',
       },
+      {
+        id: 'ch18-sealed-cave-s06',
+        text: 'Return to Dwarven Castle and speak with King Giott - Cid gives the Falcon a second upgrade, fitting it with a drill to bore through rock.',
+      },
     ],
   },
   {
@@ -624,33 +623,38 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch19-odin-lunar-whale-s01',
-        text: 'With the Falcon upgraded, the party can finally return to the surface world. Stop by the northwestern house in Mist for the MP+50% Augment.',
-        augmentIds: ['mp-plus-50'],
+        text: 'With the Falcon\'s drill, dig back to Eblan Cave where Rubicante and Edge dueled for the Inferno Augment.',
+        augmentIds: ['inferno'],
       },
       {
         id: 'ch19-odin-lunar-whale-s02',
+        text: 'The party can also return to the surface world now. Stop by the northwestern house in Mist for the MP+50% Augment.',
+        augmentIds: ['mp-plus-50'],
+      },
+      {
+        id: 'ch19-odin-lunar-whale-s03',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s03',
+        id: 'ch19-odin-lunar-whale-s04',
         text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
-        id: 'ch19-odin-lunar-whale-s04',
+        id: 'ch19-odin-lunar-whale-s05',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s05',
+        id: 'ch19-odin-lunar-whale-s06',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s06',
+        id: 'ch19-odin-lunar-whale-s07',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },

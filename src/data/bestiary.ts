@@ -466,6 +466,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 73,
     name: 'Blood Flower',
     location: 'Outside Kokkol (Underworld)',
+    notes: 'Also found near Sylvan Cave.',
     chapterId: 'ch17-underworld-sidequests',
   },
   {
@@ -478,12 +479,14 @@ export const bestiary: BestiaryEntry[] = [
     number: 75,
     name: 'Tunneler',
     location: 'Sylph Cave B1',
+    notes: 'Also found near Sylvan Cave.',
     chapterId: 'ch17-underworld-sidequests',
   },
   {
     number: 76,
     name: 'Caterpillar',
     location: 'Outside Sylph Cave',
+    notes: 'Also found near Sylvan Cave.',
     chapterId: 'ch17-underworld-sidequests',
   },
   {
@@ -508,6 +511,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 80,
     name: 'Hellflapper',
     location: 'Outside Sylph Cave',
+    notes: 'Also found near Sylvan Cave.',
     chapterId: 'ch17-underworld-sidequests',
   },
   {
@@ -712,6 +716,7 @@ export const bestiary: BestiaryEntry[] = [
     number: 111,
     name: 'Malboro',
     location: 'Sylph Cave B1',
+    notes: 'Also found near Sylvan Cave.',
     chapterId: 'ch17-underworld-sidequests',
   },
   {
