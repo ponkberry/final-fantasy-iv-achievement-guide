@@ -10,7 +10,7 @@ const links = [
 
 export function NavBar() {
   return (
-    <header className="border-b border-slate-200 dark:border-slate-800">
+    <header className="sticky top-0 z-50 border-b border-slate-200 bg-white dark:border-slate-800 dark:bg-slate-950">
       <nav className="mx-auto flex max-w-4xl items-center gap-6 px-4 py-4">
         <span className="font-semibold text-slate-900 dark:text-white">FFIV Achievement Guide</span>
         <div className="flex gap-4 text-sm">
