@@ -224,11 +224,15 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch07-mt-hobs-fabul-s07',
+        text: 'Last chance to give Edward and Yang augments before boarding this ship - both are swept away in the wreck ahead. Edward leaves with Bardsong by default, Salve if given exactly 1 augment, or Hide if given 2. Yang leaves with Focus by default, Kick if given at least 1 augment, or Brace if given at least 2.',
+      },
+      {
+        id: 'ch07-mt-hobs-fabul-s08',
         text: 'The King of Fabul lends you a ship to reach Cid in Baron. Before boarding, Yang\'s wife gives you the Counter Augment.',
         augmentIds: ['counter'],
       },
       {
-        id: 'ch07-mt-hobs-fabul-s08',
+        id: 'ch07-mt-hobs-fabul-s09',
         text: 'On the voyage, Leviathan attacks the ship. Cecil is thrown overboard and washes up alone near Mysidia.',
         achievementIds: ['alone-again'],
       },
@@ -301,15 +305,19 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch09-baron-retaken-s05',
+        text: 'Last chance to give Palom and Porom augments before the Cagnazzo fight. Each twin leaves with Twincast by default; giving Palom 1 augment yields Bluff instead, giving Porom 1 augment yields Cry instead, and giving either twin 2 augments alone (not split between both) yields Dualcast.',
+      },
+      {
+        id: 'ch09-baron-retaken-s06',
         text: 'Confront the fake King in the throne room: Cagnazzo, one of Golbez\'s four Elemental Archfiends.',
         achievementIds: ['defeated-cagnazzo'],
       },
       {
-        id: 'ch09-baron-retaken-s06',
+        id: 'ch09-baron-retaken-s07',
         text: 'Cid arrives with a new airship, the Enterprise, but Cagnazzo brings the ceiling down as you flee - Palom and Porom sacrifice themselves, turning to stone to save the party.',
       },
       {
-        id: 'ch09-baron-retaken-s07',
+        id: 'ch09-baron-retaken-s08',
         text: 'With the Enterprise now yours, Cid joins the party as an Engineer. Kain, still controlled by Golbez, offers to trade the last Crystal for Rosa - the party heads for Mist and Mysidia before pursuing the exchange.',
       },
     ],
@@ -375,22 +383,26 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s03',
+        text: 'Last chance to give Tellah augments before the Magus Sisters fight - he dies shortly after. He leaves behind Recall by default, Last Stand if given at least 1 augment, or Fast Talker if given at least 2.',
+      },
+      {
+        id: 'ch11-tower-of-zot-s04',
         text: 'Partway up, defeat the Magus Sisters - Cindy, Sandy, and Mindy.',
         achievementIds: ['delta-attack-defiance'],
       },
       {
-        id: 'ch11-tower-of-zot-s04',
+        id: 'ch11-tower-of-zot-s05',
         text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment (Last Stand and Fast Talker are also possible here).',
         augmentIds: ['recall', 'last-stand', 'fast-talker'],
       },
       {
-        id: 'ch11-tower-of-zot-s05',
+        id: 'ch11-tower-of-zot-s06',
         text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia, then find the Whirlwind Augment back in Lodestone Cavern\'s Crystal Room.',
         achievementIds: ['defeated-barbariccia'],
         augmentIds: ['whirlwind'],
       },
       {
-        id: 'ch11-tower-of-zot-s06',
+        id: 'ch11-tower-of-zot-s07',
         text: 'Barbariccia collapses the tower behind you, but Rosa teleports the party to safety.',
       },
     ],
@@ -485,6 +497,10 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch14-tower-of-babil-lower-s04',
+        text: 'Last chance to give Cid augments before climbing out of the tower - he\'s separated from the party right after. He leaves behind Analyze by default, Upgrade if given at least 1 augment, or Adrenaline if given at least 2.',
+      },
+      {
+        id: 'ch14-tower-of-babil-lower-s05',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
       },
     ],
@@ -714,16 +730,20 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s04',
+        text: 'Last chance to give Fusoya augments before the CPU fight. He leaves behind Bless by default, Omnicasting if given 1 augment, or Phoenix if given 2.',
+      },
+      {
+        id: 'ch21-giant-of-babil-s05',
         text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes. This unlocks the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
         achievementIds: ['defeated-cpu'],
         augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
       },
       {
-        id: 'ch21-giant-of-babil-s05',
+        id: 'ch21-giant-of-babil-s06',
         text: 'Fusoya breaks Zemus\'s control over Golbez, revealing that Cecil and Golbez are brothers. Golbez leaves with Fusoya to confront Zemus directly.',
       },
       {
-        id: 'ch21-giant-of-babil-s06',
+        id: 'ch21-giant-of-babil-s07',
         text: 'Escape the collapsing Giant with Kain\'s help as it explodes behind you.',
       },
     ],
