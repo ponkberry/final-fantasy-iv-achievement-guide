@@ -1,4 +1,4 @@
-import { useMemo, useState } from 'react'
+import { Fragment, useMemo, useState } from 'react'
 import { augments } from '../data/augments'
 import { achievements } from '../data/achievements'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
@@ -12,9 +12,29 @@ const statuses = ['All', 'Obtained', 'Not Obtained'] as const
 type StatusFilter = (typeof statuses)[number]
 
 export function AugmentsPage() {
-  const { isObtained, toggle, reset, obtainedCount, total } = useAugmentProgress()
+  const {
+    isObtained,
+    isLocked,
+    toggle,
+    reset,
+    obtainedCount,
+    total,
+    isSubItemComplete,
+    toggleSubItem,
+    subItemProgress,
+  } = useAugmentProgress()
   const [query, setQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
+  const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
+
+  const toggleExpanded = (id: string) => {
+    setExpandedIds((prev) => {
+      const next = new Set(prev)
+      if (next.has(id)) next.delete(id)
+      else next.add(id)
+      return next
+    })
+  }
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -112,25 +132,90 @@ export function AugmentsPage() {
           <tbody>
             {visible.map((entry) => {
               const obtained = isObtained(entry.id)
+              const locked = isLocked(entry.id)
+              const hasSubItems = entry.subItems && entry.subItems.length > 0
+              const progress = hasSubItems ? subItemProgress(entry.id) : undefined
+              const expanded = expandedIds.has(entry.id)
               return (
-                <tr
-                  key={entry.id}
-                  className={`border-t border-slate-100 dark:border-slate-800 ${
-                    obtained ? 'bg-indigo-50/60 dark:bg-indigo-950/20' : ''
-                  }`}
-                >
-                  <td className="px-3 py-2">
-                    <input
-                      type="checkbox"
-                      checked={obtained}
-                      onChange={() => toggle(entry.id)}
-                      className="size-4 accent-indigo-600"
-                      aria-label={`Mark ${entry.name} as obtained`}
-                    />
-                  </td>
-                  <td className="px-3 py-2 font-medium text-slate-900 dark:text-white">{entry.name}</td>
-                  <td className="px-3 py-2 text-slate-600 dark:text-slate-400">{entry.notes || '-'}</td>
-                </tr>
+                <Fragment key={entry.id}>
+                  <tr
+                    className={`border-t border-slate-100 dark:border-slate-800 ${
+                      obtained ? 'bg-indigo-50/60 dark:bg-indigo-950/20' : ''
+                    }`}
+                  >
+                    <td className="px-3 py-2">
+                      <input
+                        type="checkbox"
+                        checked={obtained}
+                        disabled={locked}
+                        onChange={() => toggle(entry.id)}
+                        className="size-4 accent-indigo-600 disabled:cursor-not-allowed disabled:opacity-60"
+                        aria-label={`Mark ${entry.name} as obtained`}
+                      />
+                    </td>
+                    <td className="px-3 py-2 font-medium text-slate-900 dark:text-white">
+                      <div className="flex flex-wrap items-center gap-2">
+                        <span>{entry.name}</span>
+                        {hasSubItems && progress && (
+                          <span
+                            className={`rounded-full px-2 py-0.5 text-xs font-normal ${
+                              obtained
+                                ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300'
+                                : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
+                            }`}
+                          >
+                            {progress.done} / {progress.total}
+                          </span>
+                        )}
+                      </div>
+                    </td>
+                    <td className="px-3 py-2 text-slate-600 dark:text-slate-400">
+                      {entry.notes || '-'}
+                      {hasSubItems && (
+                        <button
+                          type="button"
+                          onClick={() => toggleExpanded(entry.id)}
+                          className="ml-2 text-xs text-indigo-600 hover:underline dark:text-indigo-400"
+                        >
+                          {expanded ? 'Hide' : 'Show'} checklist
+                        </button>
+                      )}
+                    </td>
+                  </tr>
+                  {hasSubItems && expanded && (
+                    <tr className="border-t border-slate-100 dark:border-slate-800">
+                      <td></td>
+                      <td colSpan={2} className="px-3 pb-3">
+                        <ul className="ml-1 space-y-1 border-l-2 border-slate-200 pl-3 dark:border-slate-800">
+                          {entry.subItems!.map((sub) => {
+                            const done = isSubItemComplete(entry.id, sub.id)
+                            return (
+                              <li key={sub.id}>
+                                <label className="flex cursor-pointer items-start gap-2 text-sm">
+                                  <input
+                                    type="checkbox"
+                                    checked={done}
+                                    onChange={() => toggleSubItem(entry.id, sub.id)}
+                                    className="mt-0.5 size-3.5 shrink-0 accent-indigo-600"
+                                  />
+                                  <span
+                                    className={
+                                      done
+                                        ? 'text-slate-500 line-through dark:text-slate-500'
+                                        : 'text-slate-700 dark:text-slate-300'
+                                    }
+                                  >
+                                    {sub.label}
+                                  </span>
+                                </label>
+                              </li>
+                            )
+                          })}
+                        </ul>
+                      </td>
+                    </tr>
+                  )}
+                </Fragment>
               )
             })}
           </tbody>

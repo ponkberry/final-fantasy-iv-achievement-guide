@@ -26,7 +26,12 @@ export function WalkthroughPage() {
     expandChapter,
   } = useWalkthroughProgress()
   const { isSeen, toggle: toggleBestiary } = useBestiaryProgress()
-  const { isObtained, toggle: toggleAugment } = useAugmentProgress()
+  const {
+    isObtained,
+    toggle: toggleAugment,
+    isSubItemComplete: isAugmentSubItemComplete,
+    toggleSubItem: toggleAugmentSubItem,
+  } = useAugmentProgress()
 
   const jumpToChapter = (id: string) => {
     expandChapter(id)
@@ -136,7 +141,8 @@ export function WalkthroughPage() {
                       </label>
                       {((step.achievementIds && step.achievementIds.length > 0) ||
                         (step.subAchievementIds && step.subAchievementIds.length > 0) ||
-                        (step.augmentIds && step.augmentIds.length > 0)) && (
+                        (step.augmentIds && step.augmentIds.length > 0) ||
+                        (step.subAugmentIds && step.subAugmentIds.length > 0)) && (
                         <div className="mt-2 ml-6 flex flex-wrap gap-2">
                           {step.achievementIds?.map((id) => {
                             const achievement = achievementById.get(id)
@@ -213,6 +219,28 @@ export function WalkthroughPage() {
                               >
                                 {obtained ? '✓ ' : ''}
                                 {augment.name}
+                              </button>
+                            )
+                          })}
+                          {step.subAugmentIds?.map(({ augmentId, subItemId }) => {
+                            const augment = augmentById.get(augmentId)
+                            const subItem = augment?.subItems?.find((s) => s.id === subItemId)
+                            if (!augment || !subItem) return null
+                            const subDone = isAugmentSubItemComplete(augmentId, subItemId)
+                            return (
+                              <button
+                                key={`${augmentId}:${subItemId}`}
+                                type="button"
+                                onClick={() => toggleAugmentSubItem(augmentId, subItemId)}
+                                title={augment.name}
+                                className={`rounded-full border px-3 py-1 text-xs transition-colors ${
+                                  subDone
+                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
+                                }`}
+                              >
+                                {subDone ? '✓ ' : ''}
+                                {subItem.label}
                               </button>
                             )
                           })}

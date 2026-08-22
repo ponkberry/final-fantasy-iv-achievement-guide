@@ -42,10 +42,21 @@ export interface BestiaryEntry {
   extraChapterIds?: string[]
 }
 
+export interface AugmentSubItem {
+  id: string
+  label: string
+}
+
 export interface AugmentEntry {
   id: string
   name: string
   notes?: string
+  /**
+   * if set, this augment is made up of several individually-trackable parts (e.g. the 8 Eidolons
+   * to bring home for Piercing Magic) - it auto-completes once every part is checked off, and
+   * can't be toggled manually as a whole
+   */
+  subItems?: AugmentSubItem[]
 }
 
 export interface WalkthroughStep {
@@ -57,6 +68,8 @@ export interface WalkthroughStep {
   subAchievementIds?: { achievementId: string; subItemId: string }[]
   /** augment ids obtainable at this step, shown as inline callouts */
   augmentIds?: string[]
+  /** specific sub-items of multi-part augments (see AugmentEntry.subItems) relevant to this step */
+  subAugmentIds?: { augmentId: string; subItemId: string }[]
 }
 
 export interface WalkthroughChapter {

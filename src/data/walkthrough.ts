@@ -569,10 +569,12 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch17-underworld-sidequests-s02',
         text: 'Visit Kokkol\'s Forge and Tomra to resupply.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'kokkols-forge' }],
       },
       {
         id: 'ch17-underworld-sidequests-s03',
         text: 'Explore Sylvan Cave, using Rosa\'s Levitate to cross the poisoned water, for treasure and a Defender Sword.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'sylvan-cave' }],
       },
       {
         id: 'ch17-underworld-sidequests-s04',
@@ -628,6 +630,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch18-sealed-cave-s06',
         text: 'Return to Dwarven Castle and speak with King Giott - Cid gives the Falcon a second upgrade, fitting it with a drill to bore through rock. While here, check the Lali-ho Pub for another of the Eidolon\'s missing friends, seated at the table east of the counter.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'dwarven-castle' }],
       },
     ],
   },
@@ -654,6 +657,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch19-odin-lunar-whale-s04',
         text: 'Two more of the Eidolon\'s missing friends are back on the surface: near the save point at the Mount Ordeals summit, and in the northern Black Chocobo Forest.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'mount-ordeals' }, { augmentId: 'piercing-magic', subItemId: 'black-chocobo-forest' }],
       },
       {
         id: 'ch19-odin-lunar-whale-s05',
@@ -701,19 +705,24 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch20-moon-lair-of-father-s03',
+        text: 'Head back to the Feymarch and return this first Eidolon friend to the one who sent you looking.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'hummingway-village' }],
+      },
+      {
+        id: 'ch20-moon-lair-of-father-s04',
         text: 'Return to Kokkol\'s Forge in the Underworld - if you delivered a Rat Tail for Adamantite earlier from the Feymarch, he has finished forging the Excalibur.',
         achievementIds: ['form-reborn'],
       },
       {
-        id: 'ch20-moon-lair-of-father-s04',
+        id: 'ch20-moon-lair-of-father-s05',
         text: 'Head back to the Moon and enter the Lair of the Father for a first pass, covering floors B1 and B2 only and avoiding the Behemoth guarding the path deeper in for now.',
       },
       {
-        id: 'ch20-moon-lair-of-father-s05',
+        id: 'ch20-moon-lair-of-father-s06',
         text: 'Collect the Genji Gloves, Shield, Armor, and Helmet scattered through the dungeon\'s first two floors.',
       },
       {
-        id: 'ch20-moon-lair-of-father-s06',
+        id: 'ch20-moon-lair-of-father-s07',
         text: 'Continue west to the Lunar Path and reach the Crystal Palace, where Fusoya, a Lunarian, explains Golbez\'s true story and joins the party.',
       },
     ],
@@ -762,80 +771,87 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch22-lunar-subterrane-s01',
-        text: 'With free travel restored, pick up the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
-        augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
+        text: 'With free travel restored, pick up the HP+50% Augment on the roof of Baron Castle.',
+        augmentIds: ['hp-plus-50'],
       },
       {
         id: 'ch22-lunar-subterrane-s02',
-        text: 'Return to the Lair of the Father - B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
+        text: 'The Bless Augment is where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
+        augmentIds: ['bless', 'omnicasting', 'phoenix'],
       },
       {
         id: 'ch22-lunar-subterrane-s03',
-        text: 'In the area leading up to Bahamut, to the southeast, talk to the last of the Eidolon\'s missing friends.',
+        text: 'Return to the Lair of the Father - B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
       },
       {
         id: 'ch22-lunar-subterrane-s04',
+        text: 'In the area leading up to Bahamut, to the southeast, talk to the second of the Eidolon\'s missing friends.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'lair-of-the-father' }],
+      },
+      {
+        id: 'ch22-lunar-subterrane-s05',
         text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
       },
       {
-        id: 'ch22-lunar-subterrane-s05',
-        text: 'Head to Kaipo, behind the armor shop, for another of the Eidolon\'s missing friends.',
+        id: 'ch22-lunar-subterrane-s06',
+        text: 'Head to Kaipo, behind the armor shop, for the third of the Eidolon\'s missing friends.',
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'kaipo' }],
       },
       {
-        id: 'ch22-lunar-subterrane-s06',
+        id: 'ch22-lunar-subterrane-s07',
         text: 'With all eight friends found, return to the Feymarch and talk to the Eidolon in the house west of the inn for the Piercing Magic Augment.',
         augmentIds: ['piercing-magic'],
       },
       {
-        id: 'ch22-lunar-subterrane-s07',
+        id: 'ch22-lunar-subterrane-s08',
         text: 'Enter the Lunar Subterrane, the final dungeon, from the Crystal Palace.',
       },
       {
-        id: 'ch22-lunar-subterrane-s08',
+        id: 'ch22-lunar-subterrane-s09',
         text: 'On B1, take the hidden passage left of the entrance to find the White Dragon guarding the Murasame.',
       },
       {
-        id: 'ch22-lunar-subterrane-s09',
+        id: 'ch22-lunar-subterrane-s10',
         text: 'On B5, defeat the two Blue Dragons guarding the Crystal Shield, then find the Red Dragon guarding the Crystal Armlet.',
       },
       {
-        id: 'ch22-lunar-subterrane-s10',
+        id: 'ch22-lunar-subterrane-s11',
         text: 'On B6, take the invisible bridge south of the entrance to find the Dark Bahamut guarding the Ragnarok.',
       },
       {
-        id: 'ch22-lunar-subterrane-s11',
+        id: 'ch22-lunar-subterrane-s12',
         text: 'On B7, clear three back-to-back boss rooms: the Plague Horror (Holy Lance), the Lunasaur (Ribbon), and continue to B8 for Ogopogo (Masamune).',
       },
       {
-        id: 'ch22-lunar-subterrane-s12',
+        id: 'ch22-lunar-subterrane-s13',
         text: 'Collecting Ragnarok, the Holy Lance, the Ribbon, and the Masamune together with the earlier Murasame completes the full set.',
         achievementIds: ['unsealed'],
       },
       {
-        id: 'ch22-lunar-subterrane-s13',
+        id: 'ch22-lunar-subterrane-s14',
         text: 'For the Onion equipment, trade dragon and fiend tails dropped throughout this dungeon and others (Red, Blue, Green, Black, and Yellow) to the Adamant Grotto near Mythril for a full set of Onion gear.',
         achievementIds: ['the-onion-swordsman'],
       },
       {
-        id: 'ch22-lunar-subterrane-s14',
+        id: 'ch22-lunar-subterrane-s15',
         text: 'For the Adamant Armor, use a Siren on B5\'s southeastern cave to fight the Princess Flans until one drops a Pink Tail, then trade it at the Adamant Grotto.',
         achievementIds: ['to-the-end-of-misery'],
       },
       {
-        id: 'ch22-lunar-subterrane-s15',
+        id: 'ch22-lunar-subterrane-s16',
         text: 'Complete 100% of every dungeon map in the game, including the now-inaccessible Tower of Zot, both visits to the Tower of Babil, and the Giant of Babil, to round out the last of the map completion. This automatically grants the Treasure Hunter Augment.',
         achievementIds: ['the-perpetual-wayfarer'],
         augmentIds: ['treasure-hunter'],
       },
       {
-        id: 'ch22-lunar-subterrane-s16',
+        id: 'ch22-lunar-subterrane-s17',
         text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
         augmentIds: ['safe-travel'],
       },
       {
-        id: 'ch22-lunar-subterrane-s17',
+        id: 'ch22-lunar-subterrane-s18',
         text: 'Reach the Lunar Core on B12 and prepare for the final battle - this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
       },
     ],
