@@ -580,7 +580,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch17-underworld-sidequests-s05',
-        text: 'Explore the Feymarch, home of the Eidolons, and reach its hidden city.',
+        text: 'Explore the Feymarch, home of the Eidolons, and reach its hidden city. In the house west of the inn, talk to the Eidolon inside - he asks you to bring his eight missing friends home. Two you likely already passed: one on the upper floor of Yang\'s hut in Sylvan Cave, and one by the well outside Kokkol\'s Forge.',
       },
       {
         id: 'ch17-underworld-sidequests-s06',
@@ -627,7 +627,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch18-sealed-cave-s06',
-        text: 'Return to Dwarven Castle and speak with King Giott - Cid gives the Falcon a second upgrade, fitting it with a drill to bore through rock.',
+        text: 'Return to Dwarven Castle and speak with King Giott - Cid gives the Falcon a second upgrade, fitting it with a drill to bore through rock. While here, check the Lali-ho Pub for another of the Eidolon\'s missing friends, seated at the table east of the counter.',
       },
     ],
   },
@@ -653,28 +653,32 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch19-odin-lunar-whale-s04',
+        text: 'Two more of the Eidolon\'s missing friends are back on the surface: near the save point at the Mount Ordeals summit, and in the northern Black Chocobo Forest.',
+      },
+      {
+        id: 'ch19-odin-lunar-whale-s05',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s05',
+        id: 'ch19-odin-lunar-whale-s06',
         text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
-        id: 'ch19-odin-lunar-whale-s06',
+        id: 'ch19-odin-lunar-whale-s07',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s07',
+        id: 'ch19-odin-lunar-whale-s08',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s08',
+        id: 'ch19-odin-lunar-whale-s09',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },
@@ -687,7 +691,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch20-moon-lair-of-father-s01',
-        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop. The Level Lust Augment is on the ground in the northeast of the building.',
+        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop. The Level Lust Augment is on the ground in the northeast of the building, and another of the Eidolon\'s missing friends is in the northwestern part of the village.',
         augmentIds: ['level-lust'],
       },
       {
@@ -767,59 +771,71 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lunar-subterrane-s03',
-        text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up. This general stretch of the game is also when the multi-step Piercing Magic Augment becomes available; check a dedicated stat-maxing guide for the exact route.',
-        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
-        augmentIds: ['piercing-magic'],
+        text: 'In the area leading up to Bahamut, to the southeast, talk to the last of the Eidolon\'s missing friends.',
       },
       {
         id: 'ch22-lunar-subterrane-s04',
-        text: 'Enter the Lunar Subterrane, the final dungeon, from the Crystal Palace.',
+        text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
       },
       {
         id: 'ch22-lunar-subterrane-s05',
-        text: 'On B1, take the hidden passage left of the entrance to find the White Dragon guarding the Murasame.',
+        text: 'Head to Kaipo, behind the armor shop, for another of the Eidolon\'s missing friends.',
       },
       {
         id: 'ch22-lunar-subterrane-s06',
-        text: 'On B5, defeat the two Blue Dragons guarding the Crystal Shield, then find the Red Dragon guarding the Crystal Armlet.',
+        text: 'With all eight friends found, return to the Feymarch and talk to the Eidolon in the house west of the inn for the Piercing Magic Augment.',
+        augmentIds: ['piercing-magic'],
       },
       {
         id: 'ch22-lunar-subterrane-s07',
-        text: 'On B6, take the invisible bridge south of the entrance to find the Dark Bahamut guarding the Ragnarok.',
+        text: 'Enter the Lunar Subterrane, the final dungeon, from the Crystal Palace.',
       },
       {
         id: 'ch22-lunar-subterrane-s08',
-        text: 'On B7, clear three back-to-back boss rooms: the Plague Horror (Holy Lance), the Lunasaur (Ribbon), and continue to B8 for Ogopogo (Masamune).',
+        text: 'On B1, take the hidden passage left of the entrance to find the White Dragon guarding the Murasame.',
       },
       {
         id: 'ch22-lunar-subterrane-s09',
+        text: 'On B5, defeat the two Blue Dragons guarding the Crystal Shield, then find the Red Dragon guarding the Crystal Armlet.',
+      },
+      {
+        id: 'ch22-lunar-subterrane-s10',
+        text: 'On B6, take the invisible bridge south of the entrance to find the Dark Bahamut guarding the Ragnarok.',
+      },
+      {
+        id: 'ch22-lunar-subterrane-s11',
+        text: 'On B7, clear three back-to-back boss rooms: the Plague Horror (Holy Lance), the Lunasaur (Ribbon), and continue to B8 for Ogopogo (Masamune).',
+      },
+      {
+        id: 'ch22-lunar-subterrane-s12',
         text: 'Collecting Ragnarok, the Holy Lance, the Ribbon, and the Masamune together with the earlier Murasame completes the full set.',
         achievementIds: ['unsealed'],
       },
       {
-        id: 'ch22-lunar-subterrane-s10',
+        id: 'ch22-lunar-subterrane-s13',
         text: 'For the Onion equipment, trade dragon and fiend tails dropped throughout this dungeon and others (Red, Blue, Green, Black, and Yellow) to the Adamant Grotto near Mythril for a full set of Onion gear.',
         achievementIds: ['the-onion-swordsman'],
       },
       {
-        id: 'ch22-lunar-subterrane-s11',
+        id: 'ch22-lunar-subterrane-s14',
         text: 'For the Adamant Armor, use a Siren on B5\'s southeastern cave to fight the Princess Flans until one drops a Pink Tail, then trade it at the Adamant Grotto.',
         achievementIds: ['to-the-end-of-misery'],
       },
       {
-        id: 'ch22-lunar-subterrane-s12',
+        id: 'ch22-lunar-subterrane-s15',
         text: 'Complete 100% of every dungeon map in the game, including the now-inaccessible Tower of Zot, both visits to the Tower of Babil, and the Giant of Babil, to round out the last of the map completion. This automatically grants the Treasure Hunter Augment.',
         achievementIds: ['the-perpetual-wayfarer'],
         augmentIds: ['treasure-hunter'],
       },
       {
-        id: 'ch22-lunar-subterrane-s13',
+        id: 'ch22-lunar-subterrane-s16',
         text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
         augmentIds: ['safe-travel'],
       },
       {
-        id: 'ch22-lunar-subterrane-s14',
+        id: 'ch22-lunar-subterrane-s17',
         text: 'Reach the Lunar Core on B12 and prepare for the final battle - this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
       },
     ],

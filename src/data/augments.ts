@@ -36,7 +36,7 @@ export const augments: AugmentEntry[] = [
   { id: 'darkness', name: 'Darkness', notes: 'Steal it from Odin with Edge before landing the finishing blow.' },
   { id: 'level-lust', name: 'Level Lust', notes: 'On the ground in the northeast of the Hummingway Abode on the Moon.' },
   { id: 'hp-plus-50', name: 'HP+50%', notes: 'On the roof of Baron Castle, once the CPU is defeated.' },
-  { id: 'piercing-magic', name: 'Piercing Magic', notes: 'A longer, multi-step pickup - worth checking a dedicated stat-maxing guide for the exact route.' },
+  { id: 'piercing-magic', name: 'Piercing Magic', notes: 'Reward from the Eidolon in the Feymarch house west of the inn, once you find all 8 of his friends scattered across the Overworld, Underworld, and Moon and report back to him.' },
   { id: 'bless', name: 'Bless', notes: 'On the ground where you first met Fusoya on the Moon, once the CPU is defeated.' },
   { id: 'omnicasting', name: 'Omnicasting', notes: 'Same as Bless, but requires giving Fusoya 1 augment before the CPU fight.' },
   { id: 'phoenix', name: 'Phoenix', notes: 'Same as Bless, but requires giving Fusoya 2 augments before the CPU fight.' },
