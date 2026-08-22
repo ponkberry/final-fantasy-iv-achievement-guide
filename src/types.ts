@@ -59,6 +59,14 @@ export interface AugmentEntry {
   subItems?: AugmentSubItem[]
 }
 
+export interface MapEntry {
+  id: string
+  /** display name, e.g. "Underground Waterway - South B1" */
+  name: string
+  /** the free item awarded for 100%-mapping this floor/area */
+  reward: string
+}
+
 export interface WalkthroughStep {
   id: string
   text: string
