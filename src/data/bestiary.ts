@@ -908,14 +908,14 @@ export const bestiary: BestiaryEntry[] = [
   {
     number: 140,
     name: 'Gold Dragon',
-    location: 'Lair of the Father B3',
-    chapterId: 'ch22-lair-of-the-father-second-visit',
+    location: 'Lunar Subterrane B3',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     number: 141,
     name: 'Silver Dragon',
-    location: 'Lair of the Father B3',
-    chapterId: 'ch22-lair-of-the-father-second-visit',
+    location: 'Lunar Subterrane B3',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     number: 142,
@@ -945,9 +945,9 @@ export const bestiary: BestiaryEntry[] = [
   {
     number: 146,
     name: 'Blue Dragon',
-    location: 'Lair of the Father B5',
+    location: 'Lunar Subterrane B5',
     notes: 'With Siren',
-    chapterId: 'ch22-lair-of-the-father-second-visit',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     number: 147,
