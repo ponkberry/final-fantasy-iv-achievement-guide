@@ -847,7 +847,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch23-lunar-subterrane-s02',
-        text: 'On B1, take the hidden passage left of the entrance to find the White Dragon guarding the Murasame.',
+        text: 'On B3, just left of the entrance, you must fight the White Dragon guarding the Murasame.',
       },
       {
         id: 'ch23-lunar-subterrane-s03',
