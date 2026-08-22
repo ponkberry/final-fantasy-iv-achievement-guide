@@ -312,7 +312,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game.',
     category: 'Story',
     icon: 'achievements/to-mother-earth.jpg',
-    chapterId: 'ch23-final-battle',
+    chapterId: 'ch24-final-battle',
   },
   {
     id: 'master-summoner',
@@ -348,7 +348,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained Ragnarok, Holy Lance, Murasame, and Ribbon.',
     category: 'Sidequest',
     icon: 'achievements/unsealed.jpg',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     id: 'time-for-a-vault',
@@ -378,7 +378,7 @@ export const achievements: Achievement[] = [
     description: 'You traveled across the entire map.',
     category: 'Sidequest',
     icon: 'achievements/the-perpetual-wayfarer.jpg',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     id: 'bitter-battle',
@@ -386,7 +386,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game on Hard difficulty.',
     category: 'Miscellaneous',
     icon: 'achievements/bitter-battle.jpg',
-    chapterId: 'ch24-new-game-plus',
+    chapterId: 'ch25-new-game-plus',
   },
   {
     id: 'rabbit-chaser',
@@ -416,7 +416,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained Adamant Armor.',
     category: 'Sidequest',
     icon: 'achievements/to-the-end-of-misery.jpg',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     id: 'the-onion-swordsman',
@@ -424,7 +424,7 @@ export const achievements: Achievement[] = [
     description: 'You obtained all the Onion items.',
     category: 'Sidequest',
     icon: 'achievements/the-onion-swordsman.jpg',
-    chapterId: 'ch22-lunar-subterrane',
+    chapterId: 'ch23-lunar-subterrane',
   },
   {
     id: 'augment-master',
@@ -440,7 +440,7 @@ export const achievements: Achievement[] = [
     description: 'You finished the game twice.',
     category: 'Miscellaneous',
     icon: 'achievements/earths-savior-times-two.jpg',
-    chapterId: 'ch24-new-game-plus',
+    chapterId: 'ch25-new-game-plus',
   },
   {
     id: 'expert-summoner',
@@ -461,7 +461,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Geryon.',
     category: 'Combat',
     icon: 'achievements/defeated-geryon.jpg',
-    chapterId: 'ch24-new-game-plus',
+    chapterId: 'ch25-new-game-plus',
   },
   {
     id: 'defeated-proto-babil',
@@ -469,7 +469,7 @@ export const achievements: Achievement[] = [
     description: 'You defeated Proto-Babil.',
     category: 'Combat',
     icon: 'achievements/defeated-proto-babil.jpg',
-    chapterId: 'ch24-new-game-plus',
+    chapterId: 'ch25-new-game-plus',
   },
   {
     id: 'know-it-all',
@@ -485,6 +485,6 @@ export const achievements: Achievement[] = [
     description: 'You earned all achievements.',
     category: 'Miscellaneous',
     icon: 'achievements/final-fantasy-iv-master.jpg',
-    chapterId: 'ch24-new-game-plus',
+    chapterId: 'ch25-new-game-plus',
   },
 ]
