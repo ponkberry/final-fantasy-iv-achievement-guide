@@ -424,7 +424,13 @@ export const achievements: Achievement[] = [
     description: 'You obtained all the Onion items.',
     category: 'Sidequest',
     icon: 'achievements/the-onion-swordsman.jpg',
-    chapterId: 'ch23-lunar-subterrane',
+    subItems: [
+      { id: 'red-tail', label: 'Red Tail: Onion Sword, from Red Dragon in the Lunar Subterrane' },
+      { id: 'green-tail', label: 'Green Tail: Onion Helm, from Green Dragon in the Tower of Babil' },
+      { id: 'blue-tail', label: 'Blue Tail: Onion Shield, from Thunder Dragon in the Passage of Eidolons' },
+      { id: 'yellow-tail', label: 'Yellow Tail: Onion Gauntlets, from Yellow Dragon outside Kokkol' },
+      { id: 'black-tail', label: 'Black Tail: Onion Armor, from Armored Fiend in the Lair of the Father' },
+    ],
   },
   {
     id: 'augment-master',

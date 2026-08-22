@@ -868,8 +868,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch23-lunar-subterrane-s07',
-        text: 'For the Onion equipment, trade dragon and fiend tails dropped throughout this dungeon and others (Red, Blue, Green, Black, and Yellow) to the Adamant Grotto near Mythril for a full set of Onion gear.',
-        achievementIds: ['the-onion-swordsman'],
+        text: 'For the Onion equipment, trade dragon and fiend tails dropped throughout this dungeon and others to the Adamant Grotto near Mythril for a full set of Onion gear.',
+        subAchievementIds: [{ achievementId: 'the-onion-swordsman', subItemId: 'red-tail' }, { achievementId: 'the-onion-swordsman', subItemId: 'green-tail' }, { achievementId: 'the-onion-swordsman', subItemId: 'blue-tail' }, { achievementId: 'the-onion-swordsman', subItemId: 'yellow-tail' }, { achievementId: 'the-onion-swordsman', subItemId: 'black-tail' }],
       },
       {
         id: 'ch23-lunar-subterrane-s08',
