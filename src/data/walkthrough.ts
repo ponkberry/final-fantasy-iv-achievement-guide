@@ -687,7 +687,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch20-moon-lair-of-father-s01',
-        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop. The Level Lust Augment is on the ground somewhere inside.',
+        text: 'Explore the Moon\'s surface and find the Hummingway Abode, a shop and rest stop. The Level Lust Augment is on the ground in the northeast of the building.',
         augmentIds: ['level-lust'],
       },
       {
@@ -725,7 +725,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s02',
-        text: 'Board the Giant of Babil and fight through its interior; watch for Beamers, which can one-shot a party member.',
+        text: 'Board the Giant of Babil and fight through its interior.',
       },
       {
         id: 'ch21-giant-of-babil-s03',
@@ -738,9 +738,8 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch21-giant-of-babil-s05',
-        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes. This unlocks the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
+        text: 'Defeat the Giant\'s core, the CPU, along with its Attack and Support Nodes.',
         achievementIds: ['defeated-cpu'],
-        augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
       },
       {
         id: 'ch21-giant-of-babil-s06',
@@ -759,63 +758,68 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch22-lunar-subterrane-s01',
-        text: 'Return to the Lair of the Father - B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
+        text: 'With free travel restored, pick up the HP+50% Augment on the roof of Baron Castle, and the Bless Augment where you first met Fusoya on the Moon (Omnicasting and Phoenix are also possible here).',
+        augmentIds: ['hp-plus-50', 'bless', 'omnicasting', 'phoenix'],
       },
       {
         id: 'ch22-lunar-subterrane-s02',
+        text: 'Return to the Lair of the Father - B1 is already cleared. On B2, take the narrow side path you skipped before and push past the Behemoth guarding it.',
+      },
+      {
+        id: 'ch22-lunar-subterrane-s03',
         text: 'Defeat Bahamut to earn his summon - typically the last regular summon most players pick up. This general stretch of the game is also when the multi-step Piercing Magic Augment becomes available; check a dedicated stat-maxing guide for the exact route.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'bahamut' }],
         augmentIds: ['piercing-magic'],
       },
       {
-        id: 'ch22-lunar-subterrane-s03',
+        id: 'ch22-lunar-subterrane-s04',
         text: 'Enter the Lunar Subterrane, the final dungeon, from the Crystal Palace.',
       },
       {
-        id: 'ch22-lunar-subterrane-s04',
+        id: 'ch22-lunar-subterrane-s05',
         text: 'On B1, take the hidden passage left of the entrance to find the White Dragon guarding the Murasame.',
       },
       {
-        id: 'ch22-lunar-subterrane-s05',
+        id: 'ch22-lunar-subterrane-s06',
         text: 'On B5, defeat the two Blue Dragons guarding the Crystal Shield, then find the Red Dragon guarding the Crystal Armlet.',
       },
       {
-        id: 'ch22-lunar-subterrane-s06',
+        id: 'ch22-lunar-subterrane-s07',
         text: 'On B6, take the invisible bridge south of the entrance to find the Dark Bahamut guarding the Ragnarok.',
       },
       {
-        id: 'ch22-lunar-subterrane-s07',
+        id: 'ch22-lunar-subterrane-s08',
         text: 'On B7, clear three back-to-back boss rooms: the Plague Horror (Holy Lance), the Lunasaur (Ribbon), and continue to B8 for Ogopogo (Masamune).',
       },
       {
-        id: 'ch22-lunar-subterrane-s08',
+        id: 'ch22-lunar-subterrane-s09',
         text: 'Collecting Ragnarok, the Holy Lance, the Ribbon, and the Masamune together with the earlier Murasame completes the full set.',
         achievementIds: ['unsealed'],
       },
       {
-        id: 'ch22-lunar-subterrane-s09',
+        id: 'ch22-lunar-subterrane-s10',
         text: 'For the Onion equipment, trade dragon and fiend tails dropped throughout this dungeon and others (Red, Blue, Green, Black, and Yellow) to the Adamant Grotto near Mythril for a full set of Onion gear.',
         achievementIds: ['the-onion-swordsman'],
       },
       {
-        id: 'ch22-lunar-subterrane-s10',
+        id: 'ch22-lunar-subterrane-s11',
         text: 'For the Adamant Armor, use a Siren on B5\'s southeastern cave to fight the Princess Flans until one drops a Pink Tail, then trade it at the Adamant Grotto.',
         achievementIds: ['to-the-end-of-misery'],
       },
       {
-        id: 'ch22-lunar-subterrane-s11',
+        id: 'ch22-lunar-subterrane-s12',
         text: 'Complete 100% of every dungeon map in the game, including the now-inaccessible Tower of Zot, both visits to the Tower of Babil, and the Giant of Babil, to round out the last of the map completion. This automatically grants the Treasure Hunter Augment.',
         achievementIds: ['the-perpetual-wayfarer'],
         augmentIds: ['treasure-hunter'],
       },
       {
-        id: 'ch22-lunar-subterrane-s12',
+        id: 'ch22-lunar-subterrane-s13',
         text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
         augmentIds: ['safe-travel'],
       },
       {
-        id: 'ch22-lunar-subterrane-s13',
+        id: 'ch22-lunar-subterrane-s14',
         text: 'Reach the Lunar Core on B12 and prepare for the final battle - this is a good point to grind Rydia toward level 80 for Meteor if she isn\'t there yet.',
       },
     ],

@@ -34,7 +34,7 @@ export const augments: AugmentEntry[] = [
   { id: 'mp-plus-50', name: 'MP+50%', notes: 'In the northwestern house in Mist, once your ship has been upgraded.' },
   { id: 'inferno', name: 'Inferno', notes: 'On the ground in Eblan Cave where Rubicante and Edge dueled, once Rubicante is defeated.' },
   { id: 'darkness', name: 'Darkness', notes: 'Steal it from Odin with Edge before landing the finishing blow.' },
-  { id: 'level-lust', name: 'Level Lust', notes: 'On the ground somewhere in the Hummingway Abode on the Moon.' },
+  { id: 'level-lust', name: 'Level Lust', notes: 'On the ground in the northeast of the Hummingway Abode on the Moon.' },
   { id: 'hp-plus-50', name: 'HP+50%', notes: 'On the roof of Baron Castle, once the CPU is defeated.' },
   { id: 'piercing-magic', name: 'Piercing Magic', notes: 'A longer, multi-step pickup - worth checking a dedicated stat-maxing guide for the exact route.' },
   { id: 'bless', name: 'Bless', notes: 'On the ground where you first met Fusoya on the Moon, once the CPU is defeated.' },
