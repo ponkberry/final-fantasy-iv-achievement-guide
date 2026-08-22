@@ -3,6 +3,7 @@ import { bestiary } from '../data/bestiary'
 import { achievements } from '../data/achievements'
 import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { ProgressBar } from '../components/ProgressBar'
+import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 
 const milestones = achievements
   .filter((a) => a.bestiaryThreshold !== undefined)
@@ -15,6 +16,7 @@ export function BestiaryPage() {
   const { isSeen, toggle, reset, seenCount, total, percentComplete } = useBestiaryProgress()
   const [query, setQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -35,12 +37,22 @@ export function BestiaryPage() {
         <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Bestiary</h1>
         <button
           type="button"
-          onClick={reset}
+          onClick={() => setShowResetConfirm(true)}
           className="text-sm text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white"
         >
           Reset progress
         </button>
       </div>
+
+      <ConfirmResetDialog
+        open={showResetConfirm}
+        label="bestiary progress"
+        onCancel={() => setShowResetConfirm(false)}
+        onConfirm={() => {
+          reset()
+          setShowResetConfirm(false)
+        }}
+      />
 
       <div className="mt-4">
         <ProgressBar completed={seenCount} total={total} percent={Math.round(percentComplete)} />

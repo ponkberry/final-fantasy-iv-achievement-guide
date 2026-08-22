@@ -3,6 +3,7 @@ import { augments } from '../data/augments'
 import { achievements } from '../data/achievements'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { ProgressBar } from '../components/ProgressBar'
+import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 
 const milestones = achievements
   .filter((a) => a.augmentThreshold !== undefined)
@@ -26,6 +27,7 @@ export function AugmentsPage() {
   const [query, setQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
   const toggleExpanded = (id: string) => {
     setExpandedIds((prev) => {
@@ -58,12 +60,22 @@ export function AugmentsPage() {
         <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Augments</h1>
         <button
           type="button"
-          onClick={reset}
+          onClick={() => setShowResetConfirm(true)}
           className="text-sm text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white"
         >
           Reset progress
         </button>
       </div>
+
+      <ConfirmResetDialog
+        open={showResetConfirm}
+        label="augment progress"
+        onCancel={() => setShowResetConfirm(false)}
+        onConfirm={() => {
+          reset()
+          setShowResetConfirm(false)
+        }}
+      />
 
       <div className="mt-4">
         <ProgressBar completed={obtainedCount} total={total} percent={percentComplete} />

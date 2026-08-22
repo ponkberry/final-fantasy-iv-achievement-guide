@@ -5,6 +5,7 @@ import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { AchievementCard } from '../components/AchievementCard'
 import { ProgressBar } from '../components/ProgressBar'
+import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 import type { AchievementCategory } from '../types'
 
 const categories: Array<AchievementCategory | 'All'> = [
@@ -36,6 +37,7 @@ export function AchievementsPage() {
   const { obtainedCount: augmentCount } = useAugmentProgress()
   const [filter, setFilter] = useState<(typeof categories)[number]>('All')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
   const visible = useMemo(() => {
     let list = filter === 'All' ? achievements : achievements.filter((a) => a.category === filter)
@@ -50,12 +52,22 @@ export function AchievementsPage() {
         <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Achievements</h1>
         <button
           type="button"
-          onClick={reset}
+          onClick={() => setShowResetConfirm(true)}
           className="text-sm text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white"
         >
           Reset progress
         </button>
       </div>
+
+      <ConfirmResetDialog
+        open={showResetConfirm}
+        label="achievement progress"
+        onCancel={() => setShowResetConfirm(false)}
+        onConfirm={() => {
+          reset()
+          setShowResetConfirm(false)
+        }}
+      />
 
       <div className="mt-4">
         <ProgressBar completed={completedCount} total={total} percent={percentComplete} />

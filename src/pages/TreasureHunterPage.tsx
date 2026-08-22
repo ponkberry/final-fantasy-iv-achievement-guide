@@ -2,6 +2,7 @@ import { useMemo, useState } from 'react'
 import { maps } from '../data/maps'
 import { useMapProgress } from '../hooks/useMapProgress'
 import { ProgressBar } from '../components/ProgressBar'
+import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 
 const statuses = ['All', 'Mapped', 'Unmapped'] as const
 type StatusFilter = (typeof statuses)[number]
@@ -10,6 +11,7 @@ export function TreasureHunterPage() {
   const { isMapped, toggle, reset, mappedCount, total } = useMapProgress()
   const [query, setQuery] = useState('')
   const [statusFilter, setStatusFilter] = useState<StatusFilter>('All')
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
   const visible = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -33,12 +35,23 @@ export function TreasureHunterPage() {
         <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Treasure Hunter</h1>
         <button
           type="button"
-          onClick={reset}
+          onClick={() => setShowResetConfirm(true)}
           className="text-sm text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white"
         >
           Reset progress
         </button>
       </div>
+
+      <ConfirmResetDialog
+        open={showResetConfirm}
+        label="Treasure Hunter progress"
+        onCancel={() => setShowResetConfirm(false)}
+        onConfirm={() => {
+          reset()
+          setShowResetConfirm(false)
+        }}
+      />
+
       <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
         Every dungeon floor gives a free item once you've explored 100% of its map. Track them
         here as you go.

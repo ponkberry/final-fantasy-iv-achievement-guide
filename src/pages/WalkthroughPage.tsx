@@ -1,4 +1,4 @@
-import { useMemo } from 'react'
+import { useMemo, useState } from 'react'
 import { walkthrough } from '../data/walkthrough'
 import { achievements } from '../data/achievements'
 import { bestiary } from '../data/bestiary'
@@ -9,6 +9,7 @@ import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { WalkthroughNav } from '../components/WalkthroughNav'
 import { ChapterBestiaryList } from '../components/ChapterBestiaryList'
+import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 
 export function WalkthroughPage() {
   const {
@@ -32,6 +33,8 @@ export function WalkthroughPage() {
     isSubItemComplete: isAugmentSubItemComplete,
     toggleSubItem: toggleAugmentSubItem,
   } = useAugmentProgress()
+
+  const [showResetConfirm, setShowResetConfirm] = useState(false)
 
   const jumpToChapter = (id: string) => {
     expandChapter(id)
@@ -72,12 +75,22 @@ export function WalkthroughPage() {
         <h1 className="text-2xl font-semibold text-slate-900 dark:text-white">Walkthrough</h1>
         <button
           type="button"
-          onClick={resetSteps}
+          onClick={() => setShowResetConfirm(true)}
           className="text-sm text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-white"
         >
           Reset step progress
         </button>
       </div>
+
+      <ConfirmResetDialog
+        open={showResetConfirm}
+        label="walkthrough step progress"
+        onCancel={() => setShowResetConfirm(false)}
+        onConfirm={() => {
+          resetSteps()
+          setShowResetConfirm(false)
+        }}
+      />
 
       <div className="mt-6 flex flex-col gap-8 md:flex-row">
         <WalkthroughNav
