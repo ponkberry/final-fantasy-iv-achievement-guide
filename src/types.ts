@@ -65,6 +65,8 @@ export interface MapEntry {
   name: string
   /** the free item awarded for 100%-mapping this floor/area */
   reward: string
+  /** id of the walkthrough chapter where this floor/area is first explored */
+  chapterId?: string
 }
 
 export interface WalkthroughStep {

@@ -3,12 +3,15 @@ import { walkthrough } from '../data/walkthrough'
 import { achievements } from '../data/achievements'
 import { bestiary } from '../data/bestiary'
 import { augments } from '../data/augments'
+import { maps } from '../data/maps'
 import { useAchievementProgress } from '../hooks/useAchievementProgress'
 import { useWalkthroughProgress } from '../hooks/useWalkthroughProgress'
 import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
+import { useMapProgress } from '../hooks/useMapProgress'
 import { WalkthroughNav } from '../components/WalkthroughNav'
 import { ChapterBestiaryList } from '../components/ChapterBestiaryList'
+import { ChapterMapList } from '../components/ChapterMapList'
 import { ConfirmResetDialog } from '../components/ConfirmResetDialog'
 
 export function WalkthroughPage() {
@@ -33,6 +36,7 @@ export function WalkthroughPage() {
     isSubItemComplete: isAugmentSubItemComplete,
     toggleSubItem: toggleAugmentSubItem,
   } = useAugmentProgress()
+  const { isMapped, toggle: toggleMap } = useMapProgress()
 
   const [showResetConfirm, setShowResetConfirm] = useState(false)
 
@@ -59,6 +63,17 @@ export function WalkthroughPage() {
   }, [])
 
   const augmentById = useMemo(() => new Map(augments.map((a) => [a.id, a])), [])
+
+  const mapsByChapter = useMemo(() => {
+    const map = new Map<string, typeof maps>()
+    for (const entry of maps) {
+      if (!entry.chapterId) continue
+      const list = map.get(entry.chapterId) ?? []
+      list.push(entry)
+      map.set(entry.chapterId, list)
+    }
+    return map
+  }, [])
 
   const progressByChapter = useMemo(() => {
     const map: Record<string, { done: number; total: number }> = {}
@@ -275,6 +290,14 @@ export function WalkthroughPage() {
                   entries={bestiaryByChapter.get(chapter.id) ?? []}
                   isSeen={isSeen}
                   onToggle={toggleBestiary}
+                />
+              )}
+
+              {!collapsed && (
+                <ChapterMapList
+                  entries={mapsByChapter.get(chapter.id) ?? []}
+                  isMapped={isMapped}
+                  onToggle={toggleMap}
                 />
               )}
             </section>
