@@ -435,7 +435,11 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch12-eblan-agart-s05',
-        text: 'The Enterprise is damaged fighting through Red Wings tanks and crash-lands. Enter the nearby Dwarven Castle.',
+        text: 'The Enterprise is damaged fighting through Red Wings tanks and crash-lands.',
+      },
+      {
+        id: 'ch12-eblan-agart-s06',
+        text: 'Enter the nearby Dwarven Castle. This is probably the best time to give Cid 2 augments for the Adrenaline Augment - however, we\'re avoiding giving him any on this first playthrough.',
       },
     ],
   },
@@ -937,26 +941,30 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch25-new-game-plus-s03',
+        text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him 2 - it lets you pick up Adrenaline this time around instead of Analyze.',
+      },
+      {
+        id: 'ch25-new-game-plus-s04',
         text: 'If you stole Dark Matter from Zeromus, use it on the lone face-shaped rock formation in the northern part of the Moon to fight Proto-Babil.',
         achievementIds: ['defeated-proto-babil'],
       },
       {
-        id: 'ch25-new-game-plus-s04',
+        id: 'ch25-new-game-plus-s05',
         text: 'Geryon can be fought in New Game+ either where you defeated the four Archfiends in the Giant of Babil, or at the Mount Ordeals summit after clearing the Giant of Babil.',
         achievementIds: ['defeated-geryon'],
       },
       {
-        id: 'ch25-new-game-plus-s05',
+        id: 'ch25-new-game-plus-s06',
         text: 'Finishing the game a second time on any difficulty earns its own achievement.',
         achievementIds: ['earths-savior-times-two'],
       },
       {
-        id: 'ch25-new-game-plus-s06',
+        id: 'ch25-new-game-plus-s07',
         text: 'Clearing the game on Hard difficulty - recommended for a first playthrough by many players, since Normal is comparatively easy - earns its own achievement independently.',
         achievementIds: ['bitter-battle'],
       },
       {
-        id: 'ch25-new-game-plus-s07',
+        id: 'ch25-new-game-plus-s08',
         text: 'Once every other achievement is checked off, Final Fantasy IV Master unlocks on its own.',
         achievementIds: ['final-fantasy-iv-master'],
       },
