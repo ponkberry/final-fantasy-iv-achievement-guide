@@ -403,6 +403,7 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch11-tower-of-zot-s07',
         text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia.',
         achievementIds: ['defeated-barbariccia'],
+        warning: 'ONE-TIME VISIT: the tower collapses right after this fight and can\'t be revisited. Grab anything you still need from Tower of Zot before continuing.',
       },
       {
         id: 'ch11-tower-of-zot-s08',
@@ -509,6 +510,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch14-tower-of-babil-lower-s06',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
+        warning: 'ONE-TIME VISIT: this lower half of the Tower of Babil isn\'t revisited. Grab anything you still need before climbing out.',
       },
     ],
   },
@@ -542,25 +544,22 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch16-tower-of-babil-upper-s02',
-        text: 'Watch for the Coeurls\' instant-death attacks along the way.',
-      },
-      {
-        id: 'ch16-tower-of-babil-upper-s03',
         text: 'Balloons on B4 have a very rare chance to drop the hidden Bomb summon.',
         subAchievementIds: [{ achievementId: 'expert-summoner', subItemId: 'bomb' }],
       },
       {
-        id: 'ch16-tower-of-babil-upper-s04',
+        id: 'ch16-tower-of-babil-upper-s03',
         text: 'Face a false boss fight between Edge\'s parents, the King and Queen of Eblan, freed from Golbez\'s control.',
       },
       {
-        id: 'ch16-tower-of-babil-upper-s05',
+        id: 'ch16-tower-of-babil-upper-s04',
         text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually.',
         achievementIds: ['defeated-rubicante'],
       },
       {
-        id: 'ch16-tower-of-babil-upper-s06',
+        id: 'ch16-tower-of-babil-upper-s05',
         text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower - fight your way back out and steal the Falcon airship.',
+        warning: 'ONE-TIME VISIT: the Tower of Babil isn\'t accessible again after this. Grab anything you still need before the floor gives way.',
       },
     ],
   },
@@ -769,6 +768,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch21-giant-of-babil-s07',
         text: 'Escape the collapsing Giant with Kain\'s help as it explodes behind you.',
+        warning: 'ONE-TIME VISIT: the Giant of Babil explodes at the end of this chapter and can\'t be revisited. Grab anything you still need before escaping.',
       },
     ],
   },

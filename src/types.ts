@@ -78,6 +78,8 @@ export interface WalkthroughStep {
   augmentIds?: string[]
   /** specific sub-items of multi-part augments (see AugmentEntry.subItems) relevant to this step */
   subAugmentIds?: { augmentId: string; subItemId: string }[]
+  /** urgent callout shown in red, e.g. marking a location as a one-time-only visit */
+  warning?: string
 }
 
 export interface WalkthroughChapter {

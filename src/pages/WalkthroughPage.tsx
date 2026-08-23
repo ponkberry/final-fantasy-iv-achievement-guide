@@ -152,6 +152,11 @@ export function WalkthroughPage() {
                           {step.text}
                         </span>
                       </label>
+                      {step.warning && (
+                        <p className="mt-2 ml-6 rounded-lg border border-red-300 bg-red-50 px-3 py-2 text-sm font-medium text-red-700 dark:border-red-800 dark:bg-red-950/30 dark:text-red-400">
+                          ⚠ {step.warning}
+                        </p>
+                      )}
                       {((step.achievementIds && step.achievementIds.length > 0) ||
                         (step.subAchievementIds && step.subAchievementIds.length > 0) ||
                         (step.augmentIds && step.augmentIds.length > 0) ||
