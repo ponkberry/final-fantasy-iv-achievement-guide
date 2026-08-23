@@ -370,13 +370,12 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch11-tower-of-zot',
     title: 'Tower of Zot',
-    summary: 'Kain leads the party into a trap at the top of a tower held by Golbez\'s forces.',
+    summary: 'Kain leads the party into a trap at the top of a tower held by Golbez\'s forces. One-time visit: the tower isn\'t accessible again once you leave it, so fully explore it now.',
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
         text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment.',
         augmentIds: ['bardsong'],
-        warning: 'ONE-TIME VISIT: Tower of Zot can\'t be revisited once you leave it. Fully explore it and grab everything you need before reaching the top.',
       },
       {
         id: 'ch11-tower-of-zot-s02',
@@ -399,12 +398,12 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch11-tower-of-zot-s06',
         text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment (Last Stand and Fast Talker are also possible here).',
         augmentIds: ['recall', 'last-stand', 'fast-talker'],
+        warning: 'POINT OF NO RETURN: fully clear and map the lower floors now - the tower collapses once Barbariccia is defeated on 6F.',
       },
       {
         id: 'ch11-tower-of-zot-s07',
-        text: 'Kain and Rosa rejoin the party. Recommended to fully clear and map the lower floors before heading up to 6F and defeating Barbariccia.',
+        text: 'Kain and Rosa rejoin the party. Head up to 6F and defeat Barbariccia.',
         achievementIds: ['defeated-barbariccia'],
-        warning: 'POINT OF NO RETURN: the tower collapses right after this fight.',
       },
       {
         id: 'ch11-tower-of-zot-s08',
@@ -485,12 +484,11 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch14-tower-of-babil-lower',
     title: 'Tower of Babil (First Visit)',
-    summary: 'The lower half of Golbez\'s stronghold, guarded by the mad Dr. Lugae.',
+    summary: 'The lower half of Golbez\'s stronghold, guarded by the mad Dr. Lugae. One-time visit: these lower floors aren\'t accessible again once you leave, so fully explore them now.',
     steps: [
       {
         id: 'ch14-tower-of-babil-lower-s01',
         text: 'Descend through the Tower of Babil, fighting past Security Eyes and Flamehounds.',
-        warning: 'ONE-TIME VISIT: this lower half of the Tower of Babil isn\'t revisited. Fully explore it and grab everything you need before climbing back out.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s02',
@@ -538,12 +536,11 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch16-tower-of-babil-upper',
     title: 'Tower of Babil (Second Visit)',
-    summary: 'The upper half of the tower, and a rematch with the fire Archfiend.',
+    summary: 'The upper half of the tower, and a rematch with the fire Archfiend. One-time visit: the tower isn\'t accessible again after this visit, so fully explore it now.',
     steps: [
       {
         id: 'ch16-tower-of-babil-upper-s01',
         text: 'Edge cuts a new way into the Tower of Babil. Climb through its upper floors.',
-        warning: 'ONE-TIME VISIT: the Tower of Babil isn\'t accessible again after this visit. Fully explore it and grab everything you need before reaching the Crystal room.',
       },
       {
         id: 'ch16-tower-of-babil-upper-s02',
@@ -740,12 +737,11 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch21-giant-of-babil',
     title: 'Giant of Babil',
-    summary: 'Zemus\'s colossal weapon threatens to destroy everything before the party can stop it.',
+    summary: 'Zemus\'s colossal weapon threatens to destroy everything before the party can stop it. One-time visit: it can\'t be revisited once you leave it, so fully explore it now.',
     steps: [
       {
         id: 'ch21-giant-of-babil-s01',
         text: 'Return to the airship - Golbez has already awakened the Giant of Babil, but a fleet of tanks and airships buys the party time.',
-        warning: 'ONE-TIME VISIT: the Giant of Babil can\'t be revisited once you leave it. Fully explore it and grab everything you need before escaping.',
       },
       {
         id: 'ch21-giant-of-babil-s02',
