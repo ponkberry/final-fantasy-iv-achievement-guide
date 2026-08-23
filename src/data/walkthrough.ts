@@ -374,8 +374,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
-        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment (Salve and Hide are also possible here). Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
-        augmentIds: ['bardsong', 'salve', 'hide'],
+        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment. Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        augmentIds: ['bardsong'],
       },
       {
         id: 'ch11-tower-of-zot-s02',
@@ -383,7 +383,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s03',
-        text: 'Last chance to give Tellah augments before the Magus Sisters fight - he dies shortly after. He leaves behind Recall by default, Last Stand if given at least 1 augment, or Fast Talker if given at least 2.',
+        text: 'Last chance to give Tellah augments before the Magus Sisters fight - he dies shortly after. He leaves behind Recall by default, Last Stand if given at least 1 augment, or Fast Talker if given at least 2. Recommended: give him Tsunami and Bardsong.',
       },
       {
         id: 'ch11-tower-of-zot-s04',
@@ -929,6 +929,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch25-new-game-plus-s02',
         text: 'If you avoided giving Edward augments on your first playthrough, this is the time to give him some - it lets you pick up Salve or Hide this time around instead of Bardsong.',
+        augmentIds: ['salve', 'hide'],
       },
       {
         id: 'ch25-new-game-plus-s03',
