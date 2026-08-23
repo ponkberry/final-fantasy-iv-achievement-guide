@@ -376,6 +376,7 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch11-tower-of-zot-s01',
         text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment.',
         augmentIds: ['bardsong'],
+        warning: 'ONE-TIME VISIT: Tower of Zot can\'t be revisited once you leave it. Fully explore it and grab everything you need before reaching the top.',
       },
       {
         id: 'ch11-tower-of-zot-s02',
@@ -401,9 +402,9 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch11-tower-of-zot-s07',
-        text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia.',
+        text: 'Kain and Rosa rejoin the party. Recommended to fully clear and map the lower floors before heading up to 6F and defeating Barbariccia.',
         achievementIds: ['defeated-barbariccia'],
-        warning: 'ONE-TIME VISIT: the tower collapses right after this fight and can\'t be revisited. Grab anything you still need from Tower of Zot before continuing.',
+        warning: 'POINT OF NO RETURN: the tower collapses right after this fight.',
       },
       {
         id: 'ch11-tower-of-zot-s08',
@@ -489,6 +490,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch14-tower-of-babil-lower-s01',
         text: 'Descend through the Tower of Babil, fighting past Security Eyes and Flamehounds.',
+        warning: 'ONE-TIME VISIT: this lower half of the Tower of Babil isn\'t revisited. Fully explore it and grab everything you need before climbing back out.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s02',
@@ -510,7 +512,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch14-tower-of-babil-lower-s06',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
-        warning: 'ONE-TIME VISIT: this lower half of the Tower of Babil isn\'t revisited. Grab anything you still need before climbing out.',
+        warning: 'POINT OF NO RETURN: these lower floors aren\'t accessible again after this.',
       },
     ],
   },
@@ -541,6 +543,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch16-tower-of-babil-upper-s01',
         text: 'Edge cuts a new way into the Tower of Babil. Climb through its upper floors.',
+        warning: 'ONE-TIME VISIT: the Tower of Babil isn\'t accessible again after this visit. Fully explore it and grab everything you need before reaching the Crystal room.',
       },
       {
         id: 'ch16-tower-of-babil-upper-s02',
@@ -559,7 +562,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch16-tower-of-babil-upper-s05',
         text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower - fight your way back out and steal the Falcon airship.',
-        warning: 'ONE-TIME VISIT: the Tower of Babil isn\'t accessible again after this. Grab anything you still need before the floor gives way.',
+        warning: 'POINT OF NO RETURN: the floor gives way right after this, and the tower is left behind for good.',
       },
     ],
   },
@@ -742,6 +745,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch21-giant-of-babil-s01',
         text: 'Return to the airship - Golbez has already awakened the Giant of Babil, but a fleet of tanks and airships buys the party time.',
+        warning: 'ONE-TIME VISIT: the Giant of Babil can\'t be revisited once you leave it. Fully explore it and grab everything you need before escaping.',
       },
       {
         id: 'ch21-giant-of-babil-s02',
@@ -768,7 +772,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch21-giant-of-babil-s07',
         text: 'Escape the collapsing Giant with Kain\'s help as it explodes behind you.',
-        warning: 'ONE-TIME VISIT: the Giant of Babil explodes at the end of this chapter and can\'t be revisited. Grab anything you still need before escaping.',
+        warning: 'POINT OF NO RETURN: the Giant explodes right after this.',
       },
     ],
   },
