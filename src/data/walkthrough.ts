@@ -224,7 +224,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch07-mt-hobs-fabul-s07',
-        text: 'Last chance to give Edward and Yang augments before boarding this ship - both are swept away in the wreck ahead. Edward leaves with Bardsong by default, Salve if given exactly 1 augment, or Hide if given 2. Yang leaves with Focus by default, Kick if given at least 1 augment, or Brace if given at least 2.',
+        text: 'Last chance to give Edward augments before boarding this ship - he\'s swept away in the wreck ahead. He leaves with Bardsong by default, Salve if given exactly 1 augment, or Hide if given 2.',
       },
       {
         id: 'ch07-mt-hobs-fabul-s08',
@@ -492,14 +492,18 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch14-tower-of-babil-lower-s03',
-        text: 'Yang sacrifices himself to stop the tower\'s cannons from firing on the dwarves.',
+        text: 'Last chance to give Yang augments before he sacrifices himself to stop the tower\'s cannons - he leaves the party right after. He leaves behind Focus by default, Kick if given at least 1 augment, or Brace if given at least 2.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s04',
-        text: 'Last chance to give Cid augments before climbing out of the tower - he\'s separated from the party right after. He leaves behind Analyze by default, Upgrade if given at least 1 augment, or Adrenaline if given at least 2.',
+        text: 'Yang sacrifices himself to stop the tower\'s cannons from firing on the dwarves.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s05',
+        text: 'Last chance to give Cid augments before climbing out of the tower - he\'s separated from the party right after. He leaves behind Analyze by default, Upgrade if given at least 1 augment, or Adrenaline if given at least 2.',
+      },
+      {
+        id: 'ch14-tower-of-babil-lower-s06',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
       },
     ],
