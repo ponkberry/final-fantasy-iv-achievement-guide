@@ -374,34 +374,38 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
-        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment. Then board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
+        text: 'Return to Troia to resupply, then find Edward in Troia Castle - defeating the Dark Elf earns you the Bardsong Augment.',
         augmentIds: ['bardsong'],
       },
       {
         id: 'ch11-tower-of-zot-s02',
-        text: 'Climb the Tower of Zot, watching for the Flamehounds\' powerful breath attacks.',
+        text: 'Board the ship - Kain offers to lead you to the Tower of Zot, but it is a trap: the Crystal is at the top and you start at the bottom.',
       },
       {
         id: 'ch11-tower-of-zot-s03',
-        text: 'Last chance to give Tellah augments before the Magus Sisters fight - he dies shortly after. He leaves behind Recall by default, Last Stand if given at least 1 augment, or Fast Talker if given at least 2. Recommended: give him Tsunami and Bardsong.',
+        text: 'Climb the Tower of Zot, watching for the Flamehounds\' powerful breath attacks.',
       },
       {
         id: 'ch11-tower-of-zot-s04',
+        text: 'Last chance to give Tellah augments before the Magus Sisters fight - he dies shortly after. He leaves behind Recall by default, Last Stand if given at least 1 augment, or Fast Talker if given at least 2. Recommended: give him Tsunami and Bardsong.',
+      },
+      {
+        id: 'ch11-tower-of-zot-s05',
         text: 'Partway up, defeat the Magus Sisters - Cindy, Sandy, and Mindy.',
         achievementIds: ['delta-attack-defiance'],
       },
       {
-        id: 'ch11-tower-of-zot-s05',
+        id: 'ch11-tower-of-zot-s06',
         text: 'Tellah confronts Golbez alone and casts Meteor, but it only wounds him - the spell costs Tellah his life, and Golbez\'s mind control over Kain shatters. He leaves behind the Recall Augment (Last Stand and Fast Talker are also possible here).',
         augmentIds: ['recall', 'last-stand', 'fast-talker'],
       },
       {
-        id: 'ch11-tower-of-zot-s06',
+        id: 'ch11-tower-of-zot-s07',
         text: 'Kain and Rosa rejoin the party. Continue up the tower and defeat Barbariccia.',
         achievementIds: ['defeated-barbariccia'],
       },
       {
-        id: 'ch11-tower-of-zot-s07',
+        id: 'ch11-tower-of-zot-s08',
         text: 'Barbariccia collapses the tower behind you, but Rosa teleports the party to safety.',
       },
     ],
