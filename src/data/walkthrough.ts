@@ -224,7 +224,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch07-mt-hobs-fabul-s07',
-        text: 'Last chance to give Edward augments before boarding this ship - he\'s swept away in the wreck ahead. He leaves with Bardsong by default, Salve if given exactly 1 augment, or Hide if given 2.',
+        text: 'Last chance to give Edward augments before boarding this ship - he\'s swept away in the wreck ahead. He leaves with Bardsong by default, Salve if given exactly 1 augment, or Hide if given 2. On a first playthrough, avoid giving him any - it\'s the default and you can go for Salve or Hide on New Game+ instead.',
       },
       {
         id: 'ch07-mt-hobs-fabul-s08',
@@ -276,7 +276,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch08-mysidia-ordeals-s08',
-        text: 'Return to Mysidia, then Mount Ordeals to pick up the Curse Augment before heading back to Baron.',
+        text: 'Head back down Mount Ordeals, picking up the Curse Augment on the way, then return to Mysidia before heading back to Baron.',
         augmentIds: ['curse'],
       },
     ],
@@ -305,7 +305,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch09-baron-retaken-s05',
-        text: 'Last chance to give Palom and Porom augments before the Cagnazzo fight. Each twin leaves with Twincast by default; giving Palom 1 augment yields Bluff instead, giving Porom 1 augment yields Cry instead, and giving either twin 2 augments alone (not split between both) yields Dualcast.',
+        text: 'Last chance to give Palom and Porom augments before the Cagnazzo fight. Each twin leaves with Twincast by default; giving Palom 1 augment yields Bluff instead, giving Porom 1 augment yields Cry instead, and giving either twin 2 augments alone (not split between both) yields Dualcast. Recommended: give Item Lore to Palom, Auto-Potion to Porom, then Curse to either one, so each twin has at least 1 augment and one of them has 2.',
       },
       {
         id: 'ch09-baron-retaken-s06',
@@ -329,7 +329,7 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch10-mysidia-troia-s01',
-        text: 'Return to Mist and Mysidia to collect Augments from the Elder.',
+        text: 'Return to Mysidia to collect Augments from the Elder.',
         augmentIds: ['twincast', 'bluff', 'cry', 'dualcast'],
       },
       {
@@ -928,26 +928,30 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch25-new-game-plus-s02',
+        text: 'If you avoided giving Edward augments on your first playthrough, this is the time to give him some - it lets you pick up Salve or Hide this time around instead of Bardsong.',
+      },
+      {
+        id: 'ch25-new-game-plus-s03',
         text: 'If you stole Dark Matter from Zeromus, use it on the lone face-shaped rock formation in the northern part of the Moon to fight Proto-Babil.',
         achievementIds: ['defeated-proto-babil'],
       },
       {
-        id: 'ch25-new-game-plus-s03',
+        id: 'ch25-new-game-plus-s04',
         text: 'Geryon can be fought in New Game+ either where you defeated the four Archfiends in the Giant of Babil, or at the Mount Ordeals summit after clearing the Giant of Babil.',
         achievementIds: ['defeated-geryon'],
       },
       {
-        id: 'ch25-new-game-plus-s04',
+        id: 'ch25-new-game-plus-s05',
         text: 'Finishing the game a second time on any difficulty earns its own achievement.',
         achievementIds: ['earths-savior-times-two'],
       },
       {
-        id: 'ch25-new-game-plus-s05',
+        id: 'ch25-new-game-plus-s06',
         text: 'Clearing the game on Hard difficulty - recommended for a first playthrough by many players, since Normal is comparatively easy - earns its own achievement independently.',
         achievementIds: ['bitter-battle'],
       },
       {
-        id: 'ch25-new-game-plus-s06',
+        id: 'ch25-new-game-plus-s07',
         text: 'Once every other achievement is checked off, Final Fantasy IV Master unlocks on its own.',
         achievementIds: ['final-fantasy-iv-master'],
       },
