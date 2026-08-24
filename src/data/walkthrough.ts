@@ -472,7 +472,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch13-dwarven-castle-s04',
-        text: 'The dwarf Luca\'s dolls, possessed by Golbez, attack in the Crystal Room - defeat Calcabrina.',
+        text: 'The dwarf Luca\'s dolls, possessed by Golbez, attack in the Crystal Room as Calca, Brina, and Calcabrina. Kill one Calca and one Brina, then the rest merge into Calcabrina - defeat her in this merged state.',
         achievementIds: ['defeated-calcabrina'],
       },
       {
