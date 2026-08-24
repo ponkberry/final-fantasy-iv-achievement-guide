@@ -518,15 +518,11 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch14-tower-of-babil-lower-s05',
         text: 'Yang sacrifices himself to stop the tower\'s cannons from firing on the dwarves.',
+        warning: 'POINT OF NO RETURN: these lower floors aren\'t accessible again on the way out.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s06',
-        text: 'Last chance to give Cid augments before climbing out of the tower - he\'s separated from the party right after. He leaves behind Analyze by default, Upgrade if given at least 1 augment, or Adrenaline if given at least 2.',
-      },
-      {
-        id: 'ch14-tower-of-babil-lower-s07',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
-        warning: 'POINT OF NO RETURN: these lower floors aren\'t accessible again after this.',
       },
     ],
   },
