@@ -945,12 +945,12 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch25-new-game-plus-s02',
-        text: 'If you avoided giving Edward augments on your first playthrough, this is the time to give him some - it lets you pick up Salve or Hide this time around instead of Bardsong.',
+        text: 'If you avoided giving Edward augments on your first playthrough, this is the time to give him some. After returning to Fabul and before boarding the ship, give him 2 augments for Hide (or just 1 for Salve) instead of Bardsong.',
         augmentIds: ['salve', 'hide'],
       },
       {
         id: 'ch25-new-game-plus-s03',
-        text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him 2 - it lets you pick up Adrenaline and Upgrade this time around.',
+        text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him some. Before entering Dwarven Castle in the Underworld, give him 2 augments if needed - it lets you pick up Adrenaline and Upgrade this time around.',
         augmentIds: ['adrenaline', 'upgrade'],
       },
       {
