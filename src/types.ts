@@ -88,5 +88,7 @@ export interface WalkthroughChapter {
   id: string
   title: string
   summary: string
+  /** urgent callout shown in red under the summary, e.g. marking the chapter as a one-time-only visit */
+  warning?: string
   steps: WalkthroughStep[]
 }

@@ -370,7 +370,8 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch11-tower-of-zot',
     title: 'Tower of Zot',
-    summary: 'Kain leads the party into a trap at the top of a tower held by Golbez\'s forces. One-time visit: the tower isn\'t accessible again once you leave it, so fully explore it now.',
+    summary: 'Kain leads the party into a trap at the top of a tower held by Golbez\'s forces.',
+    warning: 'ONE-TIME VISIT: the tower isn\'t accessible again once you leave it. Fully explore it now.',
     steps: [
       {
         id: 'ch11-tower-of-zot-s01',
@@ -494,7 +495,8 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch14-tower-of-babil-lower',
     title: 'Tower of Babil (First Visit)',
-    summary: 'The lower half of Golbez\'s stronghold, guarded by the mad Dr. Lugae. One-time visit: these lower floors aren\'t accessible again once you leave, so fully explore them now.',
+    summary: 'The lower half of Golbez\'s stronghold, guarded by the mad Dr. Lugae.',
+    warning: 'ONE-TIME VISIT: these lower floors aren\'t accessible again once you leave. Fully explore them now.',
     steps: [
       {
         id: 'ch14-tower-of-babil-lower-s01',
@@ -546,7 +548,8 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch16-tower-of-babil-upper',
     title: 'Tower of Babil (Second Visit)',
-    summary: 'The upper half of the tower, and a rematch with the fire Archfiend. One-time visit: the tower isn\'t accessible again after this visit, so fully explore it now.',
+    summary: 'The upper half of the tower, and a rematch with the fire Archfiend.',
+    warning: 'ONE-TIME VISIT: the tower isn\'t accessible again after this visit. Fully explore it now.',
     steps: [
       {
         id: 'ch16-tower-of-babil-upper-s01',
@@ -742,7 +745,8 @@ export const walkthrough: WalkthroughChapter[] = [
   {
     id: 'ch21-giant-of-babil',
     title: 'Giant of Babil',
-    summary: 'Zemus\'s colossal weapon threatens to destroy everything before the party can stop it. One-time visit: it can\'t be revisited once you leave it, so fully explore it now.',
+    summary: 'Zemus\'s colossal weapon threatens to destroy everything before the party can stop it.',
+    warning: 'ONE-TIME VISIT: it can\'t be revisited once you leave it. Fully explore it now.',
     steps: [
       {
         id: 'ch21-giant-of-babil-s01',
