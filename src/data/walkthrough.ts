@@ -431,14 +431,20 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch12-eblan-agart-s04',
-        text: 'Use Kain\'s magma rock on the town well to blast open a route to the Underworld, then fly the Enterprise down through the hole.',
+        text: 'Lodestone Cavern\'s Crystal Room, back on the surface near Troia, holds the Whirlwind Augment.',
+        augmentIds: ['whirlwind'],
       },
       {
         id: 'ch12-eblan-agart-s05',
-        text: 'The Enterprise is damaged fighting through Red Wings tanks and crash-lands.',
+        text: 'Use Kain\'s magma rock on the town well to blast open a route to the Underworld, then fly the Enterprise down through the hole.',
+        warning: 'Once you go down the hole, you won\'t be back on the surface for a while.',
       },
       {
         id: 'ch12-eblan-agart-s06',
+        text: 'The Enterprise is damaged fighting through Red Wings tanks and crash-lands.',
+      },
+      {
+        id: 'ch12-eblan-agart-s07',
         text: 'Enter the nearby Dwarven Castle. This is probably the best time to give Cid 2 augments for the Adrenaline Augment - however, we\'re avoiding giving him any on this first playthrough.',
       },
     ],
@@ -662,38 +668,33 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch19-odin-lunar-whale-s03',
-        text: 'Lodestone Cavern\'s Crystal Room, back on the surface near Troia, now holds the Whirlwind Augment as well.',
-        augmentIds: ['whirlwind'],
-      },
-      {
-        id: 'ch19-odin-lunar-whale-s04',
         text: 'Two more of the Eidolon\'s missing friends are back on the surface: near the save point at the Mount Ordeals summit, and in the northern Black Chocobo Forest.',
         subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'mount-ordeals' }, { augmentId: 'piercing-magic', subItemId: 'black-chocobo-forest' }],
       },
       {
-        id: 'ch19-odin-lunar-whale-s05',
+        id: 'ch19-odin-lunar-whale-s04',
         text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
         augmentIds: ['focus', 'kick', 'brace'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s06',
+        id: 'ch19-odin-lunar-whale-s05',
         text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
       },
       {
-        id: 'ch19-odin-lunar-whale-s07',
+        id: 'ch19-odin-lunar-whale-s06',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s08',
+        id: 'ch19-odin-lunar-whale-s07',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s09',
+        id: 'ch19-odin-lunar-whale-s08',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },
