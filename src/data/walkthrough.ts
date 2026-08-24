@@ -500,27 +500,31 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch14-tower-of-babil-lower-s01',
-        text: 'Descend through the Tower of Babil, fighting past Security Eyes and Flamehounds.',
+        text: 'Climb up through the Tower of Babil from the basement, fighting past Security Eyes and Flamehounds.',
       },
       {
         id: 'ch14-tower-of-babil-lower-s02',
+        text: 'B7 and B8 can\'t be fully cleared on this visit - just map and clear whatever side you can reach for now.',
+      },
+      {
+        id: 'ch14-tower-of-babil-lower-s03',
         text: 'Deep in the tower, fight Barnabas and Dr. Lugae together, then Lugae\'s true form, Lugaeborg. Which one you kill first determines your bestiary credit: Lugae first gives you the Doctor entry, Barnabas first merges them into Barnabas-Z instead. The two are mutually exclusive in a single playthrough.',
         achievementIds: ['defeated-dr-lugae'],
       },
       {
-        id: 'ch14-tower-of-babil-lower-s03',
+        id: 'ch14-tower-of-babil-lower-s04',
         text: 'Last chance to give Yang augments before he sacrifices himself to stop the tower\'s cannons - he leaves the party right after. He leaves behind Focus by default, Kick if given at least 1 augment, or Brace if given at least 2.',
       },
       {
-        id: 'ch14-tower-of-babil-lower-s04',
+        id: 'ch14-tower-of-babil-lower-s05',
         text: 'Yang sacrifices himself to stop the tower\'s cannons from firing on the dwarves.',
       },
       {
-        id: 'ch14-tower-of-babil-lower-s05',
+        id: 'ch14-tower-of-babil-lower-s06',
         text: 'Last chance to give Cid augments before climbing out of the tower - he\'s separated from the party right after. He leaves behind Analyze by default, Upgrade if given at least 1 augment, or Adrenaline if given at least 2.',
       },
       {
-        id: 'ch14-tower-of-babil-lower-s06',
+        id: 'ch14-tower-of-babil-lower-s07',
         text: 'Climb back out of the tower - Cid saves the party from a collapsing bridge on the way.',
         warning: 'POINT OF NO RETURN: these lower floors aren\'t accessible again after this.',
       },
