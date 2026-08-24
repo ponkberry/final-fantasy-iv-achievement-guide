@@ -942,7 +942,7 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch25-new-game-plus-s03',
-        text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him 2 - it lets you pick up Adrenaline this time around instead of Analyze.',
+        text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him 2 - it lets you pick up Adrenaline and Upgrade this time around.',
       },
       {
         id: 'ch25-new-game-plus-s04',
