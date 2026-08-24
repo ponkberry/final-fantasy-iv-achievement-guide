@@ -572,11 +572,11 @@ export const walkthrough: WalkthroughChapter[] = [
         id: 'ch16-tower-of-babil-upper-s04',
         text: 'Defeat Rubicante, the last of the four Elemental Archfiends fought individually.',
         achievementIds: ['defeated-rubicante'],
+        warning: 'POINT OF NO RETURN: the floor gives way right after this, and the tower is left behind for good.',
       },
       {
         id: 'ch16-tower-of-babil-upper-s05',
         text: 'The floor gives way before you reach the Crystal room, dropping you further down the tower - fight your way back out and steal the Falcon airship.',
-        warning: 'POINT OF NO RETURN: the floor gives way right after this, and the tower is left behind for good.',
       },
     ],
   },
@@ -587,8 +587,8 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch17-underworld-sidequests-s01',
-        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave. Seek out Cid in the infirmary - once he finishes repairing the Falcon, it can fly over magma, and he gives you the Analyze Augment (Upgrade and Adrenaline are also possible here).',
-        augmentIds: ['analyze', 'upgrade', 'adrenaline'],
+        text: 'Return to Dwarven Castle. King Giott asks you to retrieve the last Crystal from the Sealed Cave. Seek out Cid in the infirmary - once he finishes repairing the Falcon, it can fly over magma, and he gives you the Analyze Augment.',
+        augmentIds: ['analyze'],
       },
       {
         id: 'ch17-underworld-sidequests-s02',
@@ -951,6 +951,7 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch25-new-game-plus-s03',
         text: 'If you avoided giving Cid augments on your first playthrough, this is the time to give him 2 - it lets you pick up Adrenaline and Upgrade this time around.',
+        augmentIds: ['adrenaline', 'upgrade'],
       },
       {
         id: 'ch25-new-game-plus-s04',
