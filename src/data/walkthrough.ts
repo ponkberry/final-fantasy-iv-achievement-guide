@@ -533,14 +533,18 @@ export const walkthrough: WalkthroughChapter[] = [
     steps: [
       {
         id: 'ch15-eblan-cave-s01',
-        text: 'Use the grappling hook Cid\'s apprentices installed to retrieve the hovercraft, then reach Eblan Cave near the ruined castle.',
+        text: 'Return to Baron Castle and talk to Cid\'s apprentice near the east tower to install the grappling hook onto the Enterprise.',
       },
       {
         id: 'ch15-eblan-cave-s02',
-        text: 'Fight through the cave to find Eblan\'s survivors, sheltering underground.',
+        text: 'Use the grappling hook to retrieve the hovercraft parked outside the west side of Mount Hobs, then reach Eblan Cave near the ruined castle.',
       },
       {
         id: 'ch15-eblan-cave-s03',
+        text: 'Fight through the cave to find Eblan\'s survivors, sheltering underground.',
+      },
+      {
+        id: 'ch15-eblan-cave-s04',
         text: 'Witness Rubicante defeat a young ninja in a duel - Edge, prince of Eblan, joins the party afterward.',
       },
     ],
