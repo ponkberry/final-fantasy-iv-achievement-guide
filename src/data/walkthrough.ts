@@ -598,7 +598,6 @@ export const walkthrough: WalkthroughChapter[] = [
       {
         id: 'ch17-underworld-sidequests-s03',
         text: 'Explore Sylvan Cave, using Rosa\'s Levitate to cross the poisoned water, for treasure and a Defender Sword.',
-        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'sylvan-cave' }],
       },
       {
         id: 'ch17-underworld-sidequests-s04',
@@ -680,28 +679,33 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch19-odin-lunar-whale-s04',
-        text: 'At Fabul, give Yang\'s wife\'s frying pan to the Sylphids to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here).',
-        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
-        augmentIds: ['focus', 'kick', 'brace'],
+        text: 'Go to Fabul and talk to Yang\'s wife in the west tower to get the frying pan.',
       },
       {
         id: 'ch19-odin-lunar-whale-s05',
-        text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
+        text: 'Return to Sylph Cave and use the frying pan on Yang to finally wake him - he doesn\'t rejoin, but Rydia earns the Sylphid summon, along with the Focus Augment (Kick and Brace are also possible here). While here, check the upper floor of Yang\'s hut for another of the Eidolon\'s missing friends.',
+        subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'sylph' }],
+        augmentIds: ['focus', 'kick', 'brace'],
+        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'sylvan-cave' }],
       },
       {
         id: 'ch19-odin-lunar-whale-s06',
+        text: 'Return to Baron Castle\'s east tower basement and fight Odin, who has waited there since you visited the Eidolons. Have Edge steal the Darkness Augment before landing the finishing blow.',
+      },
+      {
+        id: 'ch19-odin-lunar-whale-s07',
         text: 'Defeat Odin to earn his summon.',
         subAchievementIds: [{ achievementId: 'master-summoner', subItemId: 'odin' }],
         augmentIds: ['darkness'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s07',
+        id: 'ch19-odin-lunar-whale-s08',
         text: 'Visit Mysidia. The Elder leads a prayer for the legendary Lunar Whale, which then rises from the water and finds Namingway waiting in the Elder\'s house for your eleventh sighting. Name his intended to receive the ????Love Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-11' }],
         augmentIds: ['love'],
       },
       {
-        id: 'ch19-odin-lunar-whale-s08',
+        id: 'ch19-odin-lunar-whale-s09',
         text: 'Board the Lunar Whale and use its great crystal to travel to the Moon.',
         achievementIds: ['promised-ship-of-light'],
       },
@@ -821,36 +825,31 @@ export const walkthrough: WalkthroughChapter[] = [
       },
       {
         id: 'ch22-lair-of-the-father-second-visit-s07',
-        text: 'Head to Sylvan Cave in the Underworld, upper floor of Yang\'s hut, for the fourth of the Eidolon\'s missing friends.',
-        subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'sylvan-cave' }],
-      },
-      {
-        id: 'ch22-lair-of-the-father-second-visit-s08',
-        text: 'At Kokkol\'s Forge, check by the well outside for the fifth of the Eidolon\'s missing friends.',
+        text: 'At Kokkol\'s Forge, check by the well outside for the fourth of the Eidolon\'s missing friends.',
         subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'kokkols-forge' }],
       },
       {
-        id: 'ch22-lair-of-the-father-second-visit-s09',
-        text: 'In Dwarven Castle\'s Lali-ho Pub, the table east of the counter holds the sixth of the Eidolon\'s missing friends.',
+        id: 'ch22-lair-of-the-father-second-visit-s08',
+        text: 'In Dwarven Castle\'s Lali-ho Pub, the table east of the counter holds the fifth of the Eidolon\'s missing friends.',
         subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'dwarven-castle' }],
       },
       {
-        id: 'ch22-lair-of-the-father-second-visit-s10',
-        text: 'At the Mount Ordeals summit, near the save point, find the seventh of the Eidolon\'s missing friends.',
+        id: 'ch22-lair-of-the-father-second-visit-s09',
+        text: 'At the Mount Ordeals summit, near the save point, find the sixth of the Eidolon\'s missing friends.',
         subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'mount-ordeals' }],
       },
       {
-        id: 'ch22-lair-of-the-father-second-visit-s11',
-        text: 'In the northern Black Chocobo Forest, find the eighth and final of the Eidolon\'s missing friends.',
+        id: 'ch22-lair-of-the-father-second-visit-s10',
+        text: 'In the northern Black Chocobo Forest, find the seventh and final of the Eidolon\'s missing friends.',
         subAugmentIds: [{ augmentId: 'piercing-magic', subItemId: 'black-chocobo-forest' }],
       },
       {
-        id: 'ch22-lair-of-the-father-second-visit-s12',
+        id: 'ch22-lair-of-the-father-second-visit-s11',
         text: 'With all eight friends found, return to the Feymarch and talk to the Eidolon in the house west of the inn for the Piercing Magic Augment.',
         augmentIds: ['piercing-magic'],
       },
       {
-        id: 'ch22-lair-of-the-father-second-visit-s13',
+        id: 'ch22-lair-of-the-father-second-visit-s12',
         text: 'Namingway\'s final sighting can appear in several places - a hidden room in the Lair of the Father, any Chocobo Forest, northern Troia, Sylph Cave B2, the Underground Lake near Damcyan, or the Mount Hobs summit. Finding him completes the quest and rewards the Safe Travel Augment.',
         subAchievementIds: [{ achievementId: 'rabbit-chaser', subItemId: 'sighting-13' }],
         augmentIds: ['safe-travel'],
