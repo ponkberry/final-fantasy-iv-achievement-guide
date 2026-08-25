@@ -1,15 +1,29 @@
+import { useRef, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { useAchievementProgress } from '../hooks/useAchievementProgress'
 import { useBestiaryProgress } from '../hooks/useBestiaryProgress'
 import { useAugmentProgress } from '../hooks/useAugmentProgress'
 import { useMapProgress } from '../hooks/useMapProgress'
 import { ProgressBar } from '../components/ProgressBar'
+import { exportSession, importSession } from '../utils/sessionExport'
 
 export function HomePage() {
   const { completedCount, total, percentComplete } = useAchievementProgress()
   const bestiary = useBestiaryProgress()
   const augments = useAugmentProgress()
   const maps = useMapProgress()
+  const [importError, setImportError] = useState<string | null>(null)
+  const fileInputRef = useRef<HTMLInputElement>(null)
+
+  const handleImportFile = (file: File) => {
+    setImportError(null)
+    file
+      .text()
+      .then(importSession)
+      .catch((err: unknown) => {
+        setImportError(err instanceof Error ? err.message : 'Could not import this file.')
+      })
+  }
 
   return (
     <div className="mx-auto max-w-4xl px-4 py-10">
@@ -129,6 +143,46 @@ export function HomePage() {
             percent={maps.total === 0 ? 0 : Math.round((maps.mappedCount / maps.total) * 100)}
           />
         </div>
+      </div>
+
+      <div className="mt-8 rounded-lg border border-slate-200 p-5 dark:border-slate-800">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+          Backup &amp; restore
+        </h2>
+        <p className="mt-2 text-sm text-slate-600 dark:text-slate-400">
+          Export your progress to a file you can save or move to another browser. Importing
+          replaces your current progress here and reloads the page.
+        </p>
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <button
+            type="button"
+            onClick={exportSession}
+            className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            Export progress
+          </button>
+          <button
+            type="button"
+            onClick={() => fileInputRef.current?.click()}
+            className="rounded-lg border border-slate-200 px-3 py-1.5 text-sm font-medium text-slate-700 hover:bg-slate-100 dark:border-slate-700 dark:text-slate-300 dark:hover:bg-slate-800"
+          >
+            Import progress
+          </button>
+          <input
+            ref={fileInputRef}
+            type="file"
+            accept="application/json,.json"
+            className="hidden"
+            onChange={(e) => {
+              const file = e.target.files?.[0]
+              if (file) handleImportFile(file)
+              e.target.value = ''
+            }}
+          />
+        </div>
+        {importError && (
+          <p className="mt-2 text-sm text-red-700 dark:text-red-400">{importError}</p>
+        )}
       </div>
     </div>
   )
