@@ -87,7 +87,7 @@ export function WalkthroughNav({ chapters, progressByChapter, onJumpToChapter }:
                         <span
                           className={`shrink-0 text-xs ${
                             complete
-                              ? 'text-indigo-600 dark:text-indigo-400'
+                              ? 'text-violet-600 dark:text-violet-400'
                               : 'text-slate-400 dark:text-slate-600'
                           }`}
                         >
@@ -128,7 +128,7 @@ export function WalkthroughNav({ chapters, progressByChapter, onJumpToChapter }:
                       <span
                         className={`shrink-0 text-xs ${
                           complete
-                            ? 'text-indigo-600 dark:text-indigo-400'
+                            ? 'text-violet-600 dark:text-violet-400'
                             : 'text-slate-400 dark:text-slate-600'
                         }`}
                       >

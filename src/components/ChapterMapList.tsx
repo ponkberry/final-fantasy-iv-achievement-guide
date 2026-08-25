@@ -24,7 +24,7 @@ export function ChapterMapList({ entries, isMapped, onToggle }: ChapterMapListPr
                   type="checkbox"
                   checked={mapped}
                   onChange={() => onToggle(entry.id)}
-                  className="mt-0.5 size-3.5 shrink-0 accent-indigo-600"
+                  className="mt-0.5 size-3.5 shrink-0 accent-violet-600"
                 />
                 <span>
                   <span className={mapped ? 'text-slate-500 line-through dark:text-slate-500' : 'text-slate-700 dark:text-slate-300'}>

@@ -21,10 +21,37 @@ export function HomePage() {
         is saved in this browser and persists across visits until you reset it.
       </p>
 
+      <div className="mt-6 rounded-lg border border-slate-200 p-5 dark:border-slate-800">
+        <h2 className="text-sm font-semibold uppercase tracking-wide text-slate-500 dark:text-slate-400">
+          Before you dive in
+        </h2>
+        <ul className="mt-3 list-disc space-y-2 pl-5 text-sm text-slate-600 dark:text-slate-400">
+          <li>
+            The Walkthrough follows the story chapter by chapter, with achievement, bestiary, and
+            augment pickups called out right where you find them - check them off there, or catch
+            up later from their own tabs.
+          </li>
+          <li>
+            Achievements, Bestiary, Augments, and Treasure Hunter each get a dedicated tracker with
+            a progress bar, status filter, and search.
+          </li>
+          <li>
+            Red banners mark one-time-visit areas and points of no return, and multi-part
+            achievements or augments (like Rabbit Chaser or Piercing Magic) auto-complete once
+            every part is checked off.
+          </li>
+          <li>Everything is saved locally in this browser and stays there until you hit Reset.</li>
+          <li>
+            You'll need to complete the game twice - once on Hard difficulty - to get everything.
+            No single playthrough can obtain every augment.
+          </li>
+        </ul>
+      </div>
+
       <div className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
         <Link
           to="/walkthrough"
-          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-violet-400 dark:border-slate-800"
         >
           <h2 className="text-lg font-medium text-slate-900 dark:text-white">Walkthrough</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
@@ -33,7 +60,7 @@ export function HomePage() {
         </Link>
         <Link
           to="/achievements"
-          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-violet-400 dark:border-slate-800"
         >
           <h2 className="text-lg font-medium text-slate-900 dark:text-white">Achievements</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
@@ -42,7 +69,7 @@ export function HomePage() {
         </Link>
         <Link
           to="/bestiary"
-          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-violet-400 dark:border-slate-800"
         >
           <h2 className="text-lg font-medium text-slate-900 dark:text-white">Bestiary</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
@@ -51,7 +78,7 @@ export function HomePage() {
         </Link>
         <Link
           to="/augments"
-          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-violet-400 dark:border-slate-800"
         >
           <h2 className="text-lg font-medium text-slate-900 dark:text-white">Augments</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">
@@ -60,7 +87,7 @@ export function HomePage() {
         </Link>
         <Link
           to="/treasure-hunter"
-          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-indigo-400 dark:border-slate-800"
+          className="rounded-lg border border-slate-200 p-5 transition-colors hover:border-violet-400 dark:border-slate-800"
         >
           <h2 className="text-lg font-medium text-slate-900 dark:text-white">Treasure Hunter</h2>
           <p className="mt-1 text-sm text-slate-600 dark:text-slate-400">

@@ -15,7 +15,7 @@ export function ProgressBar({ completed, total, percent }: ProgressBarProps) {
       </div>
       <div className="h-2 w-full overflow-hidden rounded-full bg-slate-200 dark:bg-slate-800">
         <div
-          className="h-full rounded-full bg-indigo-500 transition-[width]"
+          className="h-full rounded-full bg-violet-500 transition-[width]"
           style={{ width: `${percent}%` }}
           role="progressbar"
           aria-valuenow={percent}

@@ -69,7 +69,7 @@ export function TreasureHunterPage() {
             onClick={() => setStatusFilter(status)}
             className={`rounded-full border px-3 py-1 text-sm transition-colors ${
               statusFilter === status
-                ? 'border-indigo-400 bg-indigo-50 text-indigo-700 dark:border-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300'
+                ? 'border-violet-400 bg-violet-50 text-violet-700 dark:border-violet-700 dark:bg-violet-950/40 dark:text-violet-300'
                 : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
             }`}
           >
@@ -102,7 +102,7 @@ export function TreasureHunterPage() {
                 <tr
                   key={entry.id}
                   className={`border-t border-slate-100 dark:border-slate-800 ${
-                    mapped ? 'bg-indigo-50/60 dark:bg-indigo-950/20' : ''
+                    mapped ? 'bg-violet-50/60 dark:bg-violet-950/20' : ''
                   }`}
                 >
                   <td className="px-3 py-2">
@@ -110,7 +110,7 @@ export function TreasureHunterPage() {
                       type="checkbox"
                       checked={mapped}
                       onChange={() => toggle(entry.id)}
-                      className="size-4 accent-indigo-600"
+                      className="size-4 accent-violet-600"
                       aria-label={`Mark ${entry.name} as 100% mapped`}
                     />
                   </td>

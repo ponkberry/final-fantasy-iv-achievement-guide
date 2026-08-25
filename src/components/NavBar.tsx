@@ -25,7 +25,7 @@ export function NavBar() {
               end={end}
               className={({ isActive }) =>
                 isActive
-                  ? 'font-medium text-indigo-600 dark:text-indigo-400'
+                  ? 'font-medium text-violet-600 dark:text-violet-400'
                   : 'text-slate-600 hover:text-slate-900 dark:text-slate-400 dark:hover:text-white'
               }
             >

@@ -89,7 +89,7 @@ export function AugmentsPage() {
               key={achievement.id}
               className={`flex items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-xs ${
                 reached
-                  ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                  ? 'border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-300'
                   : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
               }`}
             >
@@ -115,7 +115,7 @@ export function AugmentsPage() {
             onClick={() => setStatusFilter(status)}
             className={`rounded-full border px-3 py-1 text-sm transition-colors ${
               statusFilter === status
-                ? 'border-indigo-400 bg-indigo-50 text-indigo-700 dark:border-indigo-700 dark:bg-indigo-950/40 dark:text-indigo-300'
+                ? 'border-violet-400 bg-violet-50 text-violet-700 dark:border-violet-700 dark:bg-violet-950/40 dark:text-violet-300'
                 : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
             }`}
           >
@@ -152,7 +152,7 @@ export function AugmentsPage() {
                 <Fragment key={entry.id}>
                   <tr
                     className={`border-t border-slate-100 dark:border-slate-800 ${
-                      obtained ? 'bg-indigo-50/60 dark:bg-indigo-950/20' : ''
+                      obtained ? 'bg-violet-50/60 dark:bg-violet-950/20' : ''
                     }`}
                   >
                     <td className="px-3 py-2">
@@ -161,7 +161,7 @@ export function AugmentsPage() {
                         checked={obtained}
                         disabled={locked}
                         onChange={() => toggle(entry.id)}
-                        className="size-4 accent-indigo-600 disabled:cursor-not-allowed disabled:opacity-60"
+                        className="size-4 accent-violet-600 disabled:cursor-not-allowed disabled:opacity-60"
                         aria-label={`Mark ${entry.name} as obtained`}
                       />
                     </td>
@@ -172,7 +172,7 @@ export function AugmentsPage() {
                           <span
                             className={`rounded-full px-2 py-0.5 text-xs font-normal ${
                               obtained
-                                ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300'
+                                ? 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300'
                                 : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
                             }`}
                           >
@@ -187,7 +187,7 @@ export function AugmentsPage() {
                         <button
                           type="button"
                           onClick={() => toggleExpanded(entry.id)}
-                          className="ml-2 text-xs text-indigo-600 hover:underline dark:text-indigo-400"
+                          className="ml-2 text-xs text-violet-600 hover:underline dark:text-violet-400"
                         >
                           {expanded ? 'Hide' : 'Show'} checklist
                         </button>
@@ -208,7 +208,7 @@ export function AugmentsPage() {
                                     type="checkbox"
                                     checked={done}
                                     onChange={() => toggleSubItem(entry.id, sub.id)}
-                                    className="mt-0.5 size-3.5 shrink-0 accent-indigo-600"
+                                    className="mt-0.5 size-3.5 shrink-0 accent-violet-600"
                                   />
                                   <span
                                     className={

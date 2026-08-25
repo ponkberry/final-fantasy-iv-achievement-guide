@@ -29,7 +29,7 @@ export function AchievementCard({
     <div
       className={`rounded-lg border p-4 transition-colors ${
         completed
-          ? 'border-indigo-300 bg-indigo-50 dark:border-indigo-800 dark:bg-indigo-950/40'
+          ? 'border-violet-300 bg-violet-50 dark:border-violet-800 dark:bg-violet-950/40'
           : 'border-slate-200 dark:border-slate-800'
       }`}
     >
@@ -39,7 +39,7 @@ export function AchievementCard({
           checked={completed}
           disabled={locked}
           onChange={() => onToggle(achievement.id)}
-          className="mt-1 size-4 accent-indigo-600 disabled:cursor-not-allowed disabled:opacity-60"
+          className="mt-1 size-4 accent-violet-600 disabled:cursor-not-allowed disabled:opacity-60"
         />
         <img
           src={achievement.icon}
@@ -58,7 +58,7 @@ export function AchievementCard({
               <span
                 className={`rounded-full px-2 py-0.5 text-xs ${
                   completed
-                    ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300'
+                    ? 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300'
                     : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
                 }`}
               >
@@ -69,7 +69,7 @@ export function AchievementCard({
               <span
                 className={`rounded-full px-2 py-0.5 text-xs ${
                   completed
-                    ? 'bg-indigo-100 text-indigo-700 dark:bg-indigo-900/50 dark:text-indigo-300'
+                    ? 'bg-violet-100 text-violet-700 dark:bg-violet-900/50 dark:text-violet-300'
                     : 'bg-slate-100 text-slate-600 dark:bg-slate-800 dark:text-slate-400'
                 }`}
               >
@@ -93,7 +93,7 @@ export function AchievementCard({
                 e.preventDefault()
                 setExpanded((v) => !v)
               }}
-              className="mt-1 text-xs text-indigo-600 hover:underline dark:text-indigo-400"
+              className="mt-1 text-xs text-violet-600 hover:underline dark:text-violet-400"
             >
               {expanded ? 'Hide' : 'Show'} checklist ({subItemProgress?.done ?? 0}/
               {subItemProgress?.total ?? achievement.subItems?.length})
@@ -113,7 +113,7 @@ export function AchievementCard({
                     type="checkbox"
                     checked={done}
                     onChange={() => onToggleSubItem?.(sub.id)}
-                    className="mt-0.5 size-3.5 shrink-0 accent-indigo-600"
+                    className="mt-0.5 size-3.5 shrink-0 accent-violet-600"
                   />
                   <span
                     className={

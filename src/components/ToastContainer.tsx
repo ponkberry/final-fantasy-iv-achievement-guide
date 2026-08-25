@@ -11,13 +11,13 @@ export function ToastContainer() {
         <div
           key={toast.id}
           role="status"
-          className="animate-toast-in flex items-start gap-3 rounded-lg border border-indigo-300 bg-white p-3 shadow-lg dark:border-indigo-800 dark:bg-slate-900"
+          className="animate-toast-in flex items-start gap-3 rounded-lg border border-violet-300 bg-white p-3 shadow-lg dark:border-violet-800 dark:bg-slate-900"
         >
           {toast.icon && (
             <img src={toast.icon} alt="" width={40} height={40} className="size-10 shrink-0 rounded" />
           )}
           <div className="min-w-0 flex-1">
-            <p className="text-xs font-medium uppercase tracking-wide text-indigo-600 dark:text-indigo-400">
+            <p className="text-xs font-medium uppercase tracking-wide text-violet-600 dark:text-violet-400">
               {toast.title}
             </p>
             <p className="mt-0.5 truncate text-sm font-medium text-slate-900 dark:text-white">

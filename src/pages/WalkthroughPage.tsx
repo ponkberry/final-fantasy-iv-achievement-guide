@@ -161,7 +161,7 @@ export function WalkthroughPage() {
                           type="checkbox"
                           checked={done}
                           onChange={() => toggleStep(step.id)}
-                          className="mt-1 size-4 shrink-0 accent-indigo-600"
+                          className="mt-1 size-4 shrink-0 accent-violet-600"
                         />
                         <span
                           className={
@@ -194,7 +194,7 @@ export function WalkthroughPage() {
                                 onClick={() => toggleAchievement(id)}
                                 className={`flex items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-xs transition-colors ${
                                   achDone
-                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    ? 'border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-300'
                                     : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
                                 }`}
                               >
@@ -224,7 +224,7 @@ export function WalkthroughPage() {
                                 title={achievement.name}
                                 className={`flex items-center gap-1.5 rounded-full border py-1 pl-1 pr-3 text-xs transition-colors ${
                                   subDone
-                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    ? 'border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-300'
                                     : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
                                 }`}
                               >
@@ -252,7 +252,7 @@ export function WalkthroughPage() {
                                 title={augment.notes}
                                 className={`rounded-full border px-3 py-1 text-xs transition-colors ${
                                   obtained
-                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    ? 'border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-300'
                                     : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
                                 }`}
                               >
@@ -274,7 +274,7 @@ export function WalkthroughPage() {
                                 title={augment.name}
                                 className={`rounded-full border px-3 py-1 text-xs transition-colors ${
                                   subDone
-                                    ? 'border-indigo-300 bg-indigo-50 text-indigo-700 dark:border-indigo-800 dark:bg-indigo-950/40 dark:text-indigo-300'
+                                    ? 'border-violet-300 bg-violet-50 text-violet-700 dark:border-violet-800 dark:bg-violet-950/40 dark:text-violet-300'
                                     : 'border-slate-200 text-slate-600 dark:border-slate-800 dark:text-slate-400'
                                 }`}
                               >
